@@ -49,8 +49,8 @@ extra_css:
 extra_javascript:
     - js/version-select.js
 
-plugins:
-    - search
+#plugins:
+#    - search
 
 markdown_extensions:
     - admonition
