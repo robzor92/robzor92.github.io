@@ -1,3 +1,8 @@
+---
+hide:
+- navigation
+---
+
 # What is Hopsworks?
 
 Hopsworks and its [Feature Store](https://docs.hopsworks.ai/feature-store-api/latest/) are an open source data-intensive AI platform used for the development and operation of machine learning models at scale.
