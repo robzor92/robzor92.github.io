@@ -44,10 +44,6 @@ extra:
 
 extra_css:
     - css/custom.css
-    - css/version-select.css
-
-extra_javascript:
-    - js/version-select.js
 
 plugins: []
 
