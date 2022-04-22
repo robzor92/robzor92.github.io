@@ -9,10 +9,21 @@ repo_url: https://github.com/logicalclocks/hopsworks
 edit_uri: ""
 
 nav:
-  - Feature Store: https://robzor92.github.io/feature-store-api/latest/
-  - Hopsworks.ai: https://robzor92.github.io/hopsworks-cloud/latest/
-  - Hopsworks Platform: https://hopsworks.readthedocs.io/en/stable/index.html
-  - Examples: https://examples.hopsworks.ai/
+  - Home: index.md
+  - Getting Started:
+    - Setup: setup_gs.md
+    - Feature Store: fs_gs.md
+    - Machine Learning: ml_gs.md
+  - Concepts:
+    - Feature Store: fs_concepts.md
+  - User Guides: actual_index.md
+  - Administration: actual_index.md
+  - Setup:
+      - AWS: compute/jobs.md
+      - Azure: compute/python.md
+      - GCP: copute/alerts.md
+      - On-Prem: compute/auth/login.md
+  - Reference Guides: reference_guides.md
   - Community: https://community.hopsworks.ai/
 
 theme:
@@ -29,6 +40,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
+    # - navigation.sections
 
 extra:
   generator: false
@@ -41,11 +53,16 @@ extra:
       link: https://community.hopsworks.ai/
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/logicalclocks/
+  analytics:
+    provider: google
+    # switch for new token
+    property: UA-85730257-4
 
 extra_css:
     - css/custom.css
 
-plugins: []
+plugins:
+    - search
 
 markdown_extensions:
     - admonition
@@ -65,7 +82,3 @@ markdown_extensions:
         custom_checkbox: true
     - markdown_include.include:
         base_path: docs
-
-google_analytics:
-    - UA-85730257-4
-    - auto
