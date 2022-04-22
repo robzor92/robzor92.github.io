@@ -23,7 +23,7 @@ nav:
       - Azure: compute/python.md
       - GCP: copute/alerts.md
       - On-Prem: compute/auth/login.md
-  - Reference Guides: reference_guides.md
+  - Reference Guides: reference_guides/index.md
   - Community: https://community.hopsworks.ai/
 
 theme:
