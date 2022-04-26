@@ -1,28 +1,22 @@
 ---
 hide:
 - navigation
+- toc
 ---
 
-# What is Hopsworks?
+# Welcome to Hopsworks
 
 Hopsworks and its [Feature Store](https://docs.hopsworks.ai/feature-store-api/latest/) are an open source data-intensive AI platform used for the development and operation of machine learning models at scale.
 
-<img src="assets/images/architecture.svg">
+<div class="wrapper">
+  <div onclick="location.href='http://localhost:8000/setup_installation/aws/getting_started/';" style="cursor:pointer;" class="one">Hopsworks on AWS</div>
+  <div onclick="location.href='http://localhost:8000/setup_installation/azure/getting_started/';" style="cursor:pointer;"class="two">Hopsworks on Azure</div>
+  <div onclick="location.href='http://localhost:8000/setup_installation/gcp/getting_started/';" style="cursor:pointer;" class="three">Hopsworks on GCP</div>
+  <div onclick="location.href='http://localhost:8000/setup_installation/on_prem/';" style="cursor:pointer;" class="four">Hopsworks on Premise</div>
+  <div onclick="location.href='http://localhost:8000/getting_started/fs_gs/';" style="cursor:pointer;" class="five">Get started with the Feature Store</div>
+  <div onclick="location.href='http://localhost:8000/getting_started/ml_gs/';" style="cursor:pointer;" class="six">Get Started with Models and Serving</div>
 
-<a name="quick"></a>
-## Installer - On-premise
-
-Follow the [installation instructions](https://hopsworks.readthedocs.io/en/stable/getting_started/installation_guide/platforms/hopsworks-installer.html).
-
-
-The installation takes roughly 1-2 hrs to complete, depending on your bandwidth.
-
-
-## Installer - Azure CLI or GCP CLI
-
-Follow the [installation instructions](https://hopsworks.readthedocs.io/en/stable/getting_started/installation_guide/platforms/hopsworks-cloud-installer.html).
-
-If you have the Azure or GCP CLI utilities installed (on a Linux machine), then the Hopsworks-cloud-installer.sh will both install Hopsworks and provision the VMs in one command.
+</div>
 
 
 ## Development and Operational ML on Hopsworks
@@ -45,7 +39,7 @@ Hopsworks is available under the AGPL-V3 license. In plain English this means th
 ## Contribute
 We are building the most complete and modular ML platform available in the market and we count on your support to continuously improve Hopsworks. Feel free to [give us suggestions](https://github.com/logicalclocks/hopsworks), [report bugs](https://github.com/logicalclocks/hopsworks/issues) and [add features to our library](https://github.com/logicalclocks/feature-store-api) anytime.
 
-We’re the best in what we do and want our community to succeed as well.  
+We’re the best in what we do and want our community to succeed as well.
 Our many thanks to the top contributors of Hopsworks!
 
 

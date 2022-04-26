@@ -11,18 +11,128 @@ edit_uri: ""
 nav:
   - Home: index.md
   - Getting Started:
-    - Setup: setup_gs.md
-    - Feature Store: fs_gs.md
-    - Machine Learning: ml_gs.md
+    - Feature Store:
+      - Quickstart: getting_started/fs/fs_gs.md
+      - Tutorials:
+        - AML Tutorial: getting_started/fs/tutorials/aml.md
+    - Model Registry and Serving: getting_started/ml_gs.md
   - Concepts:
-    - Feature Store: fs_concepts.md
-  - User Guides: actual_index.md
-  - Administration: actual_index.md
-  - Setup:
-      - AWS: compute/jobs.md
-      - Azure: compute/python.md
-      - GCP: copute/alerts.md
-      - On-Prem: compute/auth/login.md
+    - Feature Store:
+      - Projects: concepts/fs/projects.md
+      - Engine: concepts/fs/engine.md
+      - Online/Offine Storage: concepts/fs/storage.md
+      - Storage Connector: concepts/fs/storage_connector.md
+      - Feature Group:
+        - Versioning: concepts/fs/feature_group/versioning.md
+        - Batch: concepts/fs/feature_group/batch_fg.md
+        - Stream: concepts/fs/feature_group/stream_fg.md
+        - External: concepts/fs/feature_group/external_fg.md
+        - Statistics: concepts/fs/feature_group/fg_statistics.md
+      - Feature View:
+        - Overview: concepts/fs/feature_view/feature_view.md
+        - Query: concepts/fs/feature_view/query.md
+        - Transformation Functions: concepts/fs/feature_view/transformation_functions.md
+        - Statistics: concepts/fs/feature_view/fv_statistics.md
+        # - Feature Monitoring (later)
+      - Tags and Keywords: concepts/fs/tags_keywords.md
+      - Alerts: concepts/fs/alerts.md
+    - Model Registry and Serving: concepts/ml/ml.md
+  - User Guides:
+    - Feature Store:
+      - Overview: user_guides/fs/dummy.md
+      - Storage Connector:
+        - JDBC: user_guides/fs/dummy.md
+        - HopsFS: user_guides/fs/dummy.md
+        - S3: user_guides/fs/dummy.md
+        - Redshift: user_guides/fs/dummy.md
+        - ADLS: user_guides/fs/dummy.md
+        - Snowflake: user_guides/fs/dummy.md
+        - BigQuery: user_guides/fs/dummy.md
+        - GCS: user_guides/fs/dummy.md
+        - Kafka: user_guides/fs/dummy.md
+      - Feature Group:
+        - Batch: user_guides/fs/dummy.md
+        - Stream: user_guides/fs/dummy.md
+        - External: user_guides/fs/dummy.md
+        - Statistics: user_guides/fs/dummy.md
+        - Data Validation: user_guides/fs/dummy.md
+        - Alerts: user_guides/fs/dummy.md
+      - Feature View:
+        - Overview: user_guides/fs/dummy.md
+        - Query: user_guides/fs/dummy.md
+        - Batch data: user_guides/fs/dummy.md
+        - Online vectors: user_guides/fs/dummy.md
+        - Training data: user_guides/fs/dummy.md
+        - Transformation Functions: user_guides/fs/dummy.md
+        - Statistics: user_guides/fs/dummy.md
+        # - Feature Monitoring (later)
+      - Tags and Keywords: user_guides/fs/dummy.md
+    - Model Registry and Serving: user_guides/ml/dummy.md
+    - Deployment and Integrations:
+      - Python: integrations/dummy.md
+      - Databricks: integrations/dummy.md
+      - AWS Sagemaker: integrations/dummy.md
+      - AWS EMR: integrations/dummy.md
+      - Azure HDInsight: integrations/dummy.md
+      - Azure Machine Learning: integrations/dummy.md
+      - Apache Spark: integrations/dummy.md
+    - Common:
+      - Authentication: user_guides/common/dummy.md
+      - Projects: user_guides/common/dummy.md
+      - Python: user_guides/common/dummy.md
+      - Jupyter: user_guides/common/dummy.md
+      - Jobs:
+        - Overview: user_guides/common/dummy.md
+        - Alerts: user_guides/common/dummy.md
+      - Airflow: user_guides/common/dummy.md
+      - Kafka: user_guides/common/dummy.md
+      - Git: user_guides/common/dummy.md
+      - Secrets: user_guides/common/dummy.md
+      - Api Keys: user_guides/common/dummy.md
+      - Search: user_guides/common/dummy.md
+      - Hops File System (HopsFS): user_guides/common/dummy.md
+  - Administration:
+    - Authentication: administration/dummy.md
+    - Project management: administration/dummy.md
+    - User management: administration/dummy.md
+    - Tags: administration/dummy.md
+    - Monitoring: administration/dummy.md
+  - Setup and Installation:
+    - AWS:
+      - Getting Started: setup_installation/aws/getting_started.md
+      - Limiting Permissions: setup_installation/aws/restrictive_permissions.md
+      - Cluster Creation: setup_installation/aws/cluster_creation.md
+    - Azure:
+      - Getting Started: setup_installation/azure/getting_started.md
+      - Limiting Permissions: setup_installation/azure/restrictive_permissions.md
+      - Cluster Creation: setup_installation/azure/cluster_creation.md
+    - GCP:
+      - Getting Started: setup_installation/gcp/getting_started.md
+      - Limiting Permissions: setup_installation/gcp/restrictive_permissions.md
+      - Cluster Creation: setup_installation/gcp/cluster_creation.md
+    - On-Prem: https://www.hopsworks.ai/contact/main
+    - Common:
+      - Services: setup_installation/common/services.md
+      - Adding and Removing workers: setup_installation/common/adding_removing_workers.md
+      - Autoscaling: setup_installation/common/autoscaling.md
+      - Scaling up: setup_installation/common/scalingup.md
+      - GPU support: setup_installation/common/gpu_support.md
+      - User management: setup_installation/common/user_management.md
+      - Managed RonDB: setup_installation/common/rondb.md
+      - Cluster upgrade:
+        - From version 2.4 or newer:
+          - AWS: setup_installation/common/aws/upgrade_2.4.md
+          - Azure: setup_installation/common/zure/upgrade_2.4.md
+        - From version 2.2 or older:
+          - AWS: setup_installation/common/aws/upgrade.md
+          - Azure: setup_installation/common/azure/upgrade.md
+      - Single Sign On:
+        - Hopsworks:
+          - OAuth2: setup_installation/common/sso/oauth.md
+          - LDAP: setup_installation/common/sso/ldap.md
+        - Hopsworks.ai: setup_installation/common/sso/sso.md
+      - API Key: setup_installation/common/api_key.md
+      - Terraform: setup_installation/common/terraform.md
   - Reference Guides: reference_guides/index.md
   - Community: https://community.hopsworks.ai/
 
@@ -40,7 +150,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    # - navigation.sections
+    - navigation.sections
 
 extra:
   generator: false
