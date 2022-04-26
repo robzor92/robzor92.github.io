@@ -68,7 +68,7 @@ nav:
         # - Feature Monitoring (later)
       - Tags and Keywords: user_guides/fs/dummy.md
     - Model Registry and Serving: user_guides/ml/dummy.md
-    - Deployment and Integrations:
+    - Integrations:
       - Python: integrations/dummy.md
       - Databricks: integrations/dummy.md
       - AWS Sagemaker: integrations/dummy.md

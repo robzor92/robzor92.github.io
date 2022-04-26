@@ -9,12 +9,12 @@ hide:
 Hopsworks and its [Feature Store](https://docs.hopsworks.ai/feature-store-api/latest/) are an open source data-intensive AI platform used for the development and operation of machine learning models at scale.
 
 <div class="wrapper">
-  <div onclick="location.href='http://localhost:8000/setup_installation/aws/getting_started/';" style="cursor:pointer;" class="one">Hopsworks on AWS</div>
-  <div onclick="location.href='http://localhost:8000/setup_installation/azure/getting_started/';" style="cursor:pointer;"class="two">Hopsworks on Azure</div>
-  <div onclick="location.href='http://localhost:8000/setup_installation/gcp/getting_started/';" style="cursor:pointer;" class="three">Hopsworks on GCP</div>
-  <div onclick="location.href='http://localhost:8000/setup_installation/on_prem/';" style="cursor:pointer;" class="four">Hopsworks on Premise</div>
-  <div onclick="location.href='http://localhost:8000/getting_started/fs_gs/';" style="cursor:pointer;" class="five">Get started with the Feature Store</div>
-  <div onclick="location.href='http://localhost:8000/getting_started/ml_gs/';" style="cursor:pointer;" class="six">Get Started with Models and Serving</div>
+  <div onclick="location.href='https://robzor92.github.io/setup_installation/aws/getting_started/';" style="cursor:pointer;" class="one">Hopsworks on AWS</div>
+  <div onclick="location.href='https://robzor92.github.io/setup_installation/azure/getting_started/';" style="cursor:pointer;"class="two">Hopsworks on Azure</div>
+  <div onclick="location.href='https://robzor92.github.io/setup_installation/gcp/getting_started/';" style="cursor:pointer;" class="three">Hopsworks on GCP</div>
+  <div onclick="location.href='https://robzor92.github.io/setup_installation/on_prem/';" style="cursor:pointer;" class="four">Hopsworks on Premise</div>
+  <div onclick="location.href='https://robzor92.github.io/getting_started/fs_gs/';" style="cursor:pointer;" class="five">Get started with the Feature Store</div>
+  <div onclick="location.href='https://robzor92.github.io/getting_started/ml_gs/';" style="cursor:pointer;" class="six">Get Started with Models and Serving</div>
 
 </div>
 
