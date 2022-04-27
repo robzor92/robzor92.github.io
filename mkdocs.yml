@@ -15,7 +15,10 @@ nav:
       - Quickstart: getting_started/fs/fs_gs.md
       - Tutorials:
         - AML Tutorial: getting_started/fs/tutorials/aml.md
-    - Model Registry and Serving: getting_started/ml_gs.md
+    - Model Registry and Serving:
+      - Quickstart: getting_started/ml/ml_gs.md
+      - Tutorials:
+        - ML Tutorial: getting_started/ml/tutorials/versioning.md
   - Concepts:
     - Feature Store:
       - Projects: concepts/fs/projects.md
@@ -36,7 +39,20 @@ nav:
         # - Feature Monitoring (later)
       - Tags and Keywords: concepts/fs/tags_keywords.md
       - Alerts: concepts/fs/alerts.md
-    - Model Registry and Serving: concepts/ml/ml.md
+    - Model Registry and Serving:
+      - Projects: concepts/ml/projects.md
+      - Model:
+        - Overview: concepts/ml/registry/model.md
+        - Versioning: concepts/ml/registry/versioning.md
+        - Frameworks: concepts/ml/registry/frameworks.md
+        - Model Schema: concepts/ml/registry/schema.md
+      - Deployment:
+        - Overview: concepts/ml/serving/deployment.md
+        - Predictor: concepts/ml/serving/predictor.md
+        - Inference Logger: concepts/ml/serving/logger.md
+        - Transformer: concepts/ml/serving/transformer.md
+      - Tags and Keywords: concepts/ml/tags_keywords.md
+      - Alerts: concepts/ml/alerts.md
   - User Guides:
     - Feature Store:
       - Overview: user_guides/fs/dummy.md
@@ -67,7 +83,19 @@ nav:
         - Statistics: user_guides/fs/dummy.md
         # - Feature Monitoring (later)
       - Tags and Keywords: user_guides/fs/dummy.md
-    - Model Registry and Serving: user_guides/ml/dummy.md
+    - Model Registry and Serving:
+      - Overview: user_guides/ml/tf.md
+      - Model:
+        - Frameworks:
+          - TensorFlow: user_guides/ml/model/frameworks/tf.md
+          - Scikit-Learn: user_guides/ml/model/frameworks/skl.md
+          - PyTorch: user_guides/ml/model/frameworks/torch.md
+        - Model Schema: user_guides/ml/model/schema.md
+        - Input Example: user_guides/ml/model/input.md
+      - Deployment:
+        - Predictor: user_guides/ml/deployment/predictor.md
+        - Transformer: user_guides/ml/deployment/transformer.md
+        - Alerts: user_guides/ml/deployment/alerts.md
     - Integrations:
       - Python: integrations/dummy.md
       - Databricks: integrations/dummy.md
