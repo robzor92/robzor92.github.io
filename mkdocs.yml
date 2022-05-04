@@ -15,10 +15,6 @@ nav:
       - Quickstart: getting_started/fs/fs_gs.md
       - Tutorials:
         - AML Tutorial: getting_started/fs/tutorials/aml.md
-    - Model Registry and Serving:
-      - Quickstart: getting_started/ml/ml_gs.md
-      - Tutorials:
-        - ML Tutorial: getting_started/ml/tutorials/versioning.md
   - Concepts:
     - Feature Store:
       - Projects: concepts/fs/projects.md
@@ -134,6 +130,43 @@ nav:
       - Api Keys: user_guides/common/dummy.md
       - Search: user_guides/common/dummy.md
       - Hops File System (HopsFS): user_guides/common/dummy.md
+  - Setup and Installation:
+      - AWS:
+          - Getting Started: setup_installation/aws/getting_started.md
+          - Limiting Permissions: setup_installation/aws/restrictive_permissions.md
+          - Cluster Creation: setup_installation/aws/cluster_creation.md
+      - Azure:
+          - Getting Started: setup_installation/azure/getting_started.md
+          - Limiting Permissions: setup_installation/azure/restrictive_permissions.md
+          - Cluster Creation: setup_installation/azure/cluster_creation.md
+      - GCP:
+          - Getting Started: setup_installation/gcp/getting_started.md
+          - Limiting Permissions: setup_installation/gcp/restrictive_permissions.md
+          - Cluster Creation: setup_installation/gcp/cluster_creation.md
+      - Common:
+          - Services: setup_installation/common/services.md
+          - Adding and Removing workers: setup_installation/common/adding_removing_workers.md
+          - Autoscaling: setup_installation/common/autoscaling.md
+          - Scaling up: setup_installation/common/scalingup.md
+          - GPU support: setup_installation/common/gpu_support.md
+          - User management: setup_installation/common/user_management.md
+          - Managed RonDB: setup_installation/common/rondb.md
+          - Cluster upgrade:
+              - From version 2.4 or newer:
+                  - AWS: setup_installation/common/aws/upgrade_2.4.md
+                  - Azure: setup_installation/common/zure/upgrade_2.4.md
+              - From version 2.2 or older:
+                  - AWS: setup_installation/common/aws/upgrade.md
+                  - Azure: setup_installation/common/azure/upgrade.md
+          - Single Sign On:
+              - Hopsworks:
+                  - OAuth2: setup_installation/common/sso/oauth.md
+                  - LDAP: setup_installation/common/sso/ldap.md
+              - Hopsworks.ai: setup_installation/common/sso/sso.md
+          - API Key: setup_installation/common/api_key.md
+          - Terraform: setup_installation/common/terraform.md
+      - On-Prem:
+          - Hopsworks Installer: setup_installation/on_prem/hopsworks_installer.md
   - Administration:
       - Introduction: admin/index.md
       - Authentication:
@@ -152,43 +185,6 @@ nav:
       - Manage Services: admin/services.md
       - Tags: administration/dummy.md
       - Monitoring: administration/dummy.md
-  - Setup and Installation:
-    - AWS:
-      - Getting Started: setup_installation/aws/getting_started.md
-      - Limiting Permissions: setup_installation/aws/restrictive_permissions.md
-      - Cluster Creation: setup_installation/aws/cluster_creation.md
-    - Azure:
-      - Getting Started: setup_installation/azure/getting_started.md
-      - Limiting Permissions: setup_installation/azure/restrictive_permissions.md
-      - Cluster Creation: setup_installation/azure/cluster_creation.md
-    - GCP:
-      - Getting Started: setup_installation/gcp/getting_started.md
-      - Limiting Permissions: setup_installation/gcp/restrictive_permissions.md
-      - Cluster Creation: setup_installation/gcp/cluster_creation.md
-    - Common:
-      - Services: setup_installation/common/services.md
-      - Adding and Removing workers: setup_installation/common/adding_removing_workers.md
-      - Autoscaling: setup_installation/common/autoscaling.md
-      - Scaling up: setup_installation/common/scalingup.md
-      - GPU support: setup_installation/common/gpu_support.md
-      - User management: setup_installation/common/user_management.md
-      - Managed RonDB: setup_installation/common/rondb.md
-      - Cluster upgrade:
-        - From version 2.4 or newer:
-          - AWS: setup_installation/common/aws/upgrade_2.4.md
-          - Azure: setup_installation/common/zure/upgrade_2.4.md
-        - From version 2.2 or older:
-          - AWS: setup_installation/common/aws/upgrade.md
-          - Azure: setup_installation/common/azure/upgrade.md
-      - Single Sign On:
-        - Hopsworks:
-          - OAuth2: setup_installation/common/sso/oauth.md
-          - LDAP: setup_installation/common/sso/ldap.md
-        - Hopsworks.ai: setup_installation/common/sso/sso.md
-      - API Key: setup_installation/common/api_key.md
-      - Terraform: setup_installation/common/terraform.md
-    - On-Prem:
-        - Hopsworks Installer: setup_installation/on_prem/hopsworks_installer.md
   - Reference Guides: reference_guides/index.md
   - Community: https://community.hopsworks.ai/
 

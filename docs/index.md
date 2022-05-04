@@ -6,16 +6,6 @@ hide:
 
 # Welcome to Hopsworks
 
-This page is under construction...
-
-- What do we want to show here?
-- Objective 1: Show what problem we solve (hook on new users)
-- Objective 2: Fast access for installation on cloud/on-prem
-- Objective 3: Getting started with existing cluster
-- Objective 4: ?
-
-<a href="https://docs.tecton.ai/">Tecton landing page</a>
-
 Hopsworks and its [Feature Store](https://docs.hopsworks.ai/feature-store-api/latest/) are an open source data-intensive AI platform used for the development and operation of machine learning models at scale.
 
 <div class="wrapper">
