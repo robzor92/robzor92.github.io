@@ -64,7 +64,7 @@ nav:
             - GitRemote: concepts/common/dummy.md
         - Secrets: concepts/common/dummy.md
         - Api Keys: concepts/common/dummy.md
-  - User Guides:
+  - Guides:
     - Feature Store:
       - Overview: user_guides/fs/dummy.md
       - Storage Connector:
@@ -185,7 +185,7 @@ nav:
       - Manage Services: admin/services.md
       - Tags: administration/dummy.md
       - Monitoring: administration/dummy.md
-  - Reference Guides: reference_guides/index.md
+  - API: reference_guides/index.md
   - Community: https://community.hopsworks.ai/
 
 theme:
