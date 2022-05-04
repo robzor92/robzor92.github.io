@@ -12,7 +12,7 @@ Hopsworks and its [Feature Store](https://docs.hopsworks.ai/feature-store-api/la
   <div onclick="location.href='https://robzor92.github.io/setup_installation/aws/getting_started/';" style="cursor:pointer;" class="one">Hopsworks on AWS</div>
   <div onclick="location.href='https://robzor92.github.io/setup_installation/azure/getting_started/';" style="cursor:pointer;"class="two">Hopsworks on Azure</div>
   <div onclick="location.href='https://robzor92.github.io/setup_installation/gcp/getting_started/';" style="cursor:pointer;" class="three">Hopsworks on GCP</div>
-  <div onclick="location.href='https://robzor92.github.io/setup_installation/on_prem/getting_started/';" style="cursor:pointer;" class="four">Hopsworks on Premise</div>
+  <div onclick="location.href='https://robzor92.github.io/setup_installation/on_prem/hopsworks_installer/';" style="cursor:pointer;" class="four">Hopsworks on Premise</div>
   <div onclick="location.href='https://robzor92.github.io/getting_started/fs_gs/';" style="cursor:pointer;" class="five">Get started with the Feature Store</div>
   <div onclick="location.href='https://robzor92.github.io/getting_started/ml_gs/';" style="cursor:pointer;" class="six">Get Started with Models and Serving</div>
 

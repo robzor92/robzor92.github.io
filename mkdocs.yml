@@ -53,6 +53,21 @@ nav:
         - Transformer: concepts/ml/serving/transformer.md
       - Tags and Keywords: concepts/ml/tags_keywords.md
       - Alerts: concepts/ml/alerts.md
+    - Common:
+        - Projects: concepts/common/dummy.md
+        - Python:
+            - Environment: concepts/common/dummy.md
+            - Library: concepts/common/dummy.md
+        - Jobs:
+            - Overview: concepts/common/dummy.mde
+            - Executions: concepts/common/dummy.md
+            - Alerts: concepts/common/dummy.md
+        - Git:
+            - GitRepo: concepts/common/dummy.md
+            - GitProvider: concepts/common/dummy.md
+            - GitRemote: concepts/common/dummy.md
+        - Secrets: concepts/common/dummy.md
+        - Api Keys: concepts/common/dummy.md
   - User Guides:
     - Feature Store:
       - Overview: user_guides/fs/dummy.md
@@ -120,11 +135,23 @@ nav:
       - Search: user_guides/common/dummy.md
       - Hops File System (HopsFS): user_guides/common/dummy.md
   - Administration:
-    - Authentication: administration/dummy.md
-    - Project management: administration/dummy.md
-    - User management: administration/dummy.md
-    - Tags: administration/dummy.md
-    - Monitoring: administration/dummy.md
+      - Introduction: admin/index.md
+      - Authentication:
+          - Configure Authentication: admin/auth.md
+          - Configure OAuth2:
+              - Register an Identity Provider: admin/oauth2/create-client.md
+              - Create Okta Client: admin/oauth2/create-okta-client.md
+              - Create Azure Client: admin/oauth2/create-azure-client.md
+          - Configure LDAP/Kerberos:
+              - Configure LDAP: admin/ldap/configure-ldap.md
+              - Configure Kerberos: admin/ldap/configure-krb.md
+              - Configure server for LDAP and Kerberos: admin/ldap/configure-server.md
+      - Project management: administration/dummy.md
+      - User Management: admin/user.md
+      - Configure Alerts: admin/alert.md
+      - Manage Services: admin/services.md
+      - Tags: administration/dummy.md
+      - Monitoring: administration/dummy.md
   - Setup and Installation:
     - AWS:
       - Getting Started: setup_installation/aws/getting_started.md
