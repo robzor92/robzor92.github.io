@@ -12,43 +12,38 @@ nav:
   - Home: index.md
   - Getting Started:
     - Feature Store:
-      - Quickstart: getting_started/fs/fs_gs.md
+      - Quickstart: getting_started/fs/index.md
       - Tutorials:
         - AML Tutorial: getting_started/fs/tutorials/aml.md
   - Concepts:
     - Feature Store:
-      - Projects: concepts/fs/projects.md
-      - Engine: concepts/fs/engine.md
-      - Online/Offine Storage: concepts/fs/storage.md
-      - Storage Connector: concepts/fs/storage_connector.md
-      - Feature Group:
+      - Architecture: concepts/fs/index.md #hsfs
+      - Feature Groups:
+        - FG Overview: concepts/fs/feature_group/fg_overview.md
+        - Write APIs: concepts/fs/feature_group/write_apis.md
+        - Feature Pipelines: concepts/fs/feature_group/feature_pipelines.md
+        - External Feature Groups: concepts/fs/feature_group/external_fg.md
+        - Feature Statistics: concepts/fs/feature_group/fg_statistics.md
         - Versioning: concepts/fs/feature_group/versioning.md
-        - Batch: concepts/fs/feature_group/batch_fg.md
-        - Stream: concepts/fs/feature_group/stream_fg.md
-        - External: concepts/fs/feature_group/external_fg.md
-        - Statistics: concepts/fs/feature_group/fg_statistics.md
-      - Feature View:
-        - Overview: concepts/fs/feature_view/feature_view.md
-        - Query: concepts/fs/feature_view/query.md
-        - Transformation Functions: concepts/fs/feature_view/transformation_functions.md
-        - Statistics: concepts/fs/feature_view/fv_statistics.md
-        # - Feature Monitoring (later)
-      - Tags and Keywords: concepts/fs/tags_keywords.md
-      - Alerts: concepts/fs/alerts.md
-    - Model Registry and Serving:
-      - Projects: concepts/ml/projects.md
-      - Model:
-        - Overview: concepts/ml/registry/model.md
-        - Versioning: concepts/ml/registry/versioning.md
-        - Frameworks: concepts/ml/registry/frameworks.md
-        - Model Schema: concepts/ml/registry/schema.md
-      - Deployment:
-        - Overview: concepts/ml/serving/deployment.md
-        - Predictor: concepts/ml/serving/predictor.md
-        - Inference Logger: concepts/ml/serving/logger.md
-        - Transformer: concepts/ml/serving/transformer.md
-      - Tags and Keywords: concepts/ml/tags_keywords.md
-      - Alerts: concepts/ml/alerts.md
+      - Feature Views:
+        - FV Overview: concepts/fs/feature_view/fv_overview.md
+        - Point-in-time Joins: concepts/fs/feature_view/pit_joins.md
+        - Training Data: concepts/fs/feature_view/training_data.md # DataFrames or Files?
+        - Consistent Transformations: concepts/fs/feature_view/transformations.md
+        - Online API: concepts/fs/feature_view/online_api.md
+        - Statistics: concepts/fs/feature_view/statistics.md
+        - Versioning: concepts/fs/feature_view/versioning.md
+    - Projects:
+        - Membership/ACLs: concepts/projects/data_mesh.md
+        - Data Storage/Sharing: concepts/projects/storage.md 
+    - Development:
+        - Outside Hopsworks: concepts/dev/outside.md # api-keys
+        - Inside Hopsworks: concepts/dev/inside.md
+    - MLOps:
+      - MLOps Flywheel: concepts/mlops/flywheel.md
+      - Model Registry: concepts/mlops/registry.md
+      - KServe: concepts/mlops/kserve.md # create, read, version
+      - Vector Database: concepts/mlops/opensearch.md 
   - Guides:
     - Feature Store:
       - Overview: user_guides/fs/dummy.md
@@ -79,7 +74,7 @@ nav:
         - Statistics: user_guides/fs/dummy.md
         # - Feature Monitoring (later)
       - Tags and Keywords: user_guides/fs/dummy.md
-    - Model Registry and Serving:
+    - Models:
       - Overview: user_guides/ml/tf.md
       - Model:
         - Frameworks:
@@ -100,7 +95,7 @@ nav:
       - Azure HDInsight: integrations/dummy.md
       - Azure Machine Learning: integrations/dummy.md
       - Apache Spark: integrations/dummy.md
-    - Common:
+    - Projects:
       - Authentication: user_guides/common/dummy.md
       - Projects: user_guides/common/dummy.md
       - Python: user_guides/common/dummy.md
@@ -108,6 +103,7 @@ nav:
       - Jobs:
         - Overview: user_guides/common/dummy.md
         - Alerts: user_guides/common/dummy.md
+      - OpenSearch: user_guides/common/opensearch.md
       - Airflow: user_guides/common/dummy.md
       - Kafka: user_guides/common/dummy.md
       - Git: user_guides/common/dummy.md
@@ -193,13 +189,13 @@ extra:
   generator: false
   social:
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/logicalclocks
+      link: https://twitter.com/hopsworks
     - icon: fontawesome/brands/github
       link: https://github.com/logicalclocks/hopsworks
     - icon: fontawesome/brands/discourse
       link: https://community.hopsworks.ai/
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/company/logicalclocks/
+      link: https://www.linkedin.com/company/hopsworks/
   analytics:
     provider: google
     # switch for new token
