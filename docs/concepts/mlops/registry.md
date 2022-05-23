@@ -9,3 +9,8 @@ The model registry is used to share models with the team and stakeholders.
 
 The model registry centralizes model management, enabling models to be securely accessed and governed. Models are more than just the model itself - the registry also stores sample data for testsing, configuration information, provenance information, environment variables, links to the code used to generate the model, the model version, and tags/descriptions). 
 
+#        - Registry Overview: concepts/mlops/registry.md # create, read, version
+#        - ML Frameworks: concepts/mlops/registry/frameworks.md
+#        - Model Schema: concepts/mlops/registry/schema.md
+#        - Versioning: concepts/mlops/registry/versioning.md
+
