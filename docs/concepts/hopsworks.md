@@ -1,6 +1,6 @@
 Hopsworks is a **modular** MLOps platform with:
 
- - a feature store
+ - a feature store (available as standalone)
  - model registry and model serving based on KServe
  - vector database based on OpenSearch
  - a data science and data engineering platform
