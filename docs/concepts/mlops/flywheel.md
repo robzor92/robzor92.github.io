@@ -3,10 +3,4 @@ You need to setup a flywheel to enable more data to be generated from your exist
 
 <img src="/assets/images/concepts/mlops/flywheel.svg">
 
-### Offline vs Online Infrastructure
-
-### ML Assets and Provenance
-
-Tags, keywords, search
-
 
