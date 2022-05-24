@@ -36,6 +36,7 @@ nav:
     - Projects:
         - Governance: concepts/projects/governance.md
         - Data Storage/Sharing: concepts/projects/storage.md 
+        - CI/CD: concepts/projects/cicd.md
     - MLOps:
       - MLOps Flywheel: concepts/mlops/flywheel.md
       - Model Registry: concepts/mlops/registry.md
