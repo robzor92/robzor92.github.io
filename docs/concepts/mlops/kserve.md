@@ -1,5 +1,5 @@
 KServe is an open-source framework for model serving on Kubernetes.
-In Hopsworks, you can easily deploy models in the model registry in KServe. You can deploy model in either programs, using the HSML library, or in the UI. A KServe model deployment can include the following components:
+In Hopsworks, you can easily deploy models from the model registry in KServe or in Docker containers (for Hopsworks Community). You can deploy model in either programs, using the HSML library, or in the UI. A KServe model deployment can include the following components:
 
  - **Transformer**
     - A pre-processing and post-processing component that can transform model inputs before predictions are made

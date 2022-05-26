@@ -7,6 +7,14 @@ You can create dev, staging, and prod projects - either on the same cluster, but
 
 <img src="/assets/images/concepts/projects/dev-staging-prod.svg">
 
+##Versioning
+
+FGs
+FVs
+Models
+Deployments
+
+
 ##Pytest for feature logic and feature pipeline tests
 
 Pytest and Great Expectations can be used for testing feature pipelines. Pytest is used to test feature logic and for end-to-end feature pipeline tests, while Great Expectations is used for data validation tests. 
