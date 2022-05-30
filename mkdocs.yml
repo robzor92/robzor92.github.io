@@ -98,18 +98,35 @@ nav:
       - Apache Spark: integrations/dummy.md
     - Projects:
       - Authentication: user_guides/common/dummy.md
-      - Projects: user_guides/common/dummy.md
-      - Python: user_guides/common/dummy.md
-      - Jupyter: user_guides/common/dummy.md
+      - Projects:
+          - Create Project: user_guides/common/project/create_project.md
+          - Add Members: user_guides/common/project/add_members.md
+      - Python:
+          - Install library: user_guides/common/python/python_install.md
+          - Export environment: user_guides/common/python/python_env_export.md
+          - Recreate environment: user_guides/common/python/python_env_recreate.md
+      - Jupyter:
+          - Run Spark Notebook: user_guides/common/jupyter/spark_notebook.md
+          - Run Python Notebook: user_guides/common/jupyter/python_notebook.md
       - Jobs:
-        - Overview: user_guides/common/dummy.md
-        - Alerts: user_guides/common/dummy.md
-      - OpenSearch: user_guides/common/opensearch.md
+          - Run PySpark Job: user_guides/common/jobs/pyspark_job.md
+          - Run Spark Job: user_guides/common/jobs/spark_job.md
+          - Run Python Job: user_guides/common/jobs/python_job.md
+          - Alerts: user_guides/common/jobs/alert.md
+      - OpenSearch:
+          - Connect: user_guides/common/opensearch/connect.md
+          - Vector Similarity: user_guides/common/opensearch/vector_similarity.md
       - Airflow: user_guides/common/dummy.md
-      - Kafka: user_guides/common/dummy.md
-      - Git: user_guides/common/dummy.md
-      - Secrets: user_guides/common/dummy.md
-      - Api Keys: user_guides/common/dummy.md
+      - Kafka:
+          - Create Schema: user_guides/common/kafka/create_schema.md
+          - Create Topic: user_guides/common/kafka/create_topic.md
+      - Git:
+          - Configure Git Provider: user_guides/common/git/configure_git_provider.md
+          - Clone Repository: user_guides/common/git/clone_repo.md
+      - Secrets:
+          - Create Secret: user_guides/common/secrets/create_secret.md
+      - Api Keys:
+          - Create API Key: user_guides/common/api_key/create_api_key.md
       - Search: user_guides/common/dummy.md
       - Hops File System (HopsFS): user_guides/common/dummy.md
   - Setup and Installation:
