@@ -82,12 +82,20 @@ nav:
           - TensorFlow: user_guides/ml/model/frameworks/tf.md
           - Scikit-Learn: user_guides/ml/model/frameworks/skl.md
           - PyTorch: user_guides/ml/model/frameworks/torch.md
+          - Python: user_guides/ml/model/frameworks/torch.md
         - Model Schema: user_guides/ml/model/schema.md
         - Input Example: user_guides/ml/model/input.md
       - Deployment:
-        - Predictor: user_guides/ml/deployment/predictor.md
+        - Frameworks:
+            - TensorFlow: user_guides/ml/model/frameworks/tf.md
+            - Scikit-Learn: user_guides/ml/model/frameworks/skl.md
+            - PyTorch: user_guides/ml/model/frameworks/torch.md
+            - Python: user_guides/ml/model/frameworks/torch.md
+        - Custom Predictor: user_guides/ml/deployment/predictor.md
         - Transformer: user_guides/ml/deployment/transformer.md
-        - Alerts: user_guides/ml/deployment/alerts.md
+        - Resource Configuration: user_guides/ml/deployment/transformer.md
+        - Inference Logger: user_guides/ml/deployment/transformer.md
+        - Inference Batcher: user_guides/ml/deployment/transformer.md
     - Integrations:
       - Python: integrations/dummy.md
       - Databricks: integrations/dummy.md
