@@ -9,13 +9,13 @@ repo_url: https://github.com/logicalclocks/hopsworks
 edit_uri: ""
 
 nav:
-  - <img src="images/icons8-home.svg" loading="lazy" class="svg_topnav"> Home: index.md
-  - <img src="images/icons8-start.svg" loading="lazy" class="svg_topnav"> Getting Started:
+  - Home: index.md
+  - Getting Started:
     - Feature Store:
       - Quickstart: getting_started/fs/index.md
       - Tutorials:
         - AML Tutorial: getting_started/fs/tutorials/aml.md
-  - <img src="images/icons8-light-on.svg" loading="lazy" class="svg_topnav"> Concepts:
+  - Concepts:
     - Hopsworks Platform: concepts/hopsworks.md
     - Feature Store:
       - Architecture: concepts/fs/index.md #hsfs
@@ -45,7 +45,7 @@ nav:
     - Development:
         - Outside Hopsworks: concepts/dev/outside.md # api-keys
         - Inside Hopsworks: concepts/dev/inside.md
-  - <img src="images/icons8-book.svg" loading="lazy" class="svg_topnav"> Guides:
+  - Guides:
     - user_guides/index.md
     - Feature Store:
       - user_guides/fs/index.md
@@ -143,7 +143,7 @@ nav:
           - Create API Key: user_guides/common/api_key/create_api_key.md
       - Search: user_guides/common/dummy.md
       - Hops File System (HopsFS): user_guides/common/dummy.md
-  - <img src="images/icons8-maintenance.svg" loading="lazy" class="svg_topnav"> Setup and Installation:
+  - Setup and Installation:
       - AWS:
           - Getting Started: setup_installation/aws/getting_started.md
           - Limiting Permissions: setup_installation/aws/restrictive_permissions.md
@@ -180,7 +180,7 @@ nav:
           - Terraform: setup_installation/common/terraform.md
       - On-Prem:
           - Hopsworks Installer: setup_installation/on_prem/hopsworks_installer.md
-  - <img src="images/icons8-settings.svg" loading="lazy" class="svg_topnav"> Administration:
+  - Administration:
       - Introduction: admin/index.md
       - Authentication:
           - Configure Authentication: admin/auth.md
@@ -198,8 +198,8 @@ nav:
       - Manage Services: admin/services.md
       - Tags: administration/dummy.md
       - Monitoring: administration/dummy.md
-  - <img src="images/icons8-link.svg" loading="lazy" class="svg_topnav"> API: reference_guides/index.md
-  - <img src="images/icons8-love.svg" loading="lazy" class="svg_topnav">  Community: https://community.hopsworks.ai/
+  - API: reference_guides/index.md
+  - Community: https://community.hopsworks.ai/
 
 theme:
   name: material
