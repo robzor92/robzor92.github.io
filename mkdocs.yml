@@ -229,6 +229,7 @@ extra:
 
 extra_css:
     - css/custom.css
+    - css/marctech.css
 
 plugins:
     - search

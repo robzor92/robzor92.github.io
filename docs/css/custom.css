@@ -3,6 +3,10 @@
   --md-secondary-fg-color: #35c495;
 }
 
+.md-header {
+
+z-index: 50;
+}
 
 .md-header__button.md-logo {
   margin: .1rem;
