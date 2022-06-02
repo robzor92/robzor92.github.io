@@ -3,19 +3,20 @@ hide:
 - navigation
 - toc
 ---
-  <div class="marctech_main">
+
+<div class="marctech_main">
     <div class="collumns w-row">
       <div class="column_sides w-col w-col-2">
         <div class="enterprise_data">
           <div class="col_heading"><img src="images/icons8-organization.svg" loading="lazy" alt="">
             <div class="head_col">
-              <h2 class="heading">Enterprise Data</h2>
-              <h3 class="heading3 green">Feature Engineering</h3>
+              <h2 class="heading_MT">Enterprise Data</h2>
+              <h3 class="MT_heading3 green">Feature Engineering</h3>
             </div>
           </div>
           <div class="side-holder">
             <div class="side-content">
-              <div class="name_item ingrey">Framworks</div>
+              <div class="name_item ingrey">frameworks</div>
               <div class="w-layout-grid">
                 <div class="rec_frame">
                   <div class="name_item">Pandas</div>
@@ -79,7 +80,7 @@ hide:
           <div class="enterprise_data">
             <div class="col_heading">
               <div class="head_col">
-                <h2 class="heading">Enterprise Feature Store</h2>
+                <h2 class="heading_MT">Enterprise Feature Store</h2>
               </div>
             </div>
           </div>
@@ -109,7 +110,7 @@ pointer-events: initial;
             </div>
           </div>
           <div class="layer_01">
-            <div class="logo-holder"><img src="images/hopsworks-logo-2022.svg" loading="lazy" alt="" class="image"></div>
+            <div class="logo-holder"><img src="images/hopsworks-logo-2022.svg" loading="lazy" alt="logo" class="image_logo"></div>
             <div class="rec_frame">
               <div class="name_center">Project Based Collaboration</div>
             </div>
@@ -180,8 +181,8 @@ pointer-events: initial;
           <div class="col_heading">
             <div class="col_heading"><img src="images/icons8-artificial-intelligence.svg" loading="lazy" alt="">
               <div class="head_col">
-                <h2 class="heading">Enterprise AI</h2>
-                <h3 class="heading3 green">MLOps</h3>
+                <h2 class="heading_MT">Enterprise AI</h2>
+                <h3 class="MT_heading3 green">MLOps</h3>
               </div>
             </div>
           </div>
@@ -224,18 +225,12 @@ pointer-events: initial;
     </div>
   </div>
 
-# Welcome to Hopsworks
+<img src="images/hopsworks-logo-2022.svg" loading="lazy" alt="" class="image">
 
 Hopsworks and its [Feature Store](https://docs.hopsworks.ai/feature-store-api/latest/) are an open source data-intensive AI platform used for the development and operation of machine learning models at scale.
 
-
-
 ## Development and Operational ML on Hopsworks
 You can develop and run Python, Spark, and Flink applications on Hopsworks - in Jupyter notebooks, as jobs, or even notebooks as jobs. You can build production pipelines with the bundled Airflow, and even run ML training pipelines with GPUs in notebooks on Airflow. You can train models on as many GPUs as are installed in a Hopsworks cluster and easily share them among users.
-
-## Who’s behind Hopsworks?
-Hopsworks started as an open-source collaborative project at [KTH University](https://www.kth.se/en), [RISE](https://www.ri.se/en), and has more recently been taken on by [Logical Clocks](https://www.logicalclocks.com/). Several funding bodies have helped contribute to its development including: [European Commission (FP7, H2020)](https://ec.europa.eu/), [EIT](https://eit.europa.eu/), [SSF](https://strategiska.se/), [Vinnova](https://www.vinnova.se/) and [Celtic-Next](https://www.celticnext.eu/).
-
 
 ## Open-Source
 Hopsworks is available under the AGPL-V3 license. In plain English this means that you are free to use Hopsworks and even build paid services on it, but if you modify the source code, you should also release your changes and any systems built around it as AGPL-V3.
@@ -245,7 +240,6 @@ Hopsworks is available under the AGPL-V3 license. In plain English this means th
 -  Ask questions and give us feedback in the [Hopsworks Community](https://community.hopsworks.ai/)
 - Follow us on [Twitter](https://twitter.com/hopsworks)
 - Check out all our latest [product releases](https://github.com/logicalclocks/hopsworks/releases)
-
 
 ## Contribute
 We are building the most complete and modular ML platform available in the market and we count on your support to continuously improve Hopsworks. Feel free to [give us suggestions](https://github.com/logicalclocks/hopsworks), [report bugs](https://github.com/logicalclocks/hopsworks/issues) and [add features to our library](https://github.com/logicalclocks/feature-store-api) anytime.
