@@ -46,19 +46,24 @@ nav:
         - Outside Hopsworks: concepts/dev/outside.md # api-keys
         - Inside Hopsworks: concepts/dev/inside.md
   - Guides:
+    - user_guides/index.md
     - Feature Store:
-      - Overview: user_guides/fs/dummy.md
+      - user_guides/fs/index.md
       - Storage Connector:
-        - JDBC: user_guides/fs/dummy.md
-        - HopsFS: user_guides/fs/dummy.md
-        - S3: user_guides/fs/dummy.md
-        - Redshift: user_guides/fs/dummy.md
-        - ADLS: user_guides/fs/dummy.md
-        - Snowflake: user_guides/fs/dummy.md
-        - BigQuery: user_guides/fs/dummy.md
-        - GCS: user_guides/fs/dummy.md
-        - Kafka: user_guides/fs/dummy.md
+        - user_guides/fs/storage_connector/index.md
+        - Configuration and Creation:
+          - JDBC: user_guides/fs/storage_connector/creation/jdbc.md
+          - Snowflake: user_guides/fs/storage_connector/creation/snowflake.md
+          - Kafka: user_guides/fs/storage_connector/creation/kafka.md 
+          - HopsFS: user_guides/fs/storage_connector/creation/hopsfs.md
+          - S3: user_guides/fs/storage_connector/creation/s3.md
+          - Redshift: user_guides/fs/storage_connector/creation/redshift.md
+          - ADLS: user_guides/fs/storage_connector/creation/adls.md
+          - BigQuery: user_guides/fs/storage_connector/creation/bigquery.md
+          - GCS: user_guides/fs/storage_connector/creation/gcs.md
+        - Usage: user_guides/fs/storage_connector/usage.md
       - Feature Group:
+        - user_guides/fs/feature_group/index.md
         - Batch: user_guides/fs/dummy.md
         - Stream: user_guides/fs/dummy.md
         - External: user_guides/fs/dummy.md
@@ -66,6 +71,7 @@ nav:
         - Data Validation: user_guides/fs/dummy.md
         - Alerts: user_guides/fs/dummy.md
       - Feature View:
+        - user_guides/fs/feature_view/index.md
         - Overview: user_guides/fs/dummy.md
         - Query: user_guides/fs/dummy.md
         - Batch data: user_guides/fs/dummy.md
@@ -210,6 +216,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
+    - navigation.indexes
 
 extra:
   generator: false
@@ -246,6 +253,8 @@ markdown_extensions:
     - pymdownx.mark
     - pymdownx.tilde
     - pymdownx.critic
+    - attr_list
+    - md_in_html
     - toc:
         permalink: "#"
     - pymdownx.tasklist:
