@@ -9,7 +9,7 @@ repo_url: https://github.com/logicalclocks/hopsworks
 edit_uri: ""
 
 nav:
-  - Home: index.md
+  - 🏠 Home: index.md
   - Getting Started:
     - Feature Store:
       - Quickstart: getting_started/fs/index.md
