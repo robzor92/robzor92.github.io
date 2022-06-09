@@ -10,7 +10,7 @@ Before you begin this guide you'll need the following:
 
 - A Hopsworks cluster running on EC2.
 - [Role chaining](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-role-chaining) setup in AWS.
-- Configure role mappings in Hopsworks. For a guide on how to configure this see [AWS IAM Role Chaining](../../../../admin/iamRoleChaining.md).
+- Configure role mappings in Hopsworks. For a guide on how to configure this see [AWS IAM Role Chaining](admin/iamRoleChaining.md).
 
 ## UI
 In this guide, you will learn how to use a mapped IAM role in your project.
@@ -63,3 +63,6 @@ above show how to read s3 buckets using Python and Scala.
 
 The method also sets environment variables **AWS_ACCESS_KEY_ID**, **AWS_SECRET_ACCESS_KEY** and 
 **AWS_SESSION_TOKEN** so that programs running in the container can use the credentials for the newly assumed role.
+
+## Conclusion
+In this guide you learned how to use IAM roles on a cluster deployed on an EC2 instances.

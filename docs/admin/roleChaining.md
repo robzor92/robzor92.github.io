@@ -1,13 +1,20 @@
 # AWS IAM Role Chaining
+
+## Introduction
+
 Using an EC2 instance profile enables your Hopsworks cluster to access AWS resources. 
 This forces all Hopsworks users to share the instance profile role and the resource access policies attached to 
 that role. To allow for per project access policies you could have your users use AWS credentials directly in 
 their programs which is not recommended so you should instead use [Role chaining](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-role-chaining).
 To use Role chaining, you need to first setup IAM roles in AWS:
 
- **Step 1**. Create an instance profile role with policies that will allow it to assume all resource roles that we can 
- assume 
-from the Hopsworks cluster.
+## Prerequisites
+Before you begin this guide you'll need the following:
+
+- A Hopsworks cluster running on EC2.
+
+### Step 1: Create an instance profile role
+Create an instance profile role with policies that will allow it to assume all resource roles that we can assume from the Hopsworks cluster.
 
 ```json
 {
@@ -29,9 +36,8 @@ from the Hopsworks cluster.
 ```
 <figcaption>Example policy for assuming four roles.</figcaption>
 
- **Step 2**. Create the resource roles and edit trust relationship and add policy document that will allow the instance 
- profile 
-to assume this role.
+### Step 2: Create the resource roles
+Create the resource roles and edit trust relationship and add policy document that will allow the instance profile to assume this role.
 
 ```json
 {
@@ -49,6 +55,7 @@ to assume this role.
 ```
 <figcaption>Example policy document.</figcaption>
 
+### Step 3: Create mappings
 Role chaining allows the instance profile to assume any role in the policy attached in step 1. To limit access to 
 iam roles we can create a per-project mapping from the admin page in Hopsworks.
 
@@ -75,3 +82,6 @@ the project setting by a Data owner in that project.
 
 Any member of a project can then go to the _Project Settings_ -> 
 [Assuming IAM Roles](../compute/project/iamRoleChaining.md) page to see which roles they can assume.
+
+## Conclusion
+In this guide you learned how to map AWS IAM roles to project roles in Hopsworks.
