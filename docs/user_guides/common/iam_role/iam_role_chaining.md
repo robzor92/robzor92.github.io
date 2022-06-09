@@ -13,7 +13,7 @@ Before you begin this guide you'll need the following:
 - Configure role mappings in Hopsworks. For a guide on how to configure this see [AWS IAM Role Chaining](../../../../admin/iamRoleChaining.md).
 
 ## UI
-In this guide, you will learn how to map IAM roles to groups in your project.
+In this guide, you will learn how to use a mapped IAM role in your project.
 
 ### Step 1: Navigate to your project's IAM Role Chaining tab
 
