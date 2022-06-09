@@ -1,10 +1,24 @@
-# Assuming AWS IAM Roles
-When deploying Hopsworks on EC2 instances you might need to assume different roles to access resources on AWS. 
-These roles are configured in AWS and mapped to a project in Hopsworks, for a guide on how to configure this go to 
-[AWS IAM Role Chaining](../../admin/iamRoleChaining.md).
+# How To Use AWS IAM Roles on EC2 instances
 
-After an administrator configured role mappings in Hopsworks you can see the roles you can assume in the Project 
-Settings IAM Role Chaining tab.
+## Introduction
+
+When deploying Hopsworks on EC2 instances you might need to assume different roles to access resources on AWS. 
+These roles can be configured in AWS and mapped to a project in Hopsworks.
+
+## Prerequisites
+Before you begin this guide you'll need the following:
+
+- A Hopsworks cluster running on EC2.
+- [Role chaining](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-role-chaining) setup in AWS.
+- Configure role mappings in Hopsworks. For a guide on how to configure this see [AWS IAM Role Chaining](../../../../admin/iamRoleChaining.md).
+
+## UI
+In this guide, you will learn how to map IAM roles to groups in your project.
+
+### Step 1: Navigate to your project's IAM Role Chaining tab
+
+In the _Project Settings_ page you can find the _IAM Role Chaining_ section showing a list of all IAM roles mapped to your project.
+
 <figure>
   <a href="../../../../assets/images/guides/iam_role/project-settings.png">
     <img src="../../../../assets/images/guides/iam_role/project-settings.png" alt="Role Chaining"/>
@@ -12,16 +26,23 @@ Settings IAM Role Chaining tab.
   <figcaption>Role Chaining</figcaption>
 </figure>
 
+### Step 2: Assign default IAM roles to groups in you project
+
+Setting a default will allow you to call _assume\_role_ in code without specifying a role ARN.
+
+You can assign (if you are a Data owner in a project) a default role to a role in your project by clicking on the _default_ 
+checkbox of a role mapping. You can set one default per project role. If a default is set for 
+a project role (Data scientist or Data owner) and all members (ALL) the default set for the project role will take 
+precedence over the default set for all members.
+
+## Code
+
 You can then use the [Hops python library](https://hops-py.logicalclocks.com/) and 
-[Hops java/scala library](https://github.com/logicalclocks/hops-util) to assume the roles listed in your project’s settings page.
+[Hops java/scala library](https://github.com/logicalclocks/hops-util) to assume the roles listed in your _Project Settings_ -> 
+_IAM Role Chaining_ page.
 
 When calling _assume\_role_ you can pass the role ARN string or use the get role method that takes the role id 
 as an argument. If you assign a default role for your project you can call _assume\_role_ without arguments.
-
-You can assign (if you are a Data owner in that project) a default role to you project by clicking on the _default_ 
-checkbox of the role you want to make default. You can set one default per project role. If a default is set for 
-a project role (Data scientist or Data owner) and all members (ALL) the default set for the project role will take 
-precedence over the default set for all members.
 
 ###### python
 ```python
