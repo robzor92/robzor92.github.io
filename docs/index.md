@@ -218,7 +218,7 @@ pointer-events: initial;
               </div>
               <div class="frame_with_arrow">
                 <div class="rec_frame">
-                  <div class="name_item">Model <br>Deployement</div>
+                  <div class="name_item">Model <br>Deployment</div>
                 </div>
               </div>
             </div>
