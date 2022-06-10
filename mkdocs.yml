@@ -59,12 +59,8 @@ nav:
         - GCS: user_guides/fs/dummy.md
         - Kafka: user_guides/fs/dummy.md
       - Feature Group:
-        - Batch: user_guides/fs/dummy.md
-        - Stream: user_guides/fs/dummy.md
-        - External: user_guides/fs/dummy.md
-        - Statistics: user_guides/fs/dummy.md
-        - Data Validation: user_guides/fs/dummy.md
-        - Alerts: user_guides/fs/dummy.md
+        - Create: user_guides/fs/feature_group/create.md
+        - Create External Feature Group: user_guides/fs/feature_group/create_external.md
       - Feature View:
         - Overview: user_guides/fs/dummy.md
         - Query: user_guides/fs/dummy.md
