@@ -66,6 +66,7 @@ nav:
         - user_guides/fs/feature_group/index.md
         - Create: user_guides/fs/feature_group/create.md
         - Create External: user_guides/fs/feature_group/create_external.md
+        - Statistics: user_guides/fs/feature_group/statistics.md
       - Feature View:
         - user_guides/fs/feature_view/index.md
         - Overview: user_guides/fs/dummy.md
@@ -74,8 +75,6 @@ nav:
         - Online vectors: user_guides/fs/dummy.md
         - Training data: user_guides/fs/dummy.md
         - Transformation Functions: user_guides/fs/dummy.md
-        - Statistics: user_guides/fs/dummy.md
-        # - Feature Monitoring (later)
       - Tags and Keywords: user_guides/fs/dummy.md
     - Models:
       - Overview: user_guides/ml/tf.md
