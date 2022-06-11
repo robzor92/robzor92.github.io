@@ -15,10 +15,10 @@ This page give administrators an overview of which services are running on the c
 It provides information about their status as reported by agents that monitor the status of the different 
 Systemd units.
 
-Columns in the services table represent machines in your cluster. Each service running on a machine will have a status
-_running_ (green), _stopped_ (gray), or _bad health_ (red). 
-Services are divided into groups, and you can search for a service by its name or group. You can also search for
-machines by their host name.
+Columns in the services table represent machines in your cluster. Each service running on a machine will have a status 
+_running_  (green) or _stopped_ (red). If a service is not installed on a machine it will have a status _not installed_ (gray). 
+Services are divided into groups, and you can search for a service by its name or group. You can also search for machines 
+by their host name.
 
 <figure>
   <a  href="../../assets/images/admin/services/services.png">
