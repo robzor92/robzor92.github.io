@@ -65,6 +65,7 @@ nav:
       - Feature Group:
         - user_guides/fs/feature_group/index.md
         - Create: user_guides/fs/feature_group/create.md
+        - Create External: user_guides/fs/feature_group/create_external.md
       - Feature View:
         - user_guides/fs/feature_view/index.md
         - Overview: user_guides/fs/dummy.md
@@ -242,7 +243,8 @@ markdown_extensions:
     - admonition
     - codehilite
     - footnotes
-    - pymdownx.tabbed
+    - pymdownx.tabbed:
+        alternate_style: true
     - pymdownx.arithmatex
     - pymdownx.superfences
     - pymdownx.details
