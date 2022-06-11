@@ -75,6 +75,8 @@ This is useful when a feature group is receiving frequent updates. Users can sch
 
 By default, the `compute_statistics` method computes statistics on the most recent version of the data available in a feature group. Users can provide a specific time using the `wallclock_time` parameter, to compute the statistics for a previous version of the data.
 
+Hopsworks can compute statistics of external feature groups. As external feature groups are read only from an Hopsworks prospective, statistics computation can be triggered using the `compute_statistics` method.
+
 === "Python"
 
     ```python
