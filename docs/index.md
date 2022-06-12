@@ -42,35 +42,35 @@ hide:
                     <div class="db_frame-top"></div>
                     <div class="db_frame-mid"></div>
                   </div>
-                  <div class="name_item db">JDBC</div>
+                  <div class="name_item db"><a href="/user_guides/fs/storage_connector/creation/jdbc/">JDBC</a></div>
                 </div>
                 <div class="db_frame">
                   <div class="icondb">
                     <div class="db_frame-top"></div>
                     <div class="db_frame-mid"></div>
                   </div>
-                  <div class="name_item db">BigQuery</div>
+                  <div class="name_item db"><a href="/user_guides/fs/storage_connector/creation/bigquery/">BigQuery</a></div>
                 </div>
                 <div class="db_frame">
                   <div class="icondb">
                     <div class="db_frame-top"></div>
                     <div class="db_frame-mid"></div>
                   </div>
-                  <div class="name_item db">Object Store</div>
+                  <div class="name_item db"><a href="/user_guides/fs/storage_connector/creation/s3/">Object Store</a></div>
                 </div>
                 <div class="db_frame">
                   <div class="icondb">
                     <div class="db_frame-top"></div>
                     <div class="db_frame-mid"></div>
                   </div>
-                  <div class="name_item db">Snowflake</div>
+                  <div class="name_item db"><a href="/user_guides/fs/storage_connector/creation/snowflake/">Snowflake</a></div>
                 </div>
                 <div class="db_frame">
                   <div class="icondb">
                     <div class="db_frame-top"></div>
                     <div class="db_frame-mid"></div>
                   </div>
-                  <div class="name_item db">RedShift</div>
+                  <div class="name_item db"><a href="/user_guides/fs/storage_connector/creation/redshift/">RedShift</a></div>
                 </div>
               </div>
             </div>
@@ -114,7 +114,9 @@ pointer-events: initial;
           <div class="layer_01">
             <div class="logo-holder"><img src="images/hopsworks-logo-2022.svg" loading="lazy" alt="logo" class="image_logo"></div>
             <div class="rec_frame">
-              <div class="name_center">Project Based Collaboration</div>
+              <a href="/concepts/projects/governance/">
+                <div class="name_center">Project Based Collaboration</div>
+              </a>
             </div>
             <div class="columns_center w-row">
               <div class="column w-col w-col-6">
@@ -127,7 +129,7 @@ pointer-events: initial;
                       <div class="name_item_02"> <a href="/concepts/fs/feature_group/fg_overview/">Feature Groups</a></div> 
                     </div>
                     <div class="rec_frame_main-white">
-                      <div class="name_item_02">Extrernal <span class="non-bold"><br>Feature Groups</span></div>
+                      <div class="name_item_02"><a href="/concepts/fs/feature_group/external_fg/">External <span class="non-bold"></br>Feature Groups</span></a></div>
                     </div>
                   </div>
                 </div>
@@ -138,12 +140,12 @@ pointer-events: initial;
                 </div>
                 <div class="rec_frame_main no_content">
                   <div class="rec_frame_main-white">
-                    <div class="name_item_02">Feature Views</div>
+                    <div class="name_item_02"><a href="/concepts/fs/feature_view/fv_overview/">Feature Views</a></div>
                     <div class="rec_frame_main-white dotted">
-                      <div class="name_item_02 non-bold">Training Dataset</div>
+                      <div class="name_item_02 non-bold"><a href="/concepts/fs/feature_view/training_data/">Training Dataset</a></div>
                     </div>
                     <div class="rec_frame_main-white dotted">
-                      <div class="name_item_02 non-bold">Feature Vectors</div>
+                      <div class="name_item_02 non-bold"><a href="/concepts/fs/feature_view/online_api/">Feature Vectors</a></div>
                     </div>
                   </div>
                 </div>
@@ -163,17 +165,29 @@ pointer-events: initial;
             </div>
           </div>
           <div class="w-layout-grid grid-infra">
-            <div id="w-node-a2a9b648-f5dd-74e5-e1c2-f7aaf4fa1fcd-46672785" class="infra"><img src="images/icons8-azure.svg" loading="lazy" alt="" class="infra-icon">
-              <div class="name_item small">Azure</div>
+            <div id="w-node-a2a9b648-f5dd-74e5-e1c2-f7aaf4fa1fcd-46672785" class="infra">
+              <a href="/setup_installation/azure/getting_started/">
+                <img src="images/icons8-azure.svg" loading="lazy" alt="" class="infra-icon">
+                <div class="name_item small">Azure</div>
+              </a>
             </div>
-            <div id="w-node-_466aa2bf-88bf-5a65-eab4-fc1eb95e7384-46672785" class="infra"><img src="images/icons8-amazon-web-services.svg" loading="lazy" alt="" class="infra-icon">
-              <div class="name_item small">AWS</div>
+            <div id="w-node-_466aa2bf-88bf-5a65-eab4-fc1eb95e7384-46672785" class="infra">
+              <a href="/setup_installation/aws/getting_started/">
+                <img src="images/icons8-amazon-web-services.svg" loading="lazy" alt="" class="infra-icon">
+                <div class="name_item small">AWS</div>
+              </a>
             </div>
-            <div id="w-node-_87009ba3-d9a6-e0b7-4cce-581190a19cf3-46672785" class="infra"><img src="images/icons8-google-cloud.svg" loading="lazy" alt="" class="infra-icon">
-              <div class="name_item small">Google Cloud</div>
+            <div id="w-node-_87009ba3-d9a6-e0b7-4cce-581190a19cf3-46672785" class="infra">
+              <a href="/setup_installation/gcp/getting_started/">
+                <img src="images/icons8-google-cloud.svg" loading="lazy" alt="" class="infra-icon">
+                <div class="name_item small">Google Cloud</div>
+              </a>
             </div>
-            <div id="w-node-_4a479fbb-90c7-9f47-d439-20aa6a224339-46672785" class="infra"><img src="images/icons8-database.svg" loading="lazy" alt="" class="infra-icon">
-              <div class="name_item small">On-premise</div>
+            <div id="w-node-_4a479fbb-90c7-9f47-d439-20aa6a224339-46672785" class="infra">
+              <a href="/setup_installation/on_prem/hopsworks_installer/">
+                <img src="images/icons8-database.svg" loading="lazy" alt="" class="infra-icon">
+                <div class="name_item small">On-premise</div>
+              </a>
             </div>
           </div>
         </div>
