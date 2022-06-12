@@ -66,6 +66,7 @@ nav:
         - user_guides/fs/feature_group/index.md
         - Create: user_guides/fs/feature_group/create.md
         - Create External: user_guides/fs/feature_group/create_external.md
+        - Data Types and Schema management: user_guides/fs/feature_group/data_types.md
         - Statistics: user_guides/fs/feature_group/statistics.md
       - Feature View:
         - user_guides/fs/feature_view/index.md

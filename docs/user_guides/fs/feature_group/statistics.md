@@ -1,4 +1,4 @@
-# How to create a Feature Group 
+# How to compute statistics on feature data
 
 ### Introduction
 
@@ -18,7 +18,8 @@ When statistics are enabled, they are computed every time new data is written in
 
 ## Prerequisites
 
-Before you begin this guide we suggest you read the [Feature Group](../../../concepts/fs/feature_group/fg_overview.md) concept page to understand what a feature group is and how it fits in the ML pipeline.
+Before you begin this guide we suggest you read the [Feature Group](../../../concepts/fs/feature_group/fg_overview.md) concept page to understand what a feature group is and how it fits in the ML pipeline. 
+We also suggest you familiarize with the APIs to [create a feature group](./create.md).
 
 ## Enable statistics when creating a feature group 
 
