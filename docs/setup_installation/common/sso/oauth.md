@@ -15,15 +15,17 @@ _OAuth2 (OpenId)_ from the dropdown and configure your identity provider.
  
 <p align="center">
  <figure>
-   <a  href="../../assets/images/sso/hopsworksai/oauth.png">
-     <img style="border: 1px solid #000" src="../../assets/images/sso/hopsworksai/oauth.png" alt="Setup OAuth">
+   <a  href="../../../../assets/images/setup_installation/managed/common/sso/oauth.png">
+     <img style="border: 1px solid #000" src="../../../../assets/images/setup_installation/managed/common/sso/oauth.png" alt="Setup OAuth">
    </a>
    <figcaption>Setup OAuth</figcaption>
  </figure>
 </p>
  
 Register your identity provider by setting the following fields:
- 
+
+- _Create Administrator password user_: if checked an administrator that can log in to the hopsworks cluster, with email and password,
+will be created for the user creating the cluster. If **Not** checked a group mapping that maps at least one group in the identity provider to _HOPS_ADMIN_ is required. 
 - _ClientId_: the client id generated when registering hopsworks in your identity provider.
 - _Client Secret_: the client secret generated when registering hopsworks in your identity provider.
 - _Provider URI_: is the base uri of the identity provider (URI should contain scheme http:// or https://).
@@ -57,8 +59,8 @@ If your provider does not publish its metadata you need to supply these values m
  
 <p align="center">
  <figure>
-   <a  href="../../assets/images/sso/hopsworksai/provider-metadata.png">
-     <img style="border: 1px solid #000" src="../../assets/images/sso/hopsworksai/provider-metadata.png" alt="provider metadata">
+   <a  href="../../../../assets/images/setup_installation/managed/common/sso/provider-metadata.png">
+     <img style="border: 1px solid #000" src="../../../../assets/images/setup_installation/managed/common/sso/provider-metadata.png" alt="provider metadata">
    </a>
    <figcaption>Setup Provider</figcaption>
  </figure>

@@ -155,8 +155,8 @@ The following permissions are used to create and attach a public IP Address to t
 You then have to make sure that you uncheck the *Attach Public IP* check box in the *Security Group* section of the cluster creation:
 <p align="center">
   <figure>
-    <a  href="../../assets/images/azure/attach_public_ip.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/azure/attach_public_ip.png" alt="Attach Public IP">
+    <a  href="../../../assets/images/setup_installation/managed/azure/attach_public_ip.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/azure/attach_public_ip.png" alt="Attach Public IP">
     </a>
     <figcaption>Attach Public IP</figcaption>
   </figure>

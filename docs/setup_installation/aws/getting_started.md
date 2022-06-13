@@ -32,8 +32,8 @@ of the *IAM* service in the AWS Management Console and select *Create role*.
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/create-role-instructions.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/create-role-instructions.png" alt="Creating the cross-account role instructions">
+    <a  href="../../../assets/images/setup_installation/managed/aws/create-role-instructions.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/create-role-instructions.png" alt="Creating the cross-account role instructions">
     </a>
     <figcaption>Creating the cross-account role instructions</figcaption>
   </figure>
@@ -44,8 +44,8 @@ id generated for you:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/create-role-aws-step-1.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/create-role-aws-step-1.png" alt="Creating the cross-account role step 1">
+    <a  href="../../../assets/images/setup_installation/managed/aws/create-role-aws-step-1.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/create-role-aws-step-1.png" alt="Creating the cross-account role step 1">
     </a>
     <figcaption>Creating the cross-account role step 1</figcaption>
   </figure>
@@ -55,8 +55,8 @@ Go to the last step of the wizard, name the role and create it:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/create-role-aws-step-2.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/create-role-aws-step-2.png" alt="Creating the cross-account role step 1">
+    <a  href="../../../assets/images/setup_installation/managed/aws/create-role-aws-step-2.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/create-role-aws-step-2.png" alt="Creating the cross-account role step 1">
     </a>
     <figcaption>Creating the cross-account role step 2</figcaption>
   </figure>
@@ -70,8 +70,8 @@ Copy the permission JSON from the instructions:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/role-permissions-instructions.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/role-permissions-instructions.png" alt="Adding the policy instructions">
+    <a  href="../../../assets/images/setup_installation/managed/aws/role-permissions-instructions.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/role-permissions-instructions.png" alt="Adding the policy instructions">
     </a>
     <figcaption>Adding the policy instructions</figcaption>
   </figure>
@@ -82,8 +82,8 @@ AWS Management Console and select *Add inline policy*:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/role-permissions-aws-step-1.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/role-permissions-aws-step-1.png" alt="Adding the inline policy step 1">
+    <a  href="../../../assets/images/setup_installation/managed/aws/role-permissions-aws-step-1.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/role-permissions-aws-step-1.png" alt="Adding the inline policy step 1">
     </a>
     <figcaption>Adding the inline policy step 1</figcaption>
   </figure>
@@ -93,8 +93,8 @@ Replace the JSON policy with the JSON from our instructions and continue in the 
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/role-permissions-aws-step-2.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/role-permissions-aws-step-2.png" alt="Adding the inline policy step 2">
+    <a  href="../../../assets/images/setup_installation/managed/aws/role-permissions-aws-step-2.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/role-permissions-aws-step-2.png" alt="Adding the inline policy step 2">
     </a>
     <figcaption>Adding the inline policy step 2</figcaption>
   </figure>
@@ -104,8 +104,8 @@ Name and create the policy:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/role-permissions-aws-step-3.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/role-permissions-aws-step-3.png" alt="Adding the inline policy step 3">
+    <a  href="../../../assets/images/setup_installation/managed/aws/role-permissions-aws-step-3.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/role-permissions-aws-step-3.png" alt="Adding the inline policy step 3">
     </a>
     <figcaption>Adding the inline policy step 3</figcaption>
   </figure>
@@ -115,8 +115,8 @@ Copy the *Role ARN* from the summary of your cross-account role:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/role-permissions-aws-step-4.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/role-permissions-aws-step-4.png" alt="Adding the inline policy step 4">
+    <a  href="../../../assets/images/setup_installation/managed/aws/role-permissions-aws-step-4.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/role-permissions-aws-step-4.png" alt="Adding the inline policy step 4">
     </a>
     <figcaption>Adding the inline policy step 4</figcaption>
   </figure>
@@ -126,8 +126,8 @@ Paste the *Role ARN* into Hopsworks.ai and click on *Finish*:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/save-role.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/save-role.png" alt="Saving the cross-account role">
+    <a  href="../../../assets/images/setup_installation/managed/aws/save-role.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/save-role.png" alt="Saving the cross-account role">
     </a>
     <figcaption>Saving the cross-account role</figcaption>
   </figure>
@@ -151,8 +151,8 @@ The required permissions are shown in the instructions. Copy them if you want to
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/access-key-permissions-instructions.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/access-key-permissions-instructions.png" alt="Configuring access key instructions">
+    <a  href="../../assets/images/setup_installation/managed/aws/access-key-permissions-instructions.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/access-key-permissions-instructions.png" alt="Configuring access key instructions">
     </a>
     <figcaption>Configuring access key instructions</figcaption>
   </figure>
@@ -162,8 +162,8 @@ Add a new *Inline policy* to your AWS user:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/access-keys-aws-step-1.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/access-keys-aws-step-1.png" alt="Configuring the access key on AWS step 1">
+    <a  href="../../assets/images/setup_installation/managed/aws/access-keys-aws-step-1.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/access-keys-aws-step-1.png" alt="Configuring the access key on AWS step 1">
     </a>
     <figcaption>Configuring the access key on AWS step 1</figcaption>
   </figure>
@@ -173,8 +173,8 @@ Replace the JSON policy with the JSON from our instructions and continue in the 
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/role-permissions-aws-step-2.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/role-permissions-aws-step-2.png" alt="Adding the inline policy step 2">
+    <a  href="../../../assets/images/setup_installation/managed/aws/role-permissions-aws-step-2.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/role-permissions-aws-step-2.png" alt="Adding the inline policy step 2">
     </a>
     <figcaption>Adding the inline policy step 2</figcaption>
   </figure>
@@ -184,8 +184,8 @@ Name and create the policy:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/role-permissions-aws-step-3.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/role-permissions-aws-step-3.png" alt="Adding the inline policy step 3">
+    <a  href="../../../assets/images/setup_installation/managed/aws/role-permissions-aws-step-3.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/role-permissions-aws-step-3.png" alt="Adding the inline policy step 3">
     </a>
     <figcaption>Adding the inline policy step 3</figcaption>
   </figure>
@@ -195,8 +195,8 @@ In the overview of your IAM user, select *Create access key*:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/access-keys-aws-step-2.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/access-keys-aws-step-2.png" alt="Configuring the access key on AWS step 2">
+    <a  href="../../../assets/images/setup_installation/managed/aws/access-keys-aws-step-2.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/access-keys-aws-step-2.png" alt="Configuring the access key on AWS step 2">
     </a>
     <figcaption>Configuring the access key on AWS step 2</figcaption>
   </figure>
@@ -206,8 +206,8 @@ Copy the *Access Key ID* and the *Secret Access Key*:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/access-keys-aws-step-3.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/access-keys-aws-step-3.png" alt="Configuring the access key on AWS step 3">
+    <a  href="../../../assets/images/setup_installation/managed/aws/access-keys-aws-step-3.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/access-keys-aws-step-3.png" alt="Configuring the access key on AWS step 3">
     </a>
     <figcaption>Configuring the access key on AWS step 3</figcaption>
   </figure>
@@ -217,8 +217,8 @@ Paste the *Access Key ID* and the *Secret Access Key* into Hopsworks.ai and clic
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/save-access-key.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/save-access-key.png" alt="Saving the access key pair">
+    <a  href="../../../assets/images/setup_installation/managed/aws/save-access-key.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/save-access-key.png" alt="Saving the access key pair">
     </a>
     <figcaption>Saving the access key pair</figcaption>
   </figure>
@@ -244,8 +244,8 @@ To enable this you need to create an S3 bucket and an instance profile to give c
 Proceed to the [S3 Management Console](https://s3.console.aws.amazon.com/s3/home) and click on *Create bucket*:
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/create-s3-bucket-1.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/create-s3-bucket-1.png" alt="Create an S3 bucket">
+    <a  href="../../../assets/images/setup_installation/managed/aws/create-s3-bucket-1.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/create-s3-bucket-1.png" alt="Create an S3 bucket">
     </a>
     <figcaption>Create an S3 bucket</figcaption>
   </figure>
@@ -255,8 +255,8 @@ Name your bucket and select the region where your Hopsworks cluster will run. Cl
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/create-s3-bucket-2.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/create-s3-bucket-2.png" alt="Create an S3 bucket">
+    <a  href="../../../assets/images/setup_installation/managed/aws/create-s3-bucket-2.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/create-s3-bucket-2.png" alt="Create an S3 bucket">
     </a>
     <figcaption>Create an S3 bucket</figcaption>
   </figure>
@@ -270,8 +270,8 @@ When deploying clusters, Hopsworks.ai installs an ssh key on the cluster's insta
 Proceed to [Key pairs in the EC2 console](https://us-east-2.console.aws.amazon.com/ec2/v2/home?#KeyPairs) and click on *Create key pair*
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/create-key-pair.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/create-key-pair.png" alt="Create a key pair">
+    <a  href="../../../assets/images/setup_installation/managed/aws/create-key-pair.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/create-key-pair.png" alt="Create a key pair">
     </a>
     <figcaption>Create a key pair</figcaption>
   </figure>
@@ -280,8 +280,8 @@ Proceed to [Key pairs in the EC2 console](https://us-east-2.console.aws.amazon.c
 Name your key, select the file format you prefer and click on *Create key pair*.
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/create-key-pair-2.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/create-key-pair-2.png" alt="Create a key pair">
+    <a  href="../../../assets/images/setup_installation/managed/aws/create-key-pair-2.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/create-key-pair-2.png" alt="Create a key pair">
     </a>
     <figcaption>Create a key pair</figcaption>
   </figure>
@@ -291,8 +291,8 @@ Name your key, select the file format you prefer and click on *Create key pair*.
 Proceed to [Key pairs in the EC2 console](https://us-east-2.console.aws.amazon.com/ec2/v2/home?#KeyPairs), click on *Action* and click on *Import key pair*
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/import-key-pair.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/import-key-pair.png" alt="Import a key pair">
+    <a  href="../../../assets/images/setup_installation/managed/aws/import-key-pair.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/import-key-pair.png" alt="Import a key pair">
     </a>
     <figcaption>Import a key pair</figcaption>
   </figure>
@@ -301,8 +301,8 @@ Proceed to [Key pairs in the EC2 console](https://us-east-2.console.aws.amazon.c
 Name your key pair, upload your public key and click on *Import key pair*.
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/import-key-pair-2.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/import-key-pair-2.png" alt="Import a key pair">
+    <a  href="../../../assets/images/setup_installation/managed/aws/import-key-pair-2.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/import-key-pair-2.png" alt="Import a key pair">
     </a>
     <figcaption>Import a key pair</figcaption>
   </figure>
@@ -314,8 +314,8 @@ In Hopsworks.ai, select *Create cluster*:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/create-instance.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/create-instance.png" alt="Create a Hopsworks cluster">
+    <a  href="../../../assets/images/setup_installation/managed/common/create-instance.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/create-instance.png" alt="Create a Hopsworks cluster">
     </a>
     <figcaption>Create a Hopsworks cluster</figcaption>
   </figure>
@@ -334,8 +334,8 @@ Press *Next*:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/create-instance-general.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/create-instance-general.png" alt="Create a Hopsworks cluster, general Information">
+    <a  href="../../../assets/images/setup_installation/managed/aws/create-instance-general.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/create-instance-general.png" alt="Create a Hopsworks cluster, general Information">
     </a>
     <figcaption>Create a Hopsworks cluster, general information</figcaption>
   </figure>
@@ -352,8 +352,8 @@ Press *Next*:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/create-instance-workers-static.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/create-instance-workers-static.png" alt="Create a Hopsworks cluster, static workers configuration">
+    <a  href="../../../assets/images/setup_installation/managed/common/create-instance-workers-static.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/create-instance-workers-static.png" alt="Create a Hopsworks cluster, static workers configuration">
     </a>
     <figcaption>Create a Hopsworks cluster, static workers configuration</figcaption>
   </figure>
@@ -363,33 +363,41 @@ Select the *SSH key* that you want to use to access cluster instances:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/connect-aws-ssh.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/connect-aws-ssh.png" alt="Choose SSH key">
+    <a  href="../../../assets/images/setup_installation/managed/aws/connect-aws-ssh.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/connect-aws-ssh.png" alt="Choose SSH key">
     </a>
     <figcaption>Choose SSH key</figcaption>
   </figure>
 </p>
 
-Select the *Instance Profile* that you created above and click on *Review and Submit*:
+Select the *Instance Profile* that you created above:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/connect-aws-profile.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/connect-aws-profile.png" alt="Choose the instance profile">
+    <a  href="../../../assets/images/setup_installation/managed/aws/connect-aws-profile.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/connect-aws-profile.png" alt="Choose the instance profile">
     </a>
     <figcaption>Choose the instance profile</figcaption>
   </figure>
 </p>
 
-!!! note
-    If you are an enterprise user you will have one more step before being able to click on *Review and Create*. In this step, you will be asked to set the backups retention policy. More details about this step [here](cluster_creation.md#step-6-set-the-backup-retention-policy)
+To backup the S3 bucket data when taking a cluster backup we need to set a retention policy for S3. You can deactivate the retention policy by setting this value to 0 but this will block you from taking any backup of your cluster. Choose the retention period in day and click on *Review and submit*:
+
+<p align="center">
+  <figure>
+    <a  href="../../../assets/images/setup_installation/managed/azure/connect-azure-backup.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/azure/connect-azure-backup.png" alt="Choose the backup retention policy">
+    </a>
+    <figcaption>Choose the backup retention policy</figcaption>
+  </figure>
+</p>
 
 Review all information and select *Create*:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/connect-aws-review.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/aws/connect-aws-review.png" alt="Review cluster information">
+    <a  href="../../../assets/images/setup_installation/managed/aws/connect-aws-review.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/aws/connect-aws-review.png" alt="Review cluster information">
     </a>
     <figcaption>Review cluster information</figcaption>
   </figure>
@@ -399,8 +407,8 @@ The cluster will start. This will take a few minutes:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/booting.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/booting.png" alt="Booting Hopsworks cluster">
+    <a  href="../../../assets/images/setup_installation/managed/common/booting.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/booting.png" alt="Booting Hopsworks cluster">
     </a>
     <figcaption>Booting Hopsworks cluster</figcaption>
   </figure>
@@ -411,8 +419,8 @@ As soon as the cluster has started, you will be able to log in to your new Hopsw
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/running.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/running.png" alt="Running Hopsworks cluster">
+    <a  href="../../../assets/images/setup_installation/managed/common/running.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/running.png" alt="Running Hopsworks cluster">
     </a>
     <figcaption>Running Hopsworks cluster</figcaption>
   </figure>

@@ -115,16 +115,24 @@ nav:
   - Setup and Installation:
       - AWS:
           - Getting Started: setup_installation/aws/getting_started.md
-          - Limiting Permissions: setup_installation/aws/restrictive_permissions.md
           - Cluster Creation: setup_installation/aws/cluster_creation.md
+          - EKS/ECR integration: setup_installation/aws/eks_ecr_integration.md
+          - Limiting Permissions: setup_installation/aws/restrictive_permissions.md
+          - Cluster upgrade: 
+            - Version 2.4 or newer: setup_installation/aws/upgrade_2.4.md
+            - Version 2.2 or older: setup_installation/aws/upgrade.md
       - Azure:
           - Getting Started: setup_installation/azure/getting_started.md
-          - Limiting Permissions: setup_installation/azure/restrictive_permissions.md
           - Cluster Creation: setup_installation/azure/cluster_creation.md
+          - AKS/ACR integration: setup_installation/azure/aks_acr_integration.md
+          - Limiting Permissions: setup_installation/azure/restrictive_permissions.md
+          - Cluster upgrade: 
+            - Version 2.4 or newer: setup_installation/azure/upgrade_2.4.md
+            - Version 2.2 or older: setup_installation/azure/upgrade.md
       - GCP:
           - Getting Started: setup_installation/gcp/getting_started.md
-          - Limiting Permissions: setup_installation/gcp/restrictive_permissions.md
           - Cluster Creation: setup_installation/gcp/cluster_creation.md
+          - Limiting Permissions: setup_installation/gcp/restrictive_permissions.md
       - Common:
           - Services: setup_installation/common/services.md
           - Adding and Removing workers: setup_installation/common/adding_removing_workers.md
@@ -133,13 +141,6 @@ nav:
           - GPU support: setup_installation/common/gpu_support.md
           - User management: setup_installation/common/user_management.md
           - Managed RonDB: setup_installation/common/rondb.md
-          - Cluster upgrade:
-              - From version 2.4 or newer:
-                  - AWS: setup_installation/common/aws/upgrade_2.4.md
-                  - Azure: setup_installation/common/zure/upgrade_2.4.md
-              - From version 2.2 or older:
-                  - AWS: setup_installation/common/aws/upgrade.md
-                  - Azure: setup_installation/common/azure/upgrade.md
           - Single Sign On:
               - Hopsworks:
                   - OAuth2: setup_installation/common/sso/oauth.md

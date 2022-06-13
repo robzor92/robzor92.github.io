@@ -27,7 +27,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = ">=3.42.0"
+      version = "4.16.0"
     }
     hopsworksai = {
       source = "logicalclocks/hopsworksai"
@@ -49,8 +49,9 @@ provider "hopsworksai" {
 
 # Create the required aws resources, an ssh key, an s3 bucket, and an instance profile with the required hopsworks permissions
 module "aws" {
-  source = "logicalclocks/helpers/hopsworksai//modules/aws"
-  region = var.region
+  source  = "logicalclocks/helpers/hopsworksai//modules/aws"
+  region  = var.region
+  version = "2.0.0"
 }
 
 # Create a cluster with no workers
@@ -63,8 +64,14 @@ resource "hopsworksai_cluster" "cluster" {
 
   aws_attributes {
     region               = var.region
-    bucket_name          = module.aws.bucket_name
     instance_profile_arn = module.aws.instance_profile_arn
+    bucket {
+      name = module.aws.bucket_name
+    }
+  }
+
+  rondb {
+
   }
 
   open_ports {
@@ -117,7 +124,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = ">= 2.60.0"
+      version = "3.8.0"
     }
     hopsworksai = {
       source = "logicalclocks/hopsworksai"
@@ -145,6 +152,7 @@ data "azurerm_resource_group" "rg" {
 module "azure" {
   source         = "logicalclocks/helpers/hopsworksai//modules/azure"
   resource_group = var.resource_group
+  version        = "2.0.0"
 }
 
 # Create a cluster with no workers
@@ -158,8 +166,14 @@ resource "hopsworksai_cluster" "cluster" {
  azure_attributes {
     location                       = module.azure.location
     resource_group                 = module.azure.resource_group
-    storage_account                = module.azure.storage_account_name
     user_assigned_managed_identity = module.azure.user_assigned_identity_name
+    container {
+      storage_account = module.azure.storage_account_name
+    }
+  }
+
+  rondb {
+
   }
 
   open_ports {
@@ -194,8 +208,8 @@ In this section, we show how to use `terraform import` to manage your existing H
 
 <p align="center">
   <figure>
-    <a  href="../assets/images/get-cluster-id.png">
-      <img style="border: 1px solid #000" src="../assets/images/get-cluster-id.png" alt="Details tab">
+    <a  href="../../../assets/images/setup_installation/managed/common/get-cluster-id.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/common/get-cluster-id.png" alt="Details tab">
     </a>
     <figcaption>Click on the Details tab and copy the Id</figcaption>
   </figure>
@@ -217,7 +231,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = ">=3.42.0"
+      version = "4.16.0"
     }
     hopsworksai = {
       source = "logicalclocks/hopsworksai"

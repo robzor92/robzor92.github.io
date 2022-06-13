@@ -6,8 +6,8 @@ When selecting the [workers' instance type](aws/cluster_creation.md#step-3-worke
 
 <p align="center">
   <figure>
-    <a  href="../assets/images/create-gpu.png">
-      <img style="border: 1px solid #000" src="../assets/images/create-gpu.png" alt="Create cluster with GPUs">
+    <a  href="../../../assets/images/setup_installation/managed/common/create-gpu.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/common/create-gpu.png" alt="Create cluster with GPUs">
     </a>
     <figcaption>Create cluster with GPUs</figcaption>
   </figure>
@@ -18,8 +18,8 @@ When [adding workers](adding_removing_workers.md#adding-workers) to a cluster, y
 
 <p align="center">
   <figure>
-    <a  href="../assets/images/add-gpu.png">
-      <img style="border: 1px solid #000" src="../assets/images/add-gpu.png" alt="Add GPUs to cluster">
+    <a  href="../../../assets/images/setup_installation/managed/common/add-gpu.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/common/add-gpu.png" alt="Add GPUs to cluster">
     </a>
     <figcaption>Add GPUs to cluster</figcaption>
   </figure>
@@ -30,8 +30,8 @@ Once workers with GPUs have been added to your cluster you can use them by alloc
 
 <p align="center">
   <figure>
-    <a  href="../assets/images/gpu-jupyter.png">
-      <img style="border: 1px solid #000" src="../assets/images/gpu-jupyter.png" alt="Using GPUs in JupyterLab">
+    <a  href="../../../assets/images/setup_installation/managed/common/gpu-jupyter.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/common/gpu-jupyter.png" alt="Using GPUs in JupyterLab">
     </a>
     <figcaption>Using GPUs in JupyterLab</figcaption>
   </figure>
@@ -39,8 +39,8 @@ Once workers with GPUs have been added to your cluster you can use them by alloc
 
 <p align="center">
   <figure>
-    <a  href="../assets/images/gpu-jobs.png">
-      <img style="border: 1px solid #000" src="../assets/images/gpu-jobs.png" alt="Using GPUs in jobs">
+    <a  href="../../../assets/images/setup_installation/managed/common/gpu-jobs.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/common/gpu-jobs.png" alt="Using GPUs in jobs">
     </a>
     <figcaption>Using GPUs in jobs</figcaption>
   </figure>
