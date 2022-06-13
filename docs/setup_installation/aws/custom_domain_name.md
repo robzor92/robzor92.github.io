@@ -24,8 +24,8 @@ shown in the figure below.
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/vpc-custom-domain-name.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/vpc-custom-domain-name.png" alt="Custom domain name">
+    <a  href="../../../assets/images/setup_installation/managed/aws/vpc-custom-domain-name.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/vpc-custom-domain-name.png" alt="Custom domain name">
     </a>
     <figcaption>VPC with custom domain name</figcaption>
   </figure>
@@ -132,8 +132,8 @@ to be executed before anything else on the VM.
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/custom-domain-name-route53-script.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/custom-domain-name-route53-script.png" alt="Automatic domain name registration">
+    <a  href="../../../assets/images/setup_installation/managed/aws/custom-domain-name-route53-script.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/custom-domain-name-route53-script.png" alt="Automatic domain name registration">
     </a>
     <figcaption>Automatic domain name registration with Route53</figcaption>
   </figure>

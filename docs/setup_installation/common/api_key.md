@@ -8,8 +8,8 @@ First, login to your Hopsworks.ai account, then click on the Settings tab as sho
 
 <p align="center">
   <figure>
-    <a  href="../assets/images/apiKey/api-key-1.png">
-      <img style="border: 1px solid #000" src="../assets/images/apiKey/api-key-1.png" alt="Click on Settings">
+    <a  href="../../../assets/images/setup_installation/managed/common/api_key/api-key-1.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/common/api_key/api-key-1.png" alt="Click on Settings">
     </a>
     <figcaption>Click on the Settings tab</figcaption>
   </figure>
@@ -19,8 +19,8 @@ Click on the API Key tab, and then click on the *Generate API Key* button:
 
 <p align="center">
   <figure>
-    <a  href="../assets/images/apiKey/api-key-2.png">
-      <img style="border: 1px solid #000" src="../assets/images/apiKey/api-key-2.png" alt="Generate API Key">
+    <a  href="../../../assets/images/setup_installation/managed/common/api_key/api-key-2.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/common/api_key/api-key-2.png" alt="Generate API Key">
     </a>
     <figcaption>Generate an API Key</figcaption>
   </figure>
@@ -34,8 +34,8 @@ Copy the generated API Key and store it in a secure location.
 
 <p align="center">
   <figure>
-    <a  href="../assets/images/apiKey/api-key-3.png">
-      <img style="border: 1px solid #000" src="../assets/images/apiKey/api-key-3.png" alt="Copy API Key">
+    <a  href="../../../assets/images/setup_installation/managed/common/api_key/api-key-3.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/common/api_key/api-key-3.png" alt="Copy API Key">
     </a>
     <figcaption>Copy the generated API Key</figcaption>
   </figure>
@@ -57,8 +57,8 @@ First, login to your Hopsworks.ai account, click on the Settings tab, then click
 
 <p align="center">
   <figure>
-    <a  href="../assets/images/apiKey/api-key-4.png">
-      <img style="border: 1px solid #000" src="../assets/images/apiKey/api-key-4.png" alt="Delete API Key">
+    <a  href="../../../assets/images/setup_installation/managed/common/api_key/api-key-4.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/common/api_key/api-key-4.png" alt="Delete API Key">
     </a>
     <figcaption>Delete your API Key</figcaption>
   </figure>

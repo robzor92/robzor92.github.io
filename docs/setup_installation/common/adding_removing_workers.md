@@ -7,8 +7,8 @@ To add workers to a cluster, go to the *Details* tab of this cluster and click o
 
 <p align="center">
   <figure>
-    <a  href="../assets/images/add-worker.png">
-      <img style="border: 1px solid #000" src="../assets/images/add-worker.png" alt="Add worker">
+    <a  href="../../../assets/images/setup_installation/managed/common/add-worker.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/common/add-worker.png" alt="Add worker">
     </a>
     <figcaption>Add worker</figcaption>
   </figure>
@@ -18,8 +18,8 @@ Select the number of workers you want to add (1). Select the type of instance yo
 
 <p align="center">
   <figure>
-    <a  href="../assets/images/add-workers-config.png">
-      <img style="border: 1px solid #000" src="../assets/images/add-workers-config.png" alt="Add workers config">
+    <a  href="../../../assets/images/setup_installation/managed/common/add-workers-config.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/common/add-workers-config.png" alt="Add workers config">
     </a>
     <figcaption>Add workers</figcaption>
   </figure>
@@ -29,8 +29,8 @@ Review your request and click *Add*.
 
 <p align="center">
   <figure>
-    <a  href="../assets/images/add-workers-review.png">
-      <img style="border: 1px solid #000" src="../assets/images/add-workers-review.png" alt="Add workers review">
+    <a  href="../../../assets/images/setup_installation/managed/common/add-workers-review.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/common/add-workers-review.png" alt="Add workers review">
     </a>
     <figcaption>Add workers</figcaption>
   </figure>
@@ -52,8 +52,8 @@ To remove workers from a cluster, go to the *Details* tab of this cluster and cl
 
 <p align="center">
   <figure>
-    <a  href="../assets/images/remove-worker.png">
-      <img style="border: 1px solid #000" src="../assets/images/remove-worker.png" alt="Remove worker">
+    <a  href="../../../assets/images/setup_installation/managed/common/remove-worker.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/common/remove-worker.png" alt="Remove worker">
     </a>
     <figcaption>Remove workers</figcaption>
   </figure>
@@ -63,8 +63,8 @@ For each of the types of instances existing in your cluster select the number of
 
 <p align="center">
   <figure>
-    <a  href="../assets/images/remove-worker-config.png">
-      <img style="border: 1px solid #000" src="../assets/images/remove-worker-config.png" alt="Remove workers config">
+    <a  href="../../../assets/images/setup_installation/managed/common/remove-worker-config.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/common/remove-worker-config.png" alt="Remove workers config">
     </a>
     <figcaption>Remove workers</figcaption>
   </figure>
@@ -74,8 +74,8 @@ Review your request and click *Remove*.
 
 <p align="center">
   <figure>
-    <a  href="../assets/images/remove-workers-review.png">
-      <img style="border: 1px solid #000" src="../assets/images/remove-workers-review.png" alt="Remove workers review">
+    <a  href="../../../assets/images/setup_installation/managed/common/remove-workers-review.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/common/remove-workers-review.png" alt="Remove workers review">
     </a>
     <figcaption>Remove workers</figcaption>
   </figure>

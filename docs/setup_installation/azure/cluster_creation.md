@@ -7,8 +7,8 @@ In Hopsworks.ai, select *Create cluster*:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/create-instance.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/create-instance.png" alt="Create a Hopsworks cluster">
+    <a  href="../../../assets/images/setup_installation/managed/common/create-instance.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/create-instance.png" alt="Create a Hopsworks cluster">
     </a>
     <figcaption>Create a Hopsworks cluster</figcaption>
   </figure>
@@ -32,8 +32,8 @@ To provide the capacity of adding and removing workers on demand, the Hopsworks 
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/azure/create-instance-general.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/azure/create-instance-general.png" alt="General configuration">
+    <a  href="../../../assets/images/setup_installation/managed/azure/create-instance-general.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/azure/create-instance-general.png" alt="General configuration">
     </a>
     <figcaption>General configuration</figcaption>
   </figure>
@@ -50,8 +50,8 @@ You can set the static configuration by selecting *Disabled* in the first drop-d
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/create-instance-workers-static.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/create-instance-workers-static.png" alt="Create a Hopsworks cluster, static workers configuration">
+    <a  href="../../../assets/images/setup_installation/managed/common/create-instance-workers-static.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/create-instance-workers-static.png" alt="Create a Hopsworks cluster, static workers configuration">
     </a>
     <figcaption>Create a Hopsworks cluster, static workers configuration</figcaption>
   </figure>
@@ -72,8 +72,8 @@ You can set the autoscaling configuration by selecting enabled in the first drop
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/create-instance-workers-autoscale.png">
-      <img style="border: 1px solid #000;width:700px;width:506px" src="../../assets/images/create-instance-workers-autoscale.png" alt="Create a Hopsworks cluster, autoscale workers configuration">
+    <a  href="../../../assets/images/setup_installation/managed/common.create-instance-workers-autoscale.png">
+      <img style="border: 1px solid #000;width:700px;width:506px" src="../../../assets/images/setup_installation/managed/common/create-instance-workers-autoscale.png" alt="Create a Hopsworks cluster, autoscale workers configuration">
     </a>
     <figcaption>Create a Hopsworks cluster, autoscale workers configuration</figcaption>
   </figure>
@@ -86,8 +86,8 @@ Select the *SSH key* that you want to use to access cluster instances. For more 
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/azure/connect-azure-12.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/azure/connect-azure-12.png" alt="Choose SSH key">
+    <a  href="../../../assets/images/setup_installation/managed/azure/connect-azure-12.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/azure/connect-azure-12.png" alt="Choose SSH key">
     </a>
     <figcaption>Choose SSH key</figcaption>
   </figure>
@@ -99,8 +99,8 @@ In order to let the cluster instances access to the Azure storage we need to att
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/azure/connect-azure-identity.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/azure/connect-azure-identity.png" alt="Choose the User assigned managed identity">
+    <a  href="../../../assets/images/setup_installation/managed/azure/connect-azure-identity.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/azure/connect-azure-identity.png" alt="Choose the User assigned managed identity">
     </a>
     <figcaption>Choose the User assigned managed identity</figcaption>
   </figure>
@@ -108,15 +108,12 @@ In order to let the cluster instances access to the Azure storage we need to att
 
 ### Step 6 set the backup retention policy:
 
-!!! note
-    This step is only accessible to enterprise users.
-
 To backup the Azure blob storage data when taking a cluster backups we need to set a retention policy for the blob storage. In this step, you choose the retention period in days. You can deactivate the retention policy by setting this value to 0 but this will block you from taking any backup of your cluster.
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/azure/connect-azure-backup.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/azure/connect-azure-backup.png" alt="Choose the backup retention policy">
+    <a  href="../../../assets/images/setup_installation/managed/azure/connect-azure-backup.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/azure/connect-azure-backup.png" alt="Choose the backup retention policy">
     </a>
     <figcaption>Choose the backup retention policy</figcaption>
   </figure>
@@ -128,8 +125,8 @@ Refer to [Create a virtual network and subnet](restrictive_permissions.md#step-1
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/azure/connect-azure-13.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/azure/connect-azure-13.png" alt="Choose virtual network">
+    <a  href="../../../assets/images/setup_installation/managed/azure/connect-azure-13.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/azure/connect-azure-13.png" alt="Choose virtual network">
     </a>
     <figcaption>Choose virtual network</figcaption>
   </figure>
@@ -142,8 +139,8 @@ If you did not select an existing virtual network in the previous step Hopsworks
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/azure/connect-azure-14.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/azure/connect-azure-14.png" alt="Choose subnet">
+    <a  href="../../../assets/images/setup_installation/managed/azure/connect-azure-14.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/azure/connect-azure-14.png" alt="Choose subnet">
     </a>
     <figcaption>Choose subnet</figcaption>
   </figure>
@@ -160,8 +157,8 @@ In this step, you can select the network security group you want to use to manag
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/azure/connect-azure-15.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/azure/connect-azure-15.png" alt="Choose security group">
+    <a  href="../../../assets/images/setup_installation/managed/azure/connect-azure-15.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/azure/connect-azure-15.png" alt="Choose security group">
     </a>
     <figcaption>Choose security group</figcaption>
   </figure>
@@ -173,8 +170,8 @@ Clusters created on Hopsworks.ai need to be able to send http requests to api.ho
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/azure/connect-azure-15-b.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/azure/connect-azure-15-b.png" alt="Enable static IPs">
+    <a  href="../../../assets/images/setup_installation/managed/azure/connect-azure-15-b.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/azure/connect-azure-15-b.png" alt="Enable static IPs">
     </a>
     <figcaption>Enable static IPs</figcaption>
   </figure>
@@ -184,43 +181,45 @@ Clusters created on Hopsworks.ai need to be able to send http requests to api.ho
 ### Step 10 User management selection
 In this step, you can choose which user management system to use. You have four choices: 
 
-* *Managed*: Hopsworks.ai automatically adds and removes users from the Hopsworks cluster when you add and remove users from your organization.
+* *Managed*: Hopsworks.ai automatically adds and removes users from the Hopsworks cluster when you add and remove users from your organization  (more details [here](../user_management.md)).
 * *OAuth2*: integrate the cluster with your organization's OAuth2 identity provider. See [Use OAuth2 for user management](../sso/oauth.md) for more detail.
 * *LDAP*: integrate the cluster with your organization's LDAP/ActiveDirectory server. See [Use LDAP for user management](../sso/ldap.md) for more detail.
 * *Disabled*: let you manage users manually from within Hopsworks.
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/create-instance-user-management.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/create-instance-user-management.png" alt="Choose user management type">
+    <a  href="../../../assets/images/setup_installation/managed/common/create-instance-user-management.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/create-instance-user-management.png" alt="Choose user management type">
     </a>
     <figcaption>Choose user management type</figcaption>
   </figure>
 </p>
 
 ### Step 12 Managed RonDB
-Hopsworks.ai users have the option to create a cluster with dedicated VMs running [RonDB](https://www.rondb.com/).
+Hopsworks uses [RonDB](https://www.rondb.com/) as a database engine for its online Feature Store. By default database will run on its
+own VM. Premium users can scale-out database services to multiple VMs
+to handle increased workload.
 
 For details on how to configure RonDB check our guide [here](../rondb.md).
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/rondb/rondb_enable.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/rondb/rondb_enable.png" alt="Enable Managed RonDB">
+    <a  href="../../../assets/images/setup_installation/managed/common/rondb/configure_database.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/rondb/configure_database.png" alt="Configure RonDB">
     </a>
-    <figcaption>Enable Managed RonDB</figcaption>
+    <figcaption>Configure RonDB</figcaption>
   </figure>
 </p>
 
-If you need this feature and don't see this step please contact [us](mailto:sales@logicalclocks.com).
+If you need to deploy a RonDB cluster instead of a single node please contact [us](mailto:sales@logicalclocks.com).
 
 ### Step 13 add tags to your instances.
 In this step, you can define tags that will be added to the cluster virtual machines.
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/create-instance-tags.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/create-instance-tags.png" alt="Add tags">
+    <a  href="../../../assets/images/setup_installation/managed/common/create-instance-tags.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/create-instance-tags.png" alt="Add tags">
     </a>
     <figcaption>Add tags</figcaption>
   </figure>
@@ -234,8 +233,8 @@ In this step, you can enter an initialization script that will be run at startup
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/init_script.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/init_script.png" alt="Add initialization script">
+    <a  href="../../../assets/images/setup_installation/managed/common/init_script.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/init_script.png" alt="Add initialization script">
     </a>
     <figcaption>Add initialization script</figcaption>
   </figure>
@@ -246,8 +245,8 @@ Review all information and select *Create*:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/azure/connect-azure-17.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/azure/connect-azure-17.png" alt="Review cluster information">
+    <a  href="../../../assets/images/setup_installation/managed/azure/connect-azure-17.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/azure/connect-azure-17.png" alt="Review cluster information">
     </a>
     <figcaption>Review cluster information</figcaption>
   </figure>
@@ -257,8 +256,8 @@ The cluster will start. This will take a few minutes:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/booting.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/booting.png" alt="Booting Hopsworks cluster">
+    <a  href="../../../assets/images/setup_installation/managed/common/booting.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/booting.png" alt="Booting Hopsworks cluster">
     </a>
     <figcaption>Booting Hopsworks cluster</figcaption>
   </figure>
@@ -268,8 +267,8 @@ As soon as the cluster has started, you will be able to log in to your new Hopsw
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/running.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/running.png" alt="Running Hopsworks cluster">
+    <a  href="../../../assets/images/setup_installation/managed/common/running.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/running.png" alt="Running Hopsworks cluster">
     </a>
     <figcaption>Running Hopsworks cluster</figcaption>
   </figure>

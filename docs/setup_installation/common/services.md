@@ -9,8 +9,8 @@ Open ports by going to the *Services* tab, selecting a service, and pressing *Up
 
 <p align="center">
   <figure>
-    <a  href="../assets/images/open-ports.png">
-      <img style="border: 1px solid #000;width:700px" src="../assets/images/open-ports.png" alt="Outside Access to the Feature Store">
+    <a  href="../../../assets/images/setup_installation/managed/common/open-ports.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/open-ports.png" alt="Outside Access to the Feature Store">
     </a>
     <figcaption>Outside Access to the Feature Store</figcaption>
   </figure>
@@ -40,12 +40,12 @@ Port: 22.
 
 ## Limiting outbound traffic to Hopsworks.ai
 
-If you have enabled the use of static IPs to communicate with Hopsworks.ai as described in [AWS](../aws/cluster_creation/#limiting-outbound-traffic-to-hopsworksai) and [AZURE](../azure/cluster_creation/#limiting-outbound-traffic-to-hopsworksai), you need to ensure that your security group allow outbound traffic to the two IPs indicated in the service page.
+If you have enabled the use of static IPs to communicate with Hopsworks.ai as described in [AWS](../../../aws/cluster_creation/#limiting-outbound-traffic-to-hopsworksai) and [AZURE](../../../azure/cluster_creation/#limiting-outbound-traffic-to-hopsworksai), you need to ensure that your security group allow outbound traffic to the two IPs indicated in the service page.
 
 <p align="center">
   <figure>
-    <a  href="../assets/images/limit-outbound-traffic-hopsworksai.png">
-      <img style="border: 1px solid #000;width:700px" src="../assets/images/limit-outbound-traffic-hopsworksai.png" alt="Limiting outbound traffic to Hopsworks.ai">
+    <a  href="../../../assets/images/setup_installation/managed/common/limit-outbound-traffic-hopsworksai.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/limit-outbound-traffic-hopsworksai.png" alt="Limiting outbound traffic to Hopsworks.ai">
     </a>
     <figcaption>Limiting outbound traffic to Hopsworks.ai</figcaption>
   </figure>

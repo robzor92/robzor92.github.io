@@ -97,10 +97,15 @@ Go to the [*IAM service*](https://console.aws.amazon.com/iam) in the *AWS manage
             ]
         },
         {
+            "Sid": "AllowCreateRespositry",
+            "Effect": "Allow",
+            "Action": "ecr:CreateRepository",
+            "Resource": "*"
+        },
+        {
             "Sid": "AllowPushandPullImages",
             "Effect": "Allow",
             "Action": [
-                "ecr:CreateRepository",
                 "ecr:GetDownloadUrlForLayer",
                 "ecr:BatchGetImage",
                 "ecr:CompleteLayerUpload",
@@ -141,10 +146,10 @@ Copy the *Role ARN* of your profile (not to be confused with the *Instance Profi
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/instance-profile-arn.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/instance-profile-arn.png" alt="Coppy the Role ARN">
+    <a  href="../../../assets/images/setup_installation/managed/aws/instance-profile-arn.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/instance-profile-arn.png" alt="Copy the Role ARN">
     </a>
-    <figcaption>Coppy the *Role ARN*</figcaption>
+    <figcaption>Copy the *Role ARN*</figcaption>
   </figure>
 </p>
 
@@ -251,8 +256,8 @@ Go to the [*Security Groups* section of *EC2* in the *AWS management console*](h
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-sg-edit-inbound-rules.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-sg-edit-inbound-rules.png" alt="Edit inbound rules">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-sg-edit-inbound-rules.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-sg-edit-inbound-rules.png" alt="Edit inbound rules">
     </a>
     <figcaption>Edit inbound rules</figcaption>
   </figure>
@@ -262,8 +267,8 @@ Add two rules for HTTP and HTTPS as follows:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-sg-hopsworks-inbound-rules.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-sg-hopsworks-inbound-rules.png" alt="Edit inbound rules">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-sg-hopsworks-inbound-rules.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-sg-hopsworks-inbound-rules.png" alt="Edit inbound rules">
     </a>
     <figcaption>Edit inbound rules</figcaption>
   </figure>
@@ -328,8 +333,8 @@ In Hopsworks.ai, select *Create cluster*. Choose the region of your EKS cluster 
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-hopsworks-create-cluster.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-hopsworks-create-cluster.png" alt="Create Hopsworks cluster">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster.png" alt="Create Hopsworks cluster">
     </a>
     <figcaption>Create Hopsworks cluster</figcaption>
   </figure>
@@ -339,8 +344,8 @@ Choose your preferred [SSH key](getting_started.md#step-4-create-an-ssh-key) to 
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-hopsworks-create-cluster-0.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-hopsworks-create-cluster-0.png" alt="Choose SSH key">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-0.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-0.png" alt="Choose SSH key">
     </a>
     <figcaption>Choose SSH key</figcaption>
   </figure>
@@ -350,8 +355,8 @@ Choose the instance profile role that you have created in [Step 2](#step-2-creat
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-hopsworks-create-cluster-1.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-hopsworks-create-cluster-1.png" alt="Choose instance profile role">
+    <a  href="../../../assets/images/aws/setup_installation/managed/eks-hopsworks-create-cluster-1.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-1.png" alt="Choose instance profile role">
     </a>
     <figcaption>Choose instance profile role</figcaption>
   </figure>
@@ -361,8 +366,8 @@ Choose the [backup retention period](cluster_creation.md#step-6-set-the-backup-r
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/azure/connect-azure-backup.png">
-      <img style="border: 1px solid #000" src="../../assets/images/azure/connect-azure-backup.png" alt="Choose the backup retention policy">
+    <a  href="../../../assets/images/setup_installation/managed/azure/connect-azure-backup.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/azure/connect-azure-backup.png" alt="Choose the backup retention policy">
     </a>
     <figcaption>Choose the backup retention policy</figcaption>
   </figure>
@@ -372,8 +377,8 @@ Choose **Enabled** to enable the use of Amazon EKS and ECR:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-hopsworks-create-cluster-2.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-hopsworks-create-cluster-2.png" alt="Choose Enabled">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-2.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-2.png" alt="Choose Enabled">
     </a>
     <figcaption>Choose Enabled</figcaption>
   </figure>
@@ -383,8 +388,8 @@ Add your EKS cluster name, then click Next:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-hopsworks-create-cluster-3.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-hopsworks-create-cluster-3.png" alt="Add EKS cluster name">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-3.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-3.png" alt="Add EKS cluster name">
     </a>
     <figcaption>Add EKS cluster name</figcaption>
   </figure>
@@ -396,8 +401,8 @@ If you followed option *B* choose the VPC you created during [Step 4](#step-4-se
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-hopsworks-create-cluster-4.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-hopsworks-create-cluster-4.png" alt="Choose VPC">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-4.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-4.png" alt="Choose VPC">
     </a>
     <figcaption>Choose VPC</figcaption>
   </figure>
@@ -410,8 +415,8 @@ Choose any of the subnets in the VPC, then click Next.
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-hopsworks-create-cluster-5.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-hopsworks-create-cluster-5.png" alt="Choose Subnet">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-5.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-5.png" alt="Choose Subnet">
     </a>
     <figcaption>Choose Subnet</figcaption>
   </figure>
@@ -424,8 +429,8 @@ Choose the security group that you have updated/created in [Step 4](#step-4-setu
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-hopsworks-create-cluster-6.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-hopsworks-create-cluster-6.png" alt="Choose Security Group">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-6.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-6.png" alt="Choose Security Group">
     </a>
     <figcaption>Choose Security Group</figcaption>
   </figure>
