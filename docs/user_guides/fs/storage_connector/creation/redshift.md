@@ -3,9 +3,8 @@
 ## Introduction
 
 Amazon Redshift is a popular managed data warehouse on AWS, used as a data warehouse in many enterprises. 
-Data warehouses are often the source of raw data for feature engineering pipelines.
 
-Data warehouses are often the source of raw data for feature engineering pipelines and Snowflake supports scalable feature computation with SQL. However, Redshift is not viable as an online feature store that serves features to models in production, with its columnar database layout its latency is too high compared to OLTP databases or key-value stores.
+Data warehouses are often the source of raw data for feature engineering pipelines and Redshift supports scalable feature computation with SQL. However, Redshift is not viable as an online feature store that serves features to models in production, with its columnar database layout its latency is too high compared to OLTP databases or key-value stores.
 
 In this guide, you will configure a Storage Connector in Hopsworks to save all the authentication information needed in order to set up a connection to your AWS Redshift cluster.
 When you're finished, you'll be able to query the database using Spark through HSFS APIs.
