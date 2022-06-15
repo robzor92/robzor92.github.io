@@ -78,8 +78,9 @@ nav:
         - Transformation Functions: user_guides/fs/dummy.md
       - Tags and Keywords: user_guides/fs/dummy.md
     - Models:
-      - Overview: user_guides/ml/tf.md
+      - user_guides/ml/index.md
       - Model:
+        - user_guides/ml/model/index.md
         - Frameworks:
           - TensorFlow: user_guides/ml/model/frameworks/tf.md
           - Scikit-Learn: user_guides/ml/model/frameworks/skl.md
@@ -88,6 +89,7 @@ nav:
         - Model Schema: user_guides/ml/model/schema.md
         - Input Example: user_guides/ml/model/input.md
       - Deployment:
+        - user_guides/ml/deployment/index.md
         - Frameworks:
             - TensorFlow: user_guides/ml/model/frameworks/tf.md
             - Scikit-Learn: user_guides/ml/model/frameworks/skl.md
@@ -135,6 +137,8 @@ nav:
       - Kafka:
           - Create Schema: user_guides/projects/kafka/create_schema.md
           - Create Topic: user_guides/projects/kafka/create_topic.md
+          - Produce messages: user_guides/projects/kafka/produce_messages.md
+          - Consume messages: user_guides/projects/kafka/consume_messages.md
       - Git:
           - Configure Git Provider: user_guides/projects/git/configure_git_provider.md
           - Clone Repository: user_guides/projects/git/clone_repo.md
