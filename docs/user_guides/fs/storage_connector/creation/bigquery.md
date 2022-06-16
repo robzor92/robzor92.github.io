@@ -48,7 +48,7 @@ it a unique **name** and an optional
 **description**.
 
 <figure markdown>
-  ![BigQuery Connector Creation](/assets/images/guides/fs/storage_connector/bigq_creation.png)
+  ![BigQuery Connector Creation](/assets/images/guides/fs/storage_connector/bigquery_creation.png)
   <figcaption>BigQuery Connector Creation Form</figcaption>
 </figure>
 
