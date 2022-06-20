@@ -77,9 +77,9 @@ nav:
         - Training data: user_guides/fs/dummy.md
         - Transformation Functions: user_guides/fs/dummy.md
       - Tags and Keywords: user_guides/fs/dummy.md
-    - Models:
+    - MLOps:
       - user_guides/ml/index.md
-      - Model:
+      - Model Registry:
         - user_guides/ml/model/index.md
         - Frameworks:
           - TensorFlow: user_guides/ml/model/frameworks/tf.md
@@ -88,7 +88,7 @@ nav:
           - Python: user_guides/ml/model/frameworks/torch.md
         - Model Schema: user_guides/ml/model/schema.md
         - Input Example: user_guides/ml/model/input.md
-      - Deployment:
+      - Model Serving:
         - user_guides/ml/deployment/index.md
         - Frameworks:
             - TensorFlow: user_guides/ml/model/frameworks/tf.md
@@ -100,6 +100,7 @@ nav:
         - Resource Configuration: user_guides/ml/deployment/transformer.md
         - Inference Logger: user_guides/ml/deployment/transformer.md
         - Inference Batcher: user_guides/ml/deployment/transformer.md
+      - Vector Database: user_guides/ml/vector_database/vector_database.md
     - Integrations:
       - Python: integrations/dummy.md
       - Databricks: integrations/dummy.md
