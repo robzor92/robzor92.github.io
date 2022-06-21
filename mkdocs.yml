@@ -95,11 +95,11 @@ nav:
             - Scikit-Learn: user_guides/ml/model/frameworks/skl.md
             - PyTorch: user_guides/ml/model/frameworks/torch.md
             - Python: user_guides/ml/model/frameworks/torch.md
-        - Custom Predictor: user_guides/ml/deployment/predictor.md
+        - Predictor: user_guides/ml/deployment/predictor.md
         - Transformer: user_guides/ml/deployment/transformer.md
-        - Resource Configuration: user_guides/ml/deployment/transformer.md
-        - Inference Logger: user_guides/ml/deployment/transformer.md
-        - Inference Batcher: user_guides/ml/deployment/transformer.md
+        - Resource Configuration: user_guides/ml/deployment/resources.md
+        - Inference Logger: user_guides/ml/deployment/inference-logger.md
+        - Inference Batcher: user_guides/ml/deployment/inference-batcher.md
       - Vector Database: user_guides/ml/vector_database/vector_database.md
     - Integrations:
       - Python: integrations/dummy.md

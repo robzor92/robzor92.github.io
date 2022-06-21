@@ -69,13 +69,14 @@ Optionally, you can access and adjust other parameters of the deployment configu
   </figure>
 </p>
 
-You will be redirected to a full-page deployment creation form where you can see all the default configuration values we selected for your deployment and adjust them according to your use case. Apart from the aforementioned simplified configuration, in this form you can modify the following components:
+You will be redirected to a full-page deployment creation form where you can see all the default configuration values we selected for your deployment and adjust them according to your use case. Apart from the aforementioned simplified configuration, in this form you can setup the following components:
 
 !!! info "Deployment advanced configuration"
-    1. [Transformer](#transformer)
-    2. [Inference logger](#inference-logger)
-    3. [Inference batcher](#inference-batcher)
-    4. [Resources](#resources)
+    1. [Predictor](#predictor)
+    2. [Transformer](#transformer)
+    3. [Inference logger](#inference-logger)
+    4. [Inference batcher](#inference-batcher)
+    5. [Resources](#resources)
 
 <!-- TODO: Image of full deployment form ??? or we skip image here and include an image per component in the corresponding docs page (transformer.md, ...) -->
 <p color=red>CHANGE IMAGE</p>
@@ -136,6 +137,7 @@ connection = hopsworks.connection()
 
 project = connection.get_project("my_project")
 
+# get Hopsworks Model Registry handle
 mr = project.get_model_registry()
 ```
 
@@ -159,6 +161,7 @@ my_deployment = my_model.deploy()
 
 ```python
 
+# get Hopsworks Model Serving handle
 ms = project.get_model_serving()
 
 my_predictor = ms.create_predictor(my_model)
@@ -196,8 +199,8 @@ Predictors are responsible for running the model server that loads the trained m
 
 Transformers are used to apply transformations on the model inputs before sending them to the predictor for making predictions using the model. To learn more about transformers, see the [Transformer Guide](transformer.md).
 
-!!! info
-    Transformers are only supported in KServe deployments. For more details, see the [Predictor Guide](predictor.md).
+!!! warning
+    Transformers are only supported in KServe deployments.
 
 ## Inference logger
 
