@@ -2,5 +2,6 @@
 
 This section serves to provide guides and examples for the common usage of abstractions and functionality of Models and Deployments through the Hopsworks UI and APIs.
 
-- [Models](model/index.md)
-- [Deployment](deployment/index.md)
+- [Model Registry](model/index.md)
+- [Model Serving](deployment/index.md)
+- [Vector Database](vector_database/vector_database.md)

@@ -65,7 +65,7 @@ import hopsworks
 connection = hopsworks.connection()
 ```
 
-### Step 2: Create secret
+### Step 2: Create project
 
 ```python
 project = connection.create_project("my_project")
