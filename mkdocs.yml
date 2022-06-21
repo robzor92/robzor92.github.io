@@ -78,29 +78,23 @@ nav:
         - Transformation Functions: user_guides/fs/dummy.md
       - Tags and Keywords: user_guides/fs/dummy.md
     - MLOps:
-      - user_guides/ml/index.md
+      - user_guides/mlops/index.md
       - Model Registry:
-        - user_guides/ml/model/index.md
+        - user_guides/mlops/registry/index.md
         - Frameworks:
-          - TensorFlow: user_guides/ml/model/frameworks/tf.md
-          - Scikit-Learn: user_guides/ml/model/frameworks/skl.md
-          - PyTorch: user_guides/ml/model/frameworks/torch.md
-          - Python: user_guides/ml/model/frameworks/torch.md
-        - Model Schema: user_guides/ml/model/schema.md
-        - Input Example: user_guides/ml/model/input.md
+          - TensorFlow: user_guides/mlops/registry/frameworks/tf.md
+          - Scikit-learn: user_guides/mlops/registry/frameworks/skl.md
+          - Python: user_guides/mlops/registry/frameworks/python.md
+        - Model Schema: user_guides/mlops/registry/model_schema.md
+        - Input Example: user_guides/mlops/registry/input_example.md
       - Model Serving:
-        - user_guides/ml/deployment/index.md
-        - Frameworks:
-            - TensorFlow: user_guides/ml/model/frameworks/tf.md
-            - Scikit-Learn: user_guides/ml/model/frameworks/skl.md
-            - PyTorch: user_guides/ml/model/frameworks/torch.md
-            - Python: user_guides/ml/model/frameworks/torch.md
-        - Predictor: user_guides/ml/deployment/predictor.md
-        - Transformer: user_guides/ml/deployment/transformer.md
-        - Resource Configuration: user_guides/ml/deployment/resources.md
-        - Inference Logger: user_guides/ml/deployment/inference-logger.md
-        - Inference Batcher: user_guides/ml/deployment/inference-batcher.md
-      - Vector Database: user_guides/ml/vector_database/vector_database.md
+        - user_guides/mlops/deployment/index.md
+        - Predictor: user_guides/mlops/deployment/predictor.md
+        - Transformer: user_guides/mlops/deployment/transformer.md
+        - Resource Configuration: user_guides/mlops/deployment/resources.md
+        - Inference Logger: user_guides/mlops/deployment/inference-logger.md
+        - Inference Batcher: user_guides/mlops/deployment/inference-batcher.md
+      - Vector Database: user_guides/mlops/vector_database/index.md
     - Integrations:
       - Python: integrations/dummy.md
       - Databricks: integrations/dummy.md
