@@ -136,7 +136,7 @@ uploaded_file_path = dataset_api.upload("my_transformer.py", "Resources", overwr
 transformer_script_path = os.path.join("/Projects", project.name, uploaded_file_path)
 ```
 
-### Step 4: Configure a transformer
+### Step 4: Define a transformer
 
 ```python
 

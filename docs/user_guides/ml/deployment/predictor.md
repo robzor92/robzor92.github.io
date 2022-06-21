@@ -126,7 +126,7 @@ uploaded_file_path = dataset_api.upload("my_predictor.py", "Resources", overwrit
 predictor_script_path = os.path.join("/Projects", project.name, uploaded_file_path)
 ```
 
-### Step 4: Configure predictor
+### Step 4: Define predictor
 
 ```python
 
