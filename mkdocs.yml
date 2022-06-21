@@ -70,12 +70,12 @@ nav:
         - Statistics: user_guides/fs/feature_group/statistics.md
       - Feature View:
         - user_guides/fs/feature_view/index.md
-        - Overview: user_guides/fs/dummy.md
-        - Query: user_guides/fs/dummy.md
-        - Batch data: user_guides/fs/dummy.md
-        - Online vectors: user_guides/fs/dummy.md
-        - Training data: user_guides/fs/dummy.md
-        - Transformation Functions: user_guides/fs/dummy.md
+        - Feature View: user_guides/fs/feature_view/overview.md
+        - Training data: user_guides/fs/feature_view/training-data.md
+        - Batch data: user_guides/fs/feature_view/batch-data.md
+        - Feature vectors: user_guides/fs/feature_view/feature-vectors.md
+        - Query: user_guides/fs/feature_view/query.md
+        - Transformation Functions: user_guides/fs/feature_view/transformation-function.md
       - Tags and Keywords: user_guides/fs/dummy.md
     - MLOps:
       - user_guides/mlops/index.md
