@@ -5,7 +5,7 @@
 In this guide, you will learn how to create a new deployment for a trained model.
 
 !!! warning
-    This guide assumes that a model has already been trained and saved into the Model Registry. To learn how to create a model in the Model Registry, see [Model Registry Guide](../model/index.md)
+    This guide assumes that a model has already been trained and saved into the Model Registry. To learn how to create a model in the Model Registry, see [Model Registry Guide](../registry/frameworks/tf.md)
 
 Deployments are used to unify the different components involved in making one or more trained models online and accessible to compute predictions on demand. In each deployment, there are three main components to consider:
 

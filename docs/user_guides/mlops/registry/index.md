@@ -18,9 +18,9 @@ Follow these framework-specific guides to export a Model to the Model Registry.
 
 ## Model Schema
 
-A [Model schema](model_schema/index.md) describes the input and outputs for a model. It provides a functional description of the model which makes it simpler to get started working with it. For example if the model inputs a tensor, the model schema can define the shape and data type of the tensor.
+A [Model schema](model_schema.md) describes the input and outputs for a model. It provides a functional description of the model which makes it simpler to get started working with it. For example if the model inputs a tensor, the model schema can define the shape and data type of the tensor.
 
 
 ## Input Example
 
-An [Input example](input_example/index.md) provides an instance of a valid model input. Input examples are stored with the model as separate artifacts.
+An [Input example](input_example.md) provides an instance of a valid model input. Input examples are stored with the model as separate artifacts.
