@@ -53,7 +53,7 @@ Set the `model_schema` parameter in the `create_model` function and call `save()
 
 model = mr.tensorflow.create_model(name="mnist",
                                    model_schema=model_schema)
-model.save("...")
+model.save("./model")
 
 ```
 

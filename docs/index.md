@@ -18,7 +18,7 @@ hide:
           </div>
           <div class="side-holder">
             <div class="side-content">
-              <div class="name_item ingrey">frameworks</div>
+              <div class="name_item ingrey">Frameworks</div>
               <div class="w-layout-grid">
                 <div class="rec_frame">
                   <div class="name_item">Pandas</div>
@@ -212,13 +212,13 @@ pointer-events: initial;
               </div>
               <div class="frame_with_arrow">
                 <div class="rec_frame">
-                  <div class="name_item">Model Registry</div>
+                  <div class="name_item"><a href="/user_guides/mlops/registry/">Model Registry</a></div>
                 </div>
                 <div class="arrowdown"><img src="images/icons8-thick-arrow-pointing-down.svg" loading="lazy" alt=""></div>
               </div>
               <div class="frame_with_arrow">
                 <div class="rec_frame">
-                  <div class="name_item">Model <br>Deployment</div>
+                  <div class="name_item"><a href="/user_guides/mlops/deployment/">Model <br>Deployment</a></div>
                 </div>
               </div>
             </div>

@@ -37,7 +37,7 @@ Set the `input_example` parameter in the `create_model` function and call `save(
 
 model = mr.tensorflow.create_model(name="mnist",
                                    input_example=input_example)
-model.save("...")
+model.save("./model")
 
 ```
 
