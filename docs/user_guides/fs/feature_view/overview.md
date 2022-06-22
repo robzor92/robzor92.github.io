@@ -1,27 +1,29 @@
 # Feature View
 
-Feature view is a collection of feature groups and supports all common use cases of model development and deployment. You can create [training datasets](training-data.md), create [batch data](batch-data.md) and get [feature vectors](feature-vectors.md).
+A feature view is a set of features that come from one or more feature groups. It is a logical view over the feature groups, as the feature data is only stored in feature groups. Feature views are used to read feature data for both training and serving (online and batch). You can create [training datasets](training-data.md), create [batch data](batch-data.md) and get [feature vectors](feature-vectors.md).
 
 If you want to understand more about the concept of feature view, you can refer to [here](../../../concepts/fs/feature_view/fv_overview.md).
 
 ## Creation
-[Query](./query.md) and [transformation function](./transformation-function.md) are the building blocks of feature view. You can define your set of features by `query`. You can also define `labels`, which is useful when you create training datasets for classification tasks. Furthermore, in python client, each features can be attached by a transformation function which can for example performs feature normalisation.
+[Query](./query.md) and [transformation function](./transformation-function.md) are the building blocks of a feature view. You can define your set of features by building a `query`. You can also define which columns in your feature view are the `labels`, which is useful for supervised machine learning tasks. Furthermore, in python client, each feature can be attached to its own transformation function. This way, when a feature is read (for training or scoring), the transformation is executed on-demand - just before the feature data is returned. For example, when a client reads a numerical feature, the feature value could be normalized by a StandardScalar transformation function before it is returned to the client.
 
 === "Python"
 
     ```python
     # create a simple feature view
-    feature_view = feature_store.create_feature_view(
+    feature_view = fs.create_feature_view(
         name='transactions_view',
         query=query
     )
     
     # create a feature view with transformation and label
-    feature_view = feature_store.create_feature_view(
+    feature_view = fs.create_feature_view(
         name='transactions_view',
         query=query,
         labels=["fraud_label"],
-        transformation_functions={"feature_name": transformation_function}
+        transformation_functions={
+            "amount": fs.get_transformation_function(name="standard_scaler", version=1)
+        }
     )
     ```
 
@@ -45,11 +47,11 @@ If you want to understand more about the concept of feature view, you can refer 
 You can refer to [query](./query.md) and [transformation function](./transformation-function.md) for creating `query` and `transformation_function`.
 
 ## Retrieval
-Once you have created a feature view, you can retrieve it by specifying a name and a version.
+Once you have created a feature view, you can retrieve it by its name and version.
 
 === "Python"
     ```python
-    feature_view = feature_store.get_feature_view(name="transactions_view", version=1)
+    feature_view = fs.get_feature_view(name="transactions_view", version=1)
     ```
 === "Java"
     ```java
@@ -70,7 +72,7 @@ If there are some feature view instances which you do not use anymore, you can d
 
 ## Tags
 
-Feature view also supports tags. You can attach, get and remove tags. You can refer to [here]() if you want to learn more about how tags work.
+Feature views also support tags. You can attach, get, and remove tags. You can refer to [here]() if you want to learn more about how tags work.
 
 === "Python"
     ```python
@@ -98,4 +100,4 @@ Feature view also supports tags. You can attach, get and remove tags. You can re
     ```
 
 ## Next
-Once you have created a feature view, next we can [create training data](./training-data.md)
+Once you have created a feature view, you can now [create training data](./training-data.md)
