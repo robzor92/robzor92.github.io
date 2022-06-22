@@ -211,7 +211,7 @@ pointer-events: initial;
             <div class="side-content">
               <div class="frame_with_arrow">
                 <div class="rec_frame">
-                  <div class="name_item">Experiments <br>&amp; Model Training</div>
+                  <div class="name_item"><a href="/concepts/mlops/training/">Experiments <br>&amp; Model Training</a></div>
                 </div>
                 <div class="arrowdown"><img src="images/icons8-thick-arrow-pointing-down.svg" loading="lazy" alt=""></div>
               </div>
@@ -223,7 +223,7 @@ pointer-events: initial;
               </div>
               <div class="frame_with_arrow">
                 <div class="rec_frame">
-                  <div class="name_item"><a href="/user_guides/mlops/deployment/">Model <br>Deployment</a></div>
+                  <div class="name_item"><a href="/user_guides/mlops/serving/">Model <br>Deployment</a></div>
                 </div>
               </div>
             </div>

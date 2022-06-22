@@ -5,7 +5,7 @@
 In this guide, you will learn how to configure a predictor for a trained model.
 
 !!! warning
-    This guide assumes that a model has already been trained and saved into the Model Registry. To learn how to create a model in the Model Registry, see [Model Registry Guide](../model/index.md)
+    This guide assumes that a model has already been trained and saved into the Model Registry. To learn how to create a model in the Model Registry, see [Model Registry Guide](../registry/frameworks/tf.md)
 
 Predictors are the main component of deployments. They are responsible for running a model server that loads a trained model, handles inference requests and returns predictions. They can be configured to use different model servers, serving tools, log specific inference data or scale differently. In each predictor, you can configure the following components:
 

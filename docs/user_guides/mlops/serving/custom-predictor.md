@@ -22,4 +22,4 @@ To configure a custom predictor, users must provide a python script implementing
 
 
 
-The predictor script should be available via a local file system path or a path on HopsFS. The path to this script then has to be provided when calling `deploy()` or `create_predictor()` methods. Find more details in the [Predictor Reference](predictor_api.md).
+The predictor script should be available via a local file system path or a path on HopsFS. The path to this script then has to be provided when calling `deploy()` or `create_predictor()` methods.
