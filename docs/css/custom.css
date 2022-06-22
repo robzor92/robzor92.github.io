@@ -6,6 +6,10 @@
   --border-radius-variable: 5px;
 }
 
+.md-footer__inner:not([hidden]) {
+  display: none
+}
+
 /* Lex did stuff here */
 .svg_topnav{
   width: 12px;
