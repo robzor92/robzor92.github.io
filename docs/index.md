@@ -2,9 +2,14 @@
 hide:
 - navigation
 - toc
+- title
 ---
 
-#
+<style>
+  .md-typeset h1 {
+      font-size: 0em;
+  }
+</style>
 
 <div class="marctech_main">
     <div class="collumns w-row">
