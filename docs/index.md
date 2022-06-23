@@ -229,7 +229,10 @@ pointer-events: initial;
             </div>
             <div class="side-content">
               <div class="rec_frame">
-                <div class="name_item">Online <br>&amp; Batch Apps</div>
+                <div class="name_item">Online Apps</div>
+              </div>
+               <div class="rec_frame">
+                <div class="name_item">Batch Apps</div>
               </div>
             </div>
             <div class="side-content">

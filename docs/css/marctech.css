@@ -20,10 +20,11 @@
 }
 
 .image_logo{
-  width: 50%;
+  width: 69%;
   background-color: white;
   z-index: 50;
   padding: 0px 15px 0px 15px;
+  margin-bottom: 10px;
 }
 
 .layer_02{
@@ -351,7 +352,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 750px;
-  height: 800px;
+  height: 670px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 20px 10px;
@@ -705,7 +706,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 730px;
+  height: 630px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
