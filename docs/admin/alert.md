@@ -9,9 +9,9 @@ In order to send alerts we first need to configure the _Alert manager_.
 Administrator account on a Hopsworks cluster.
 
 ### Step 1: Go to alerts configuration
-To do that click on your name in the top right corner of the navigation bar and choose Cluster Settings from the dropdown menu.
-In the Cluster Settings' Alerts tab you can configure the alert manager to send alerts
-via email, slack or pagerduty.
+To configure the _Alert manager_ click on your name in the top right corner of the navigation bar and choose
+Cluster Settings from the dropdown menu. In the Cluster Settings' Alerts tab you can configure the alert 
+manager to send alerts via email, slack or pagerduty.
 
 <figure>
   <a href="../../assets/images/alerts/configure-alerts.png">
@@ -41,7 +41,7 @@ Optionally cluster wide Email alert receivers can be added in _Default receiver 
 These receivers will be available to all users when they create event triggered [alerts](../../user_guides/projects/jobs/alert).
 
 ### Step 3: Configure Slack Alerts
-Alert can also be sent via Slack message. To be able to send Slack messages you first need to configure
+Alerts can also be sent via Slack messages. To be able to send Slack messages you first need to configure
 a Slack webhook. Click on the _Configure_ button on the left side of the **slack** row and past in your
 [Slack webhook](https://api.slack.com/messaging/webhooks) in _Webhook_.
 
