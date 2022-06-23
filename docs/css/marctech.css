@@ -3,8 +3,25 @@
   --md-secondary-fg-color: #188a64;
   --md-tertiary-fg-color: #0d493550;
   --md-quaternary-fg-color: #fdfdfd;
+  --md-fiftuary-fg-color: #2471cf;
   --border-radius-variable: 5px;
   --border-width:1px;
+}
+
+.marctech_main a{
+  color: var(--md-fiftuary-fg-color);
+  border-bottom: 1px dotted var(--md-fiftuary-fg-color) !important;
+  text-decoration: none
+}
+
+.marctech_main a:hover{
+  border-bottom: 1px dotted var(--md-primary-fg-color)!important;
+}
+
+.marctech_main a:visited{
+  color: var(--md-tertiary-fg-color);
+  border-bottom: 1px dotted var(--md-tertiary-fg-color) !important;
+
 }
 
 .w-layout-grid {
