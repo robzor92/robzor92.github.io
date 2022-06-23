@@ -1,9 +1,13 @@
 # Update Your Profile and Credentials
 
 ## Introduction
+A profile is required to access Hopsworks. A profile is created when a user registers and can be updated via Account settings.
 
 ## Prerequisites
 An account on a Hopsworks cluster.
+
+Updating profile and credentials is not supported if you are using Third-party Identity Providers like Kerberos, LDAP, or OAuth 
+to authenticate to Hopsworks.
 
 ### Step 1: Go to your Account settings
 After you have logged in, in the upper right-hand corner of the screen, you will see your name. Click on your name,

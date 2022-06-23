@@ -1,7 +1,14 @@
 # Configure Alerts
+
+## Introduction
 Alerts are sent from Hopsworks using Prometheus' 
 [Alert manager](https://prometheus.io/docs/alerting/latest/alertmanager/).
 In order to send alerts we first need to configure the _Alert manager_.
+
+## Prerequisites
+Administrator account on a Hopsworks cluster.
+
+### Step 1: Go to alerts configuration
 To do that click on your name in the top right corner of the navigation bar and choose Cluster Settings from the dropdown menu.
 In the Cluster Settings' Alerts tab you can configure the alert manager to send alerts
 via email, slack or pagerduty.
@@ -13,7 +20,7 @@ via email, slack or pagerduty.
   <figcaption>Configure alerts</figcaption>
 </figure>
 
-### 1. Email Alerts
+### Step 2: Configure Email Alerts
 To send alerts via email you need to configure an SMTP server. Click on the _Configure_ 
 button on the left side of the **email** row and fill out the form that pops up.
 
@@ -31,9 +38,9 @@ button on the left side of the **email** row and fill out the form that pops up.
   CRAM-MD5, LOGIN or PLAIN.
 
 Optionally cluster wide Email alert receivers can be added in _Default receiver emails_.
-These receivers will be available to all users when they create event triggered [alerts](../compute/alerts.md).
+These receivers will be available to all users when they create event triggered [alerts](../../user_guides/projects/jobs/alert).
 
-### 2. Slack Alerts
+### Step 3: Configure Slack Alerts
 Alert can also be sent via Slack message. To be able to send Slack messages you first need to configure
 a Slack webhook. Click on the _Configure_ button on the left side of the **slack** row and past in your
 [Slack webhook](https://api.slack.com/messaging/webhooks) in _Webhook_.
@@ -46,9 +53,9 @@ a Slack webhook. Click on the _Configure_ button on the left side of the **slack
 </figure>
 
 Optionally cluster wide Slack alert receivers can be added in _Slack channel/user_.
-These receivers will be available to all users when they create event triggered [alerts](../compute/alerts.md).
+These receivers will be available to all users when they create event triggered [alerts](../../user_guides/projects/jobs/alert).
 
-### 3. Pagerduty
+### Step 4: Configure Pagerduty Alerts
 Pagerduty is another way you can send alerts from Hopsworks. Click on the _Configure_ button on the left side of 
 the **pagerduty** row and fill out the form that pops up. 
 
@@ -71,7 +78,8 @@ Then adding the Service key/Routing key of the receiver(s). PagerDuty provides
 [documentation](https://www.pagerduty.com/docs/guides/prometheus-integration-guide/) on how to integrate with 
 Prometheus' Alert manager.
 
-### Advanced configuration
+
+### Step 5: Advanced configuration
 If you are familiar with Prometheus' [Alert manager](https://prometheus.io/docs/alerting/latest/alertmanager/) 
 you can also configure alerts by editing the _yaml/json_ file directly.  
 
@@ -95,4 +103,7 @@ global:
  ...
 ```
 
-To test the alerts by creating triggers from Jobs and Feature group validations see [Alerts](../compute/alerts.md).
+To test the alerts by creating triggers from Jobs and Feature group validations see [Alerts](../../user_guides/projects/jobs/alert).
+
+## Conclusion
+In this guide you learned how to configure alerts in Hopsworks.

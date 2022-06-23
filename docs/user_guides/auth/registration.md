@@ -1,9 +1,11 @@
 # Register A New Account On Hopsworks
 
 ## Introduction
+Hopsworks supports different methods of authentication. 
+To use username and password as the method of authentication, you first need to register.
 
 ## Prerequisites
-A Hopsworks cluster.
+Registration enabled Hopsworks cluster.
 
 The process for registering a new account is as follows
 

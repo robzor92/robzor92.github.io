@@ -1,8 +1,13 @@
 # Create An Application in Okta
 
+## Introduction
 This example uses an Okta development account to create an application that will represent a Hopsworks client in the 
-identity provider. To create a developer account go to [Okta developer](https://developer.okta.com/signup/).
+identity provider.
 
+## Prerequisites
+Okta development account. To create a developer account go to [Okta developer](https://developer.okta.com/signup/).
+
+### Step 1: Register Hopsworks as an application in your identity provider
 After creating a developer account register a client by going to _Applications_ and click on **Create App Integration**.
 
   <figure>
@@ -57,9 +62,10 @@ match all groups. See [Group mapping](../create-client/#group-mapping) on how to
     <figcaption>Group claim</figcaption>
   </figure>
 
+### Step 2: Get the nessary fields for client registration
 After the application is created go back to _Applications_ and click on the application you just created. Use the
 _Okta domain_ (_Connection URL_), _client id_ and _client secret_ generated for your app in the 
-[Identity Provider registration](./create-client.md) in Hopsworks.
+[Identity Provider registration](../create-client) in Hopsworks.
 
   <figure>
     <a  href="../../../assets/images/admin/oauth2/overview.png">
@@ -71,4 +77,8 @@ _Okta domain_ (_Connection URL_), _client id_ and _client secret_ generated for 
 !!! note
 
     When copying the domain in the figure above make sure to add the url scheme (http:// or https://) when using it 
-    in the _Connection URL_ in the [Identity Provider registration form](./create-client.md).
+    in the _Connection URL_ in the [Identity Provider registration form](../create-client).
+
+## Conclusion
+In this guide you learned how to create a client in your Okta identity provider and 
+acquire a _client id_ and a _client secret_.

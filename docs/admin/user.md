@@ -1,8 +1,14 @@
 # User Management
+
+## Introduction
 Whether you run Hopsworks on-premise, or on the cloud using [hopsworks.ai](https://managed.hopsworks.ai), 
 you have a Hopsworks cluster which contains all users and projects.
 
-## Cluster users
+## Prerequisites
+Administrator account on a Hopsworks cluster.
+
+### Step 1: Go to user management
+
 All the users of your Hopsworks instance have access to your cluster with different access rights. 
 You can find them by clicking on your name in the top right corner of the navigation bar and choosing _Cluster 
 Settings_ from the dropdown menu and going to the _Users_ tab (You need to have _Admin_ role to get access to the 
@@ -15,15 +21,18 @@ _Cluster Settings_ page).
   <figcaption>Active Users</figcaption>
 </figure>
 
-### Cluster roles
+### Step 2: Manage user roles
 
 Roles let you manage the access rights of a user to the cluster.
 
 - User: users with this role are only allowed to use the cluster by creating a limited number of projects.
 - Admin: users with this role are allowed to manage the cluster. This includes accepting new users to the cluster or 
-  blocking them, managing user quota, [configure alerts](./alert.md) and setting up [authentication methods](./auth.md).  
+  blocking them, managing user quota, [configure alerts](../alert) and setting up [authentication methods](../auth).  
 
-## Validating and blocking users
+You can change the role of a user by clicking on the _select dropdown_ that shows the current role of the user.
+
+### Step 3: Validating and blocking users
+
 By default, a user who register on Hopsworks using their own credentials are not granted access to the cluster. 
 First, a user with an admin role needs to validate their account.
 
@@ -55,13 +64,11 @@ Blocked users will appear on the lower section of the page. Click on _display bl
 users in your cluster. If a user is blocked by mistake you can reactivate it by clicking on the check mark icon 
 that corresponds to that user in the blocked users list. 
 
-You can also change the role of a user by clicking on the _select dropdown_ that shows the current role of the user.
-
 If there are too many users in your cluster, use the search box (available for blocked users too) to filter users by 
 name or email. It is also possible to filter activated users by role. For example to see all administrators in you 
 cluster click on the _select dropdown_ to the right of the search box and choose _Admin_. 
 
-## Create users 
+### Step 4: Create a new users
 
 If you want to allow users to login without registering you can pre-create them by clicking on _New user_.
 
@@ -87,10 +94,10 @@ it securely to the user.
   <figcaption>Copy temporary password</figcaption>
 </figure>
 
-## Reset user password
+### Step 5: Reset user password
 
 In the case where a user loses her/his password and can not recover it with the 
-[password recovery](../compute/auth/recoverPassword.md), an administrator can reset it for them.
+[password recovery](../../user_guides/auth/recovery), an administrator can reset it for them.
 
 On the bottom of the _Users_ page click on the _Reset a user password_ link. A popup window with a dropdown for 
 searching users by name or email will open. Find the user and click on _Reset new password_.
@@ -122,3 +129,6 @@ A user with a temporary password will see a warning message when going to _User 
 !!! Note
 
     A temporary password should be changed as soon as possible.
+
+## Conclusion
+In this guide you learned how to manage users in Hopsworks.

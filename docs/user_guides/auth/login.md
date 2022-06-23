@@ -1,6 +1,8 @@
 # Log in To Hopsworks
 
 ## Introduction
+Sometimes it is necessary to login to a platform before using, this is also the case with Hopsworks.
+Hopsworks supports different methods of authentication. Here we will look at authentication using username and password.
 
 ## Prerequisites
 An account on a Hopsworks cluster.

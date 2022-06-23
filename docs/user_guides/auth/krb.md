@@ -1,9 +1,13 @@
 # Login using Kerberos
 
 ## Introduction
+Sometimes it is necessary to login to a platform before using, this is also the case with Hopsworks.
+Hopsworks supports different methods of authentication. Here we will look at authentication using Kerberos.
 
 ## Prerequisites
-A Hopsworks cluster with Kerberos authentication.
+
+A Hopsworks cluster with Kerberos authentication. 
+See [Configure Kerberos](../../../admin/ldap/configure-krb) on how to configure Kerberos on your cluster.
 
 ### Step 1: Log in with Kerberos
 If Kerberos is configured you will see a _Log in using_ alternative on the login page. Choose Kerberos and click on 

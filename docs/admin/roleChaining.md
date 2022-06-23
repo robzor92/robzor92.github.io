@@ -12,6 +12,7 @@ To use Role chaining, you need to first setup IAM roles in AWS:
 Before you begin this guide you'll need the following:
 
 - A Hopsworks cluster running on EC2.
+- Administrator account on a Hopsworks cluster.
 
 ### Step 1: Create an instance profile role
 Create an instance profile role with policies that will allow it to assume all resource roles that we can assume from the Hopsworks cluster.

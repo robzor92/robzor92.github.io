@@ -1,9 +1,12 @@
 # Login using LDAP
 
 ## Introduction
+Sometimes it is necessary to login to a platform before using, this is also the case with Hopsworks.
+Hopsworks supports different methods of authentication. Here we will look at authentication using LDAP.
 
 ## Prerequisites
-A Hopsworks cluster with LDAP authentication.
+A Hopsworks cluster with LDAP authentication. 
+See [Configure LDAP](../../../admin/ldap/configure-ldap) on how to configure LDAP on your cluster.
 
 ### Step 1: Log in with LDAP
 If LDAP is configured you will see a _Log in using_ alternative on the login page. Choose LDAP and type in your 

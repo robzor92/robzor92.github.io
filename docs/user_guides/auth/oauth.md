@@ -1,9 +1,12 @@
 # Login Using A Third-party Identity Provider
 
 ## Introduction
+Sometimes it is necessary to login to a platform before using, this is also the case with Hopsworks.
+Hopsworks supports different methods of authentication. Here we will look at authentication using Third-party Identity Provider.
 
 ## Prerequisites
-An OAuth configured Hopsworks cluster.
+A Hopsworks cluster with OAuth authentication. 
+See [Configure OAuth2](../../../admin/oauth2/create-client) on how to configure OAuth on your cluster.
 
 ### Step 1: Log in with OAuth
 If OAuth is configured a **Login with ** button will appear in the login page. Use this button to log in to Hopsworks

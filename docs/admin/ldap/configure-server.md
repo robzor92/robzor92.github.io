@@ -1,9 +1,15 @@
 # Configure Server for LDAP and Kerberos
 
+## Introduction
 LDAP and Kerberos integration need some configuration in the [Karamel](https://github.com/logicalclocks/karamel-chef) 
-cluster definition used to deploy your hopsworks cluster.
+cluster definition used to deploy your hopsworks cluster. This tutorial shows an administrator how to configure the application
+server for LDAP and Kerberos integration.
 
-## Server Configuration for LDAP 
+## Prerequisites
+An accessable LDAP domain. 
+A Kerberos Key Distribution Center (KDC) running on the same domain as Hopsworks (Only for Kerberos).
+
+### Step 1: Server Configuration for LDAP
 
 The LDAP attributes below are used to configure JNDI external resource in Payara. The JNDI resource will communicate 
 with your LDAP server to perform the authentication.
@@ -28,7 +34,7 @@ ldap:
 - security_credentials: contains the password of the user that will be used to query LDAP.
 - referral: whether to follow or ignore an alternate location in which an LDAP Request may be processed.
 
-## Server Configuration for Kerberos
+### Step 1: Server Configuration for Kerberos
 
 The Kerberos attributes are used to configure [SPNEGO](http://spnego.sourceforge.net/).
 SPNEGO is used to establish a secure context between the requester and the application server when using Kerberos 
@@ -61,3 +67,6 @@ Both Kerberos and LDAP attributes need to be specified to configure Kerberos. Th
 - spnego_server_conf: contains the configuration that will be appended to Payara's (application serve used to host hopsworks) 
   login.conf. In particular, it should contain useKeyTab=true, and the principal name to be used in the authentication phase. 
   Initiator should be set to false.
+
+## Conclusion
+In this guide you learned how to configure the application server for LDAP and Kerberos.
