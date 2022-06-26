@@ -21,16 +21,16 @@ hide:
               <div class="name_item ingrey">Frameworks</div>
               <div class="w-layout-grid">
                 <div class="rec_frame">
-                  <div class="name_item">Pandas</div>
+                  <div class="name_item"><a href="./concepts/fs/feature_group/feature_pipelines#feature-engineering-in-pandas">Pandas</a></div>
                 </div>
                 <div class="rec_frame">
-                  <div class="name_item">Flink</div>
+                  <div class="name_item"><a href="./concepts/fs/feature_group/feature_pipelines#feature-engineering-in-flink">Flink</a></div>
                 </div>
                 <div class="rec_frame">
-                  <div class="name_item">Spark</div>
+                  <div class="name_item"><a href="./concepts/fs/feature_group/feature_pipelines#feature-engineering-in-spark">Spark</a></div>
                 </div>
                 <div class="rec_frame">
-                  <div class="name_item">SQL</div>
+                  <div class="name_item"><a href="./concepts/fs/feature_group/feature_pipelines#feature-engineering-in-sql">SQL</a></div>
                 </div>
               </div>
             </div>
