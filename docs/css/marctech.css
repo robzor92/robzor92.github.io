@@ -11,8 +11,7 @@
 .marctech_main a{
   color: var(--md-fiftuary-fg-color);
   border-bottom: 1px dotted var(--md-fiftuary-fg-color) !important;
-  text-decoration: none
-}
+  text-decoration: dotted !important;}
 
 .marctech_main a:hover{
   border-bottom: 1px dotted var(--md-primary-fg-color)!important;
