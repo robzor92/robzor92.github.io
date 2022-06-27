@@ -131,7 +131,7 @@ pointer-events: initial;
                 <div class="div-block">
                   <div class="rec_frame_main no_content">
                     <div class="rec_frame_main-white">
-                      <div class="name_item_02"> <a href="/concepts/fs/feature_group/fg_overview/">Feature Groups</a></div> 
+                      <div class="name_item_02"> <a href="/concepts/fs/feature_group/fg_overview/">Feature Groups 3.1</a></div> 
                     </div>
                     <div class="rec_frame_main-white">
                       <div class="name_item_02"><a href="/concepts/fs/feature_group/external_fg/">External <span class="non-bold"></br>Feature Groups</span></a></div>
