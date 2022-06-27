@@ -7,9 +7,13 @@ A prediction service consists of the following components:
 * inference pipeline (for either batch predictions or online predictions)
 * a sink for predictions - either a store or a user-interface.
 
+## Analytical ML
+
 In the analytical ML figure below, we can see an analytical prediction service, where feature pipelines update the feature store with new feature data, running at some schedule (e.g., hourly, daily), and a batch program also runs on a schedule, reading batch scoring data from the feature store, computing predictions for that data with an embedded model, and writing those predictions to a database sink, from where the predictions are used for (predictive, prescriptive) analytical reports and/or to AI-enable operational services.
 
 <img src="/assets/images/concepts/mlops/analytical-prediction-service.svg">
+
+## Operational ML
 
 In the operational ML figure below, we can see an operational prediction service, where feature pipelines update the feature store with new feature data, running at some schedule (e.g., streaming, hourly, daily), and the operational service sends prediction requests to a model deployed on KServe via its secured Istio endpoint. A deployed model on KServer handles the prediction request by first retrieving pre-computed features from the feature store for the given request, and then building a feature vector that is scored by the model. The prediction result is returned to the client (the operational service). KServe logs both the feature values and the prediction results back to Hopsworks for further analysis and to help create new training data.
 

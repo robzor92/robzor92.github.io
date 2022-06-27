@@ -229,18 +229,18 @@ pointer-events: initial;
             </div>
             <div class="side-content">
               <div class="rec_frame">
-                <div class="name_item">Online Apps</div>
+                <div class="name_item"><a href="/user_guides/mlops/prediction_services/#operational-ml/">Operational ML</a></div>
               </div>
                <div class="rec_frame">
-                <div class="name_item">Batch Apps</div>
+                <div class="name_item"><a href="/user_guides/mlops/prediction_services/#analytical-ml/">Analytical ML</a></div>
               </div>
             </div>
             <div class="side-content">
               <div class="rec_frame">
-                <div class="name_item">BI Tools</div>
+                <div class="name_item"><a href="/concepts/mlops/bi_tools/">BI Tools</a></div>
               </div>
               <div class="rec_frame">
-                <div class="name_item">Analytics <br>&amp; Reports</div>
+                <div class="name_item"><a href="/concepts/mlops/opensearch/">Vector DB<br>OpenSearch</a></div>
               </div>
             </div>
           </div>
