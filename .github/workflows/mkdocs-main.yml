@@ -25,9 +25,6 @@ jobs:
           git config --global user.name MkDocs
           git config --global user.email mkdocs@docs.hopsworks.ai
 
-      - name: build docs
-        run: mkdocs build
-
-      - name: deploy docs
-        run: mkdocs gh-deploy
+      - name: mike deploy docs
+        run: mike deploy 3.1-SNAPSHOT dev -u --push
 
