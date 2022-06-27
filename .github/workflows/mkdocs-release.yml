@@ -18,7 +18,6 @@ jobs:
           python-version: '3.8'
 
       - name: install deps
-        working-directory: ./python
         run: cp ../README.md . && pip3 install pip==22.0.3 && pip3 install -e .[dev,docs]
 
       - name: setup git
