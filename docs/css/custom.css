@@ -20,9 +20,8 @@
   filter: invert(10);
 }
 
-.md-header {
-z-index: 50;
-height:100px;
+.md-header[data-md-state=shadow] {
+  box-shadow: 0 0 0 0;
 }
 
 .md-tabs__item:hover {
