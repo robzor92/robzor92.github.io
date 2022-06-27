@@ -1,6 +1,6 @@
 Hopsworks provides a complete self-service development environment for feature engineering and model training. You can develop programs as Jupyer noteooks or jobs, you can manage the Python libaries in a project using its conda environment, you can manage your source code in Git or BitBucket, and you can orchestrate jobs with Airflow.
 
-<img src="/assets/images/concepts/dev/dev-inside.svg">
+<img src="../../../assets/images/concepts/dev/dev-inside.svg">
 
 ### Jupyter Notebooks
 

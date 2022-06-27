@@ -1,6 +1,6 @@
 A feature pipeline is a program that orchestrates the execution of a dataflow graph of data validation, aggregation, dimensionality reduction, transformation, and other feature engineering steps on input data to create and/or update feature data. With HSFS, you can write feature pipelines in different languages as shown in the figure below. 
 
-<img src="/assets/images/concepts/fs/feature-pipelines.svg">
+<img src="../../../../assets/images/concepts/fs/feature-pipelines.svg">
 
 ### Data Sources
 Your feature pipeline needs to connect to some (external) data source to read the data to be processed. Python, Spark, and Flink have connectors to a huge number of different data sources, while SQL feature pipelines are often restricted to a single data source (for example, your connector to SnowFlake only runs SQL on SnowFlake). SparkSQL, in contrast, can be used over tables that originate in different  data sources.
@@ -18,7 +18,7 @@ If input data is impractically large or if it has a signnificant amount of redun
 ### Transformations
 Transformations are covered in more detail in [training/inference pipelines](../feature-view/training_inference_pipelines.md), as transformations typically happen after the feature store. If you store transformed features in feature groups, the feature data is no longer useful for EDA (as it near to impossible for Data Scientists to understand the transformed values). It also makes it impossible for inference pipelines to log untransformed feature values and predictions for an operational model. There is one use case for storing transformed features in feature groups - when you need to have ultra low latency when reading precomputed features (and online transformations when reading features add too much latency for your use case). The figure below shows to include transformations in your feature pipelines. 
 
-<img src="/assets/images/concepts/fs/feature-pipelines-with-transformations.svg">
+<img src="../../../../assets/images/concepts/fs/feature-pipelines-with-transformations.svg">
 
 ### Feature Engineering in Python
 Python is the most widely used framework for feature engineering due to its extensive library support for aggregations (Pandas), data validation (Great Expectations), and dimensionality reduction (embeddings, PCA), and transformations (in Scikit-Learn, TensorFlow, PyTorch). Python also supports open-source feature engineering frameworks used for automated feature engineering, such as [featuretools](https://www.featuretools.com/) that supports relational and temporal sources.

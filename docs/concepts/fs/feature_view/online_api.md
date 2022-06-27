@@ -1,6 +1,6 @@
 A feature vector is a row of features (without the primary key(s) and event timestamp):
 
-<img src="/assets/images/concepts/fs/feature-vector.svg">
+<img src="../../../../assets/images/concepts/fs/feature-vector.svg">
 
 The Feature View's online API provides methods to return an individual feature vector, or a batch of feature vectors, containing the latest feature values, given a valid primary key for the feature view.
 
