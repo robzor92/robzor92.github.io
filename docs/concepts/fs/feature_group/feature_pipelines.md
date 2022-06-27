@@ -39,8 +39,3 @@ You can do aggregation in SQL for data in your data warehouse or database.
 
 Flink is used for feature engineering when you need very fresh features computed in real-time. Flink pipelines are often written in Java, and provide native support for aggregations, with dimensionality reduction algorithms and transformations also possible in Java.
 
-
-### Alerting
-
-HSFS also supports alerts, that can be triggered when there are problems in your feature pipelines, for example, when a write fails due to an error or a failed expectation. You can send alerts to different alerting endpoints, such as email or Slack, that can be configured in the Hopsworks UI.
-

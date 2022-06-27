@@ -24,7 +24,7 @@ nav:
         - Write APIs: concepts/fs/feature_group/write_apis.md
         - Feature Pipelines: concepts/fs/feature_group/feature_pipelines.md
         - External Feature Groups: concepts/fs/feature_group/external_fg.md
-        - Feature Validation/Statistics: concepts/fs/feature_group/fg_statistics.md
+        - Data Validation/Stats/Alerts: concepts/fs/feature_group/fg_statistics.md
         - Versioning: concepts/fs/feature_group/versioning.md
       - Feature Views:
         - Overview: concepts/fs/feature_view/fv_overview.md
