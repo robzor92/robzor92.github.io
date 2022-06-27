@@ -24,13 +24,13 @@ nav:
         - Write APIs: concepts/fs/feature_group/write_apis.md
         - Feature Pipelines: concepts/fs/feature_group/feature_pipelines.md
         - External Feature Groups: concepts/fs/feature_group/external_fg.md
-        - Feature Validation/Statistics: concepts/fs/feature_group/fg_statistics.md
+        - Data Validation/Stats/Alerts: concepts/fs/feature_group/fg_statistics.md
         - Versioning: concepts/fs/feature_group/versioning.md
       - Feature Views:
         - Overview: concepts/fs/feature_view/fv_overview.md
-        - Training Data: concepts/fs/feature_view/training_data.md 
-        - Consistent Transformations: concepts/fs/feature_view/transformations.md
+        - Offline API: concepts/fs/feature_view/offline_api.md 
         - Online API: concepts/fs/feature_view/online_api.md
+        - Consistent Transformations: concepts/fs/feature_view/training_inference_pipelines.md
         - Statistics: concepts/fs/feature_view/statistics.md
         - Versioning: concepts/fs/feature_view/versioning.md
     - Projects:
@@ -39,6 +39,7 @@ nav:
         - CI/CD: concepts/projects/cicd.md
     - MLOps:
       - MLOps Flywheel: concepts/mlops/flywheel.md
+      - Model Training: concepts/mlops/training.md
       - Model Registry: concepts/mlops/registry.md
       - Model Serving: concepts/mlops/kserve.md # create, read, version
       - Vector Database: concepts/mlops/opensearch.md 
@@ -64,12 +65,10 @@ nav:
         - Usage: user_guides/fs/storage_connector/usage.md
       - Feature Group:
         - user_guides/fs/feature_group/index.md
-        - Batch: user_guides/fs/dummy.md
-        - Stream: user_guides/fs/dummy.md
-        - External: user_guides/fs/dummy.md
-        - Statistics: user_guides/fs/dummy.md
-        - Data Validation: user_guides/fs/dummy.md
-        - Alerts: user_guides/fs/dummy.md
+        - Create: user_guides/fs/feature_group/create.md
+        - Create External: user_guides/fs/feature_group/create_external.md
+        - Data Types and Schema management: user_guides/fs/feature_group/data_types.md
+        - Statistics: user_guides/fs/feature_group/statistics.md
       - Feature View:
         - user_guides/fs/feature_view/index.md
         - Overview: user_guides/fs/dummy.md
@@ -78,84 +77,89 @@ nav:
         - Online vectors: user_guides/fs/dummy.md
         - Training data: user_guides/fs/dummy.md
         - Transformation Functions: user_guides/fs/dummy.md
-        - Statistics: user_guides/fs/dummy.md
-        # - Feature Monitoring (later)
       - Tags and Keywords: user_guides/fs/dummy.md
-    - Models:
-      - Overview: user_guides/ml/tf.md
-      - Model:
-        - Frameworks:
-          - TensorFlow: user_guides/ml/model/frameworks/tf.md
-          - Scikit-Learn: user_guides/ml/model/frameworks/skl.md
-          - PyTorch: user_guides/ml/model/frameworks/torch.md
-          - Python: user_guides/ml/model/frameworks/torch.md
-        - Model Schema: user_guides/ml/model/schema.md
-        - Input Example: user_guides/ml/model/input.md
-      - Deployment:
-        - Frameworks:
-            - TensorFlow: user_guides/ml/model/frameworks/tf.md
-            - Scikit-Learn: user_guides/ml/model/frameworks/skl.md
-            - PyTorch: user_guides/ml/model/frameworks/torch.md
-            - Python: user_guides/ml/model/frameworks/torch.md
-        - Custom Predictor: user_guides/ml/deployment/predictor.md
-        - Transformer: user_guides/ml/deployment/transformer.md
-        - Resource Configuration: user_guides/ml/deployment/transformer.md
-        - Inference Logger: user_guides/ml/deployment/transformer.md
-        - Inference Batcher: user_guides/ml/deployment/transformer.md
-    - Integrations:
-      - Python: integrations/dummy.md
-      - Databricks: integrations/dummy.md
-      - AWS Sagemaker: integrations/dummy.md
-      - AWS EMR: integrations/dummy.md
-      - Azure HDInsight: integrations/dummy.md
-      - Azure Machine Learning: integrations/dummy.md
-      - Apache Spark: integrations/dummy.md
     - Projects:
-      - Authentication: user_guides/common/dummy.md
-      - Projects:
-          - Create Project: user_guides/common/project/create_project.md
-          - Add Members: user_guides/common/project/add_members.md
-      - Python:
-          - Install library: user_guides/common/python/python_install.md
-          - Export environment: user_guides/common/python/python_env_export.md
-          - Recreate environment: user_guides/common/python/python_env_recreate.md
-      - Jupyter:
-          - Run Spark Notebook: user_guides/common/jupyter/spark_notebook.md
-          - Run Python Notebook: user_guides/common/jupyter/python_notebook.md
-      - Jobs:
-          - Run PySpark Job: user_guides/common/jobs/pyspark_job.md
-          - Run Spark Job: user_guides/common/jobs/spark_job.md
-          - Run Python Job: user_guides/common/jobs/python_job.md
-          - Alerts: user_guides/common/jobs/alert.md
-      - OpenSearch:
-          - Connect: user_guides/common/opensearch/connect.md
-          - Vector Similarity: user_guides/common/opensearch/vector_similarity.md
-      - Airflow: user_guides/common/dummy.md
-      - Kafka:
-          - Create Schema: user_guides/common/kafka/create_schema.md
-          - Create Topic: user_guides/common/kafka/create_topic.md
-      - Git:
-          - Configure Git Provider: user_guides/common/git/configure_git_provider.md
-          - Clone Repository: user_guides/common/git/clone_repo.md
-      - Secrets:
-          - Create Secret: user_guides/common/secrets/create_secret.md
-      - Api Keys:
-          - Create API Key: user_guides/common/api_key/create_api_key.md
-      - Search: user_guides/common/dummy.md
-      - Hops File System (HopsFS): user_guides/common/dummy.md
+        - Authentication: user_guides/projects/dummy.md
+        - Projects:
+            - Create Project: user_guides/projects/project/create_project.md
+            - Add Members: user_guides/projects/project/add_members.md
+        - Python:
+            - Install library:
+                - Git source: user_guides/projects/python/python_install.md
+                - pip: user_guides/projects/python/python_install.md
+                - conda: user_guides/projects/python/python_install.md
+                - distribution: user_guides/projects/python/python_install.md
+            - Export environment: user_guides/projects/python/python_env_export.md
+            - Recreate environment: user_guides/projects/python/python_env_recreate.md
+        - Jupyter:
+            - Run Spark Notebook: user_guides/projects/jupyter/spark_notebook.md
+            - Run Python Notebook: user_guides/projects/jupyter/python_notebook.md
+        - Jobs:
+            - Run PySpark Job: user_guides/projects/jobs/pyspark_job.md
+            - Run Spark Job: user_guides/projects/jobs/spark_job.md
+            - Run Python Job: user_guides/projects/jobs/python_job.md
+            - Alerts: user_guides/projects/jobs/alert.md
+        - OpenSearch:
+            - Connect: user_guides/projects/opensearch/connect.md
+        - Kafka:
+            - Create Schema: user_guides/projects/kafka/create_schema.md
+            - Create Topic: user_guides/projects/kafka/create_topic.md
+            - Produce messages: user_guides/projects/kafka/produce_messages.md
+            - Consume messages: user_guides/projects/kafka/consume_messages.md
+        - Git:
+            - Configure Git Provider: user_guides/projects/git/configure_git_provider.md
+            - Clone Repository: user_guides/projects/git/clone_repo.md
+        - Secrets:
+            - Create Secret: user_guides/projects/secrets/create_secret.md
+        - Api Keys:
+            - Create API Key: user_guides/projects/api_key/create_api_key.md
+        - AWS IAM Roles: user_guides/projects/iam_role/iam_role_chaining.md
+    - MLOps:
+      - user_guides/mlops/index.md
+      - Model Registry:
+        - user_guides/mlops/registry/index.md
+        - Frameworks:
+          - TensorFlow: user_guides/mlops/registry/frameworks/tf.md
+          - Scikit-learn: user_guides/mlops/registry/frameworks/skl.md
+          - Python: user_guides/mlops/registry/frameworks/python.md
+        - Model Schema: user_guides/mlops/registry/model_schema.md
+        - Input Example: user_guides/mlops/registry/input_example.md
+      - Model Serving:
+        - user_guides/mlops/serving/index.md
+        - Predictor: user_guides/mlops/serving/predictor.md
+        - Transformer: user_guides/mlops/serving/transformer.md
+        - Inference Logger: user_guides/mlops/serving/inference-logger.md
+        - Inference Batcher: user_guides/mlops/serving/inference-batcher.md
+      - Vector Database: user_guides/mlops/vector_database/index.md
+    - Integrations:
+        - Python: integrations/dummy.md
+        - Databricks: integrations/dummy.md
+        - AWS Sagemaker: integrations/dummy.md
+        - AWS EMR: integrations/dummy.md
+        - Azure HDInsight: integrations/dummy.md
+        - Azure Machine Learning: integrations/dummy.md
+        - Apache Spark: integrations/dummy.md
   - Setup and Installation:
       - AWS:
           - Getting Started: setup_installation/aws/getting_started.md
-          - Limiting Permissions: setup_installation/aws/restrictive_permissions.md
           - Cluster Creation: setup_installation/aws/cluster_creation.md
+          - EKS/ECR integration: setup_installation/aws/eks_ecr_integration.md
+          - Limiting Permissions: setup_installation/aws/restrictive_permissions.md
+          - Cluster upgrade: 
+            - Version 2.4 or newer: setup_installation/aws/upgrade_2.4.md
+            - Version 2.2 or older: setup_installation/aws/upgrade.md
       - Azure:
           - Getting Started: setup_installation/azure/getting_started.md
-          - Limiting Permissions: setup_installation/azure/restrictive_permissions.md
           - Cluster Creation: setup_installation/azure/cluster_creation.md
+          - AKS/ACR integration: setup_installation/azure/aks_acr_integration.md
+          - Limiting Permissions: setup_installation/azure/restrictive_permissions.md
+          - Cluster upgrade: 
+            - Version 2.4 or newer: setup_installation/azure/upgrade_2.4.md
+            - Version 2.2 or older: setup_installation/azure/upgrade.md
       - GCP:
           - Getting Started: setup_installation/gcp/getting_started.md
-          - Limiting Permissions: setup_installation/gcp/restrictive_permissions.md
           - Cluster Creation: setup_installation/gcp/cluster_creation.md
+          - Limiting Permissions: setup_installation/gcp/restrictive_permissions.md
       - Common:
           - Services: setup_installation/common/services.md
           - Adding and Removing workers: setup_installation/common/adding_removing_workers.md
@@ -164,13 +168,6 @@ nav:
           - GPU support: setup_installation/common/gpu_support.md
           - User management: setup_installation/common/user_management.md
           - Managed RonDB: setup_installation/common/rondb.md
-          - Cluster upgrade:
-              - From version 2.4 or newer:
-                  - AWS: setup_installation/common/aws/upgrade_2.4.md
-                  - Azure: setup_installation/common/zure/upgrade_2.4.md
-              - From version 2.2 or older:
-                  - AWS: setup_installation/common/aws/upgrade.md
-                  - Azure: setup_installation/common/azure/upgrade.md
           - Single Sign On:
               - Hopsworks:
                   - OAuth2: setup_installation/common/sso/oauth.md
@@ -192,12 +189,10 @@ nav:
               - Configure LDAP: admin/ldap/configure-ldap.md
               - Configure Kerberos: admin/ldap/configure-krb.md
               - Configure server for LDAP and Kerberos: admin/ldap/configure-server.md
-      - Project management: administration/dummy.md
       - User Management: admin/user.md
       - Configure Alerts: admin/alert.md
       - Manage Services: admin/services.md
-      - Tags: administration/dummy.md
-      - Monitoring: administration/dummy.md
+      - IAM Role Chaining: admin/roleChaining.md 
   - API: reference_guides/index.md
   - Community: https://community.hopsworks.ai/
 
@@ -245,7 +240,8 @@ markdown_extensions:
     - admonition
     - codehilite
     - footnotes
-    - pymdownx.tabbed
+    - pymdownx.tabbed:
+        alternate_style: true
     - pymdownx.arithmatex
     - pymdownx.superfences
     - pymdownx.details

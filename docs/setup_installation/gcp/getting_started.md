@@ -24,8 +24,8 @@ In [Hopsworks.ai](managed.hopsworks.ai/) click on *Connect to GCP* or go to *Set
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/gcp/connect-gcp.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/gcp/connect-gcp.png" alt="GCP configuration page">
+    <a  href="../../../assets/images/setup_installation/managed/gcp/connect-gcp.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/gcp/connect-gcp.png" alt="GCP configuration page">
     </a>
     <figcaption>GCP configuration page</figcaption>
   </figure>
@@ -104,8 +104,8 @@ In [Hopsworks.ai](managed.hopsworks.ai/), select *Create cluster*:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/create-instance.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/create-instance.png" alt="Create a Hopsworks cluster">
+    <a  href="../../../assets/images/setup_installation/managed/common//create-instance.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/create-instance.png" alt="Create a Hopsworks cluster">
     </a>
     <figcaption>Create a Hopsworks cluster</figcaption>
   </figure>
@@ -129,8 +129,8 @@ Press *Next*:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/gcp/create-instance-general.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/gcp/create-instance-general.png" alt="General configuration">
+    <a  href="../../../assets/images/setup_installation/managed/gcp/create-instance-general.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/gcp/create-instance-general.png" alt="General configuration">
     </a>
     <figcaption>General configuration</figcaption>
   </figure>
@@ -146,35 +146,41 @@ Press *Next*:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/create-instance-workers-static.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/create-instance-workers-static.png" alt="Create a Hopsworks cluster, static workers configuration">
+    <a  href="../../../assets/images/setup_installation/managed/common/create-instance-workers-static.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/create-instance-workers-static.png" alt="Create a Hopsworks cluster, static workers configuration">
     </a>
     <figcaption>Create a Hopsworks cluster, static workers configuration</figcaption>
   </figure>
 </p>
 
-Enter *Email* of the instances *service account* that you created [above](#step-22-creating-a-service-account). If you followed the instruction it should be *hopsworks-ai-instances@\[PROJECT_ID\].iam.gserviceaccount.com* with \[PROJECT_ID\] the name of your project
-
-Press *Review and submit*:
+Enter *Email* of the instances *service account* that you created [above](#step-22-creating-a-service-account). If you followed the instruction it should be *hopsworks-ai-instances@\[PROJECT_ID\].iam.gserviceaccount.com* with \[PROJECT_ID\] the name of your project:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/gcp/create-instance-service-account.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/gcp/create-instance-service-account.png" alt="Set the instance service account">
+    <a  href="../../../assets/images/setup_installation/managed/gcp/create-instance-service-account.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/gcp/create-instance-service-account.png" alt="Set the instance service account">
     </a>
     <figcaption>Set the instance service account</figcaption>
   </figure>
 </p>
 
-!!! note
-    If you are an enterprise user you will have one more step before the *Subnet* selection. In this step, you will be asked to set the backups retention policy. More details about this step [here](cluster_creation.md#step-5-set-the-backup-retention-policy)
+To backup the storage bucket data when taking a cluster backup we need to set a retention policy for the bucket. You can deactivate the retention policy by setting this value to 0 but this will block you from taking any backup of your cluster. Choose the retention period in days and click on *Review and submit*.
+
+<p align="center">
+  <figure>
+    <a  href="../../../assets/images/setup_installation/managed/gcp/create-instance-backup.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/gcp/create-instance-backup.png" alt="Choose the backup retention policy">
+    </a>
+    <figcaption>Choose the backup retention policy</figcaption>
+  </figure>
+</p>
 
 Review all information and select *Create*:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/gcp/create-instance-review.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/gcp/create-instance-review.png" alt="Review cluster information">
+    <a  href="../../../assets/images/setup_installation/managed/gcp/create-instance-review.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/gcp/create-instance-review.png" alt="Review cluster information">
     </a>
     <figcaption>Review cluster information</figcaption>
   </figure>
@@ -187,8 +193,8 @@ The cluster will start. This will take a few minutes:
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/booting.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/booting.png" alt="Booting Hopsworks cluster">
+    <a  href="../../../assets/images/setup_installation/managed/common/booting.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/booting.png" alt="Booting Hopsworks cluster">
     </a>
     <figcaption>Booting Hopsworks cluster</figcaption>
   </figure>
@@ -198,8 +204,8 @@ As soon as the cluster has started, you will be able to log in to your new Hopsw
 
 <p align="center">
   <figure>
-    <a  href="../../assets/images/running.png">
-      <img style="border: 1px solid #000;width:700px" src="../../assets/images/running.png" alt="Running Hopsworks cluster">
+    <a  href="../../../assets/images/setup_installation/managed/common/running.png">
+      <img style="border: 1px solid #000;width:700px" src="../../../assets/images/setup_installation/managed/common/running.png" alt="Running Hopsworks cluster">
     </a>
     <figcaption>Running Hopsworks cluster</figcaption>
   </figure>

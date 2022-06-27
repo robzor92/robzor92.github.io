@@ -3,8 +3,25 @@
   --md-secondary-fg-color: #188a64;
   --md-tertiary-fg-color: #0d493550;
   --md-quaternary-fg-color: #fdfdfd;
+  --md-fiftuary-fg-color: #2471cf;
   --border-radius-variable: 5px;
   --border-width:1px;
+}
+
+.marctech_main a{
+  color: var(--md-fiftuary-fg-color);
+  border-bottom: 1px dotted var(--md-fiftuary-fg-color) !important;
+  text-decoration: none
+}
+
+.marctech_main a:hover{
+  border-bottom: 1px dotted var(--md-primary-fg-color)!important;
+}
+
+.marctech_main a:visited{
+  color: var(--md-tertiary-fg-color);
+  border-bottom: 1px dotted var(--md-tertiary-fg-color) !important;
+
 }
 
 .w-layout-grid {
@@ -20,10 +37,11 @@
 }
 
 .image_logo{
-  width: 50%;
+  width: 69%;
   background-color: white;
   z-index: 50;
   padding: 0px 15px 0px 15px;
+  margin-bottom: 10px;
 }
 
 .layer_02{
@@ -35,7 +53,7 @@
 }
 
 .marctech_main {
-  margin-top:-50px;
+  margin-top:-20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -149,11 +167,11 @@
   position: relative;
   z-index: 1;
   display: inline-block;
-  min-width: 7vw;
+  min-width: 150px;
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
-  padding: 20px 10px;
+  padding: 10px 10px;
   border-style: solid;
   border-width: var(--border-width);
   border-color: #585858;
@@ -233,7 +251,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 150px;
-  height: 75px;
+  height: 55px;
   padding: 20px 10px;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -351,7 +369,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 750px;
-  height: 800px;
+  height: 670px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 20px 10px;
@@ -410,7 +428,7 @@
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
-  padding: 20px 10px;
+  padding: 5px 10px;
   border-style: solid;
   border-width: var(--border-width);
   border-color: #1eb182;
@@ -475,7 +493,8 @@
   display: inline-block;
   width: 100%;
   margin-top: 10px;
-  padding: 20px 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
   border-style: solid;
   border-width: var(--border-width);
   border-color: #1eb182;
@@ -550,6 +569,7 @@
 }
 
 .infra {
+  text-align: center;
   position: relative;
   z-index: 30;
   display: -webkit-box;
@@ -704,7 +724,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 790px;
+  height: 630px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;

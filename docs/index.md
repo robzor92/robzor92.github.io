@@ -2,9 +2,14 @@
 hide:
 - navigation
 - toc
+- title
 ---
 
-#
+<style>
+  .md-typeset h1 {
+      font-size: 0em;
+  }
+</style>
 
 <div class="marctech_main">
     <div class="collumns w-row">
@@ -18,19 +23,19 @@ hide:
           </div>
           <div class="side-holder">
             <div class="side-content">
-              <div class="name_item ingrey">frameworks</div>
+              <div class="name_item ingrey">Frameworks</div>
               <div class="w-layout-grid">
                 <div class="rec_frame">
-                  <div class="name_item">Pandas</div>
+                  <div class="name_item"><a href="./concepts/fs/feature_group/feature_pipelines#feature-engineering-in-pandas">Pandas</a></div>
                 </div>
                 <div class="rec_frame">
-                  <div class="name_item">Flink</div>
+                  <div class="name_item"><a href="./concepts/fs/feature_group/feature_pipelines#feature-engineering-in-flink">Flink</a></div>
                 </div>
                 <div class="rec_frame">
-                  <div class="name_item">Spark</div>
+                  <div class="name_item"><a href="./concepts/fs/feature_group/feature_pipelines#feature-engineering-in-spark">Spark</a></div>
                 </div>
                 <div class="rec_frame">
-                  <div class="name_item">SQL</div>
+                  <div class="name_item"><a href="./concepts/fs/feature_group/feature_pipelines#feature-engineering-in-sql">SQL</a></div>
                 </div>
               </div>
             </div>
@@ -42,35 +47,35 @@ hide:
                     <div class="db_frame-top"></div>
                     <div class="db_frame-mid"></div>
                   </div>
-                  <div class="name_item db">JDBC</div>
+                  <div class="name_item db"><a href="/user_guides/fs/storage_connector/creation/jdbc/">JDBC</a></div>
                 </div>
                 <div class="db_frame">
                   <div class="icondb">
                     <div class="db_frame-top"></div>
                     <div class="db_frame-mid"></div>
                   </div>
-                  <div class="name_item db">BigQuery</div>
+                  <div class="name_item db"><a href="/user_guides/fs/storage_connector/creation/bigquery/">BigQuery</a></div>
                 </div>
                 <div class="db_frame">
                   <div class="icondb">
                     <div class="db_frame-top"></div>
                     <div class="db_frame-mid"></div>
                   </div>
-                  <div class="name_item db">Object Store</div>
+                  <div class="name_item db"><a href="/user_guides/fs/storage_connector/creation/s3/">Object Store</a></div>
                 </div>
                 <div class="db_frame">
                   <div class="icondb">
                     <div class="db_frame-top"></div>
                     <div class="db_frame-mid"></div>
                   </div>
-                  <div class="name_item db">Snowflake</div>
+                  <div class="name_item db"><a href="/user_guides/fs/storage_connector/creation/snowflake/">Snowflake</a></div>
                 </div>
                 <div class="db_frame">
                   <div class="icondb">
                     <div class="db_frame-top"></div>
                     <div class="db_frame-mid"></div>
                   </div>
-                  <div class="name_item db">RedShift</div>
+                  <div class="name_item db"><a href="/user_guides/fs/storage_connector/creation/redshift/">RedShift</a></div>
                 </div>
               </div>
             </div>
@@ -96,7 +101,7 @@ hide:
               <div class="name_item">Serve</div>
             </div>
             <div class="round-frame bottom-left">
-              <div class="name_item">Share &amp; Re-use</div>
+              <div class="name_item">Share </br>&amp; Re-use</div>
             </div>
             <div class="round-frame top-left">
               <div class="name_item">Create</div>
@@ -114,7 +119,9 @@ pointer-events: initial;
           <div class="layer_01">
             <div class="logo-holder"><img src="images/hopsworks-logo-2022.svg" loading="lazy" alt="logo" class="image_logo"></div>
             <div class="rec_frame">
-              <div class="name_center">Project Based Collaboration</div>
+              <a href="/concepts/projects/governance/">
+                <div class="name_center">Project Based Collaboration</div>
+              </a>
             </div>
             <div class="columns_center w-row">
               <div class="column w-col w-col-6">
@@ -127,7 +134,7 @@ pointer-events: initial;
                       <div class="name_item_02"> <a href="/concepts/fs/feature_group/fg_overview/">Feature Groups</a></div> 
                     </div>
                     <div class="rec_frame_main-white">
-                      <div class="name_item_02">Extrernal <span class="non-bold"><br>Feature Groups</span></div>
+                      <div class="name_item_02"><a href="/concepts/fs/feature_group/external_fg/">External <span class="non-bold"></br>Feature Groups</span></a></div>
                     </div>
                   </div>
                 </div>
@@ -138,12 +145,12 @@ pointer-events: initial;
                 </div>
                 <div class="rec_frame_main no_content">
                   <div class="rec_frame_main-white">
-                    <div class="name_item_02">Feature Views</div>
+                    <div class="name_item_02"><a href="/concepts/fs/feature_view/fv_overview/">Feature Views</a></div>
                     <div class="rec_frame_main-white dotted">
-                      <div class="name_item_02 non-bold">Training Dataset</div>
+                      <div class="name_item_02 non-bold"><a href="/concepts/fs/feature_view/training_data/">Training Dataset</a></div>
                     </div>
                     <div class="rec_frame_main-white dotted">
-                      <div class="name_item_02 non-bold">Feature Vectors</div>
+                      <div class="name_item_02 non-bold"><a href="/concepts/fs/feature_view/online_api/">Feature Vectors</a></div>
                     </div>
                   </div>
                 </div>
@@ -152,7 +159,7 @@ pointer-events: initial;
             <div class="rec_frame_main">
               <div class="text_and_icon">
                 <div class="svg_icon w-embed"><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNjQiIGhlaWdodD0iNjQiCnZpZXdCb3g9IjAgMCA1MTIgNTEyIgpzdHlsZT0iIGZpbGw6I3VuZGVmaW5lZDsiPjxwYXRoIGQ9Ik01MyA0MTUuNjQ1YTMwLjAzNCAzMC4wMzQgMCAwMDMwIDMwSDQyOWEzMC4wMzQgMzAuMDM0IDAgMDAzMC0zMFYxNjcuNTEzSDUzek0zMDIuNjY3IDI2My41MzdhMTAgMTAgMCAxMTE0LjAwOC0xNC4yNzZsNDQuMTM3IDQzLjMxYTEwIDEwIDAgMDEwIDE0LjI3NmwtNDQuMTM3IDQzLjMwOWExMCAxMCAwIDExLTE0LjAwOC0xNC4yNzZsMzYuODYyLTM2LjE3MXptLTgwLjkgMTA5LjVsMzguMjU3LTE1MC41YTEwIDEwIDAgMTExOS4zODMgNC45MjdsLTM4LjI1NyAxNTAuNWExMCAxMCAwIDAxLTE5LjM4My00LjkyN3ptLTc3LjA3NC04MC40NjVsNDQuMTM3LTQzLjMxYTEwIDEwIDAgMTExNC4wMDggMTQuMjc2bC0zNi44NjIgMzYuMTcyIDM2Ljg2MiAzNi4xNzFhMTAgMTAgMCAwMS0xNC4wMDggMTQuMjc2bC00NC4xMzctNDMuMzA5YTEwIDEwIDAgMDEwLTE0LjI3NnpNNDI5IDY2LjM1NUg4M2EzMC4wMzQgMzAuMDM0IDAgMDAtMzAgMzB2NTEuMTU3SDQ1OVY5Ni4zNTVBMzAuMDM0IDMwLjAzNCAwIDAwNDI5IDY2LjM1NXoiPjwvcGF0aD48L3N2Zz4="></div>
-                <div class="name_item_02"><strong>     Metadata </strong>: <span class="non-bold">Search, Versioning, Statistics, Cod</span>e</div>
+                <div class="name_item_02">Search, Versioning, Statistics, Code</div>
               </div>
             </div>
             <div class="rec_frame_main">
@@ -163,17 +170,29 @@ pointer-events: initial;
             </div>
           </div>
           <div class="w-layout-grid grid-infra">
-            <div id="w-node-a2a9b648-f5dd-74e5-e1c2-f7aaf4fa1fcd-46672785" class="infra"><img src="images/icons8-azure.svg" loading="lazy" alt="" class="infra-icon">
-              <div class="name_item small">Azure</div>
+            <div id="w-node-a2a9b648-f5dd-74e5-e1c2-f7aaf4fa1fcd-46672785" class="infra">
+              <a href="/setup_installation/azure/getting_started/">
+                <img src="images/icons8-azure.svg" loading="lazy" alt="" class="infra-icon">
+                <div class="name_item small">Azure</div>
+              </a>
             </div>
-            <div id="w-node-_466aa2bf-88bf-5a65-eab4-fc1eb95e7384-46672785" class="infra"><img src="images/icons8-amazon-web-services.svg" loading="lazy" alt="" class="infra-icon">
-              <div class="name_item small">AWS</div>
+            <div id="w-node-_466aa2bf-88bf-5a65-eab4-fc1eb95e7384-46672785" class="infra">
+              <a href="/setup_installation/aws/getting_started/">
+                <img src="images/icons8-amazon-web-services.svg" loading="lazy" alt="" class="infra-icon">
+                <div class="name_item small">AWS</div>
+              </a>
             </div>
-            <div id="w-node-_87009ba3-d9a6-e0b7-4cce-581190a19cf3-46672785" class="infra"><img src="images/icons8-google-cloud.svg" loading="lazy" alt="" class="infra-icon">
-              <div class="name_item small">Google Cloud</div>
+            <div id="w-node-_87009ba3-d9a6-e0b7-4cce-581190a19cf3-46672785" class="infra">
+              <a href="/setup_installation/gcp/getting_started/">
+                <img src="images/icons8-google-cloud.svg" loading="lazy" alt="" class="infra-icon">
+                <div class="name_item small">Google Cloud</div>
+              </a>
             </div>
-            <div id="w-node-_4a479fbb-90c7-9f47-d439-20aa6a224339-46672785" class="infra"><img src="images/icons8-database.svg" loading="lazy" alt="" class="infra-icon">
-              <div class="name_item small">On-premise</div>
+            <div id="w-node-_4a479fbb-90c7-9f47-d439-20aa6a224339-46672785" class="infra">
+              <a href="/setup_installation/on_prem/hopsworks_installer/">
+                <img src="images/icons8-database.svg" loading="lazy" alt="" class="infra-icon">
+                <div class="name_item small">On-premise</div>
+              </a>
             </div>
           </div>
         </div>
@@ -192,25 +211,28 @@ pointer-events: initial;
             <div class="side-content">
               <div class="frame_with_arrow">
                 <div class="rec_frame">
-                  <div class="name_item">Experiments <br>&amp; Model Training</div>
+                  <div class="name_item"><a href="/concepts/mlops/training/">Experiments <br>&amp; Model Training</a></div>
                 </div>
                 <div class="arrowdown"><img src="images/icons8-thick-arrow-pointing-down.svg" loading="lazy" alt=""></div>
               </div>
               <div class="frame_with_arrow">
                 <div class="rec_frame">
-                  <div class="name_item">Model Registry</div>
+                  <div class="name_item"><a href="/user_guides/mlops/registry/">Model Registry</a></div>
                 </div>
                 <div class="arrowdown"><img src="images/icons8-thick-arrow-pointing-down.svg" loading="lazy" alt=""></div>
               </div>
               <div class="frame_with_arrow">
                 <div class="rec_frame">
-                  <div class="name_item">Model <br>Deployement</div>
+                  <div class="name_item"><a href="/user_guides/mlops/serving/">Model <br>Deployment</a></div>
                 </div>
               </div>
             </div>
             <div class="side-content">
               <div class="rec_frame">
-                <div class="name_item">Online <br>&amp; Batch Apps</div>
+                <div class="name_item">Online Apps</div>
+              </div>
+               <div class="rec_frame">
+                <div class="name_item">Batch Apps</div>
               </div>
             </div>
             <div class="side-content">

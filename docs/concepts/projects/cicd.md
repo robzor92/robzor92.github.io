@@ -9,10 +9,12 @@ You can create dev, staging, and prod projects - either on the same cluster, but
 
 ##Versioning
 
-FGs
-FVs
-Models
-Deployments
+Hopsworks supports the versioning of ML assets, including:
+
+* Feature Groups: the version of its schema - breaking schema changes require a new version and backfilling the new version;
+* Feature Views:  the version of its schema, and breaking schema changes only require a new version;
+* Models: the version of a model;
+* Deployments: the version of the deployment of a model - a model with the same version can be found in >1 deployment.
 
 
 ##Pytest for feature logic and feature pipeline tests

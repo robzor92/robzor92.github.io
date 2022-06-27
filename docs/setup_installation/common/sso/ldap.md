@@ -7,8 +7,8 @@ The LDAP attributes below are used to configure JNDI resources in the hopsworks 
 The JNDI resource will communicate with your LDAP server to perform the authentication.
 <p align="center">
   <figure>
-    <a  href="../../assets/images/sso/hopsworksai/ldap.png">
-      <img style="border: 1px solid #000" src="../../assets/images/sso/hopsworksai/ldap.png" alt="Setup ldap">
+    <a  href="../../../../assets/images/setup_installation/managed/common/sso/ldap.png">
+      <img style="border: 1px solid #000" src="../../../../assets/images/setup_installation/managed/common/sso/ldap.png" alt="Setup ldap">
     </a>
     <figcaption>Setup LDAP</figcaption>
   </figure>
@@ -25,3 +25,9 @@ The JNDI resource will communicate with your LDAP server to perform the authenti
 After configuring LDAP and creating your cluster you can log into your hopsworks cluster and edit the LDAP _attributes to field names_ to match
 your server. By default all _attributes to field names_ are set to the values in [OpenLDAP](https://www.openldap.org/). 
 See [Configure LDAP](https://docs.hopsworks.ai/hopsworks/latest/admin/ldap/configure-ldap/) on how to edit the LDAP default configurations.
+
+
+!!!Note
+
+     A default admin user that can log in with **username** and **password** will be created for the user that is creating the cluster. 
+     This user can be removed after making sure users can log in using LDAP. 
