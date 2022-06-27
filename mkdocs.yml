@@ -214,6 +214,8 @@ theme:
     - navigation.indexes
 
 extra:
+  version:
+    provider: mike
   generator: false
   social:
     - icon: fontawesome/brands/twitter
@@ -232,10 +234,6 @@ extra:
 extra_css:
     - css/custom.css
     - css/marctech.css
-    - css/version-select.css
-
-extra_javascript:
-  - js/version-select.js
 
 plugins:
     - search
