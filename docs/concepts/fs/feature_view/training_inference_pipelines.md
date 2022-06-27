@@ -8,7 +8,7 @@ Feature transformations are mathematical operations that change feature values w
 
 It is crucial that the transformations performed when creating features (for training or serving) are consistent - use the same code - to avoid training/serving skew. In the image below, you can see that transformations happen after the Feature Store, but that the implementation of the transformation functions need to be consistent between the training and inference pipelines. 
 
-<img src="/assets/images/concepts/fs/no-training-serving-skew.svg">
+<img src="../../../../assets/images/concepts/fs/no-training-serving-skew.svg">
 
 There are 3 main approaches to prevent training/serving skew that we support in Hopsworks. These are (1) perform transformations in models, (2) perform transformations in pipelines (sklearn, TF, PyTorch) and use the model registry to save the transformation pipeline so that the same transformation is used in your inference pipeline, and (3) use HSFS transformations, defined as UDFs in Python.
 

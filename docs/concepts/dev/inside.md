@@ -1,6 +1,6 @@
 Hopsworks provides a Jupyter notebook development environment for programs written in Python, Spark, Flink, and SparkSQL. You can also develop in your IDE (PyCharm, IntelliJ, etc), test locally, and then run your programs as Jobs in Hopsworks. Jupyter notebooks can also be run as Jobs.
 
-<img src="/assets/images/concepts/dev/dev-inside.svg">
+<img src="../../../assets/images/concepts/dev/dev-inside.svg">
 
 
 Hopsworks provides source code control inside the platform using Git (Github, Gitlab) or Bitbucket.

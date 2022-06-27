@@ -16,4 +16,4 @@ In Hopsworks, you can easily deploy models from the model registry in KServe or 
 
 Models deployed on KServe in Hopsworks can be easily integrated with the Hopsworks feature store using a Transformer Python script, that builds the predictor's input feature vector using the application input and pre-computed features from the feature store.
 
-<img src="/assets/images/concepts/mlops/kserve.svg">
+<img src="../../../assets/images/concepts/mlops/kserve.svg">

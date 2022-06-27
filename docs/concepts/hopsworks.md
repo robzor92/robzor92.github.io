@@ -5,7 +5,7 @@ Hopsworks is a **modular** MLOps platform with:
  - vector database based on OpenSearch
  - a data science and data engineering platform
 
-<img src="/assets/images/concepts/mlops/architecture.svg">
+<img src="../../assets/images/concepts/mlops/architecture.svg">
 
 ## Standalone Feature Store
 Hopsworks was the first open-source and first enterprise feature store for ML.  You can use Hopsworks as a standalone feature store with the HSFS API.

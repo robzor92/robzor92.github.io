@@ -4,7 +4,7 @@
 
 Hopsworks and its Feature Store are an open source data-intensive AI platform used for the development and operation of machine learning models at scale. The Hopsworks Feature Store provides the HSFS API to enable clients to write features to feature groups in the feature store, and to read features from feature views - either through a low latency Online API to retrieve pre-computed features for operational models or through a high throughput, latency insensitive Offline API, used to create training data and to retrieve batch data for scoring.
 
-<img src="/assets/images/concepts/fs/architecture.svg">
+<img src="../../../assets/images/concepts/fs/architecture.svg">
 
 ##HSFS API
 
