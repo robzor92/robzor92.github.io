@@ -235,6 +235,9 @@ extra_css:
     - css/custom.css
     - css/marctech.css
 
+extra_javascript:
+    - js/inject-api-links.js
+
 plugins:
     - search
 
