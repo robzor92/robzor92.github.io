@@ -251,19 +251,25 @@ pointer-events: initial;
 
 <img src="images/hopsworks-logo-2022.svg" loading="lazy" alt="" class="image_logo_02">
 
-Hopsworks is a Python-centric [Feature Store](https://docs.hopsworks.ai/feature-store-api/latest/), it brings asset sharing and collaboration for ML teams, as well as management and operationalization for models of any scale.
+Hopsworks is a data platform for ML with a Python-centric Feature Store and MLOps capabilities. Hopsworks is a modular platform. You can use it as a standalone Feature Store, you can use it manage, govern, and serve your models, and you can even use it to develop and operate feature pipelines and training pipelines. Hopsworks brings collaboration for ML teams, providing a secure, governed platform for developing, managing, and sharing ML assets - features, models, training data, batch scoring data, logs, and more. 
 
-## Development and Operational ML on Hopsworks
-You can develop and run Python, Spark, and Flink applications on Hopsworks - in Jupyter notebooks, as jobs, or even notebooks as jobs. You can build production pipelines with the bundled Airflow, and even run ML training pipelines with GPUs in notebooks on Airflow. You can train models on as many GPUs as are installed in a Hopsworks cluster and easily share them among users.
+## Python-Centric Feature Store
+Hopsworks is widely used as a standalone Feature Store. Hopsworks breaks the monolithic model development pipeline into separate feature and training pipelines, enabling both feature reuse and better tested ML assets. You can develop features by building feature pipelines in any Python (or Spark or Flink) environment, either inside or outside Hopsworks. You can use the Python frameworks you are familiar with to build production feature pipelines. You can compute aggregations in Pandas, validate feature data with Great Expectations, reduce your data dimensionality with embeddings and PCA, test your feature logic and features end-to-end with PyTest, and transform your categorical and numerical features with Scikit-Learn, TensorFlow, and PyTorch. You can orchestrate your feature pipelines with your Python framework of choice, including Hopsworks' own Airflow support.
 
-## Team Collaboration
-Hopsworks enables teams to work across multiple projects, each having multiple access levels and users can share assets across projects as well as add users to their own projects. Versioning, lineage, and provenance provide all hopsworks users with a complete view of the MLOps life cycle, from feature engineering through model serving. 
+## The Widest Feature Store Capabilities
+Hopsworks Feature Store also supports feature pipelines in PySpark, Spark, Flink, and SQL. Offline features can either be stored in Hopsworks, as Hudi tables on object storage, or in external data lakehouses (Snowflake, Databricks, Redshift, BigQuery, any JDBC-enabled platform) via External Feature Groups. Online features are served by [RonDB](https://www.rondbai.com), developed by Hopsworks as the lowest latency, highest throughput, highest availability data store for your features.
 
-## Python-Centric
-With Hopsworks, data professionals can work in Python in any environment within or outside the platform, using a laptop or virtual machine. Providing a user experience that is closest to the current workflow and enhancing the AI teams' ability to put their models into production by removing technical obstacles.
+## MLOps on Hops
+Hopsworks provides model serving capabilities through KServe, with additional support for feature/prediction logging to Kafka (also part of Hopsworks), and secure, low-latency model deployments via Istio. Hopsworks also has a Model Registry for KServe, with support for versioning both models and model assets (such as KServe transformers). Hopsworks also includes a vector database to provide similarity search capabilities for embeddings, based on [OpenSearch](/docs/concepts/mlops/opensearch.md).
 
-## Platform Modularity
-Data from anywhere, allowing models to be served everywhere. Hopsworks is the most modular Enterprise Feature Store allowing it to work in any infrastructure and with all the databases, data warehouses, data lakes and engines that organizations already use. The modularity allows organizations to complement their existing ML infrastructure and enhance its capabilities.  
+## Project-based Multi-Tenancy and Team Collaboration
+Hopsworks provides projects as a secure sandbox in which teams can collaborate and share ML assets. Hopsworks' unique multi-tenant project model even enables sensitive data to be stored in a shared cluster, while still providing fine-grained sharing capabilities for ML assets across project boundaries.  Projects can be used to structure teams so that they have end-to-end responsibilty from raw data to managed features and models. Projects can also be used to create development, staging, and production environments for data teamss. All ML assets support versioning, lineage, and provenance provide all hopsworks users with a complete view of the MLOps life cycle, from feature engineering through model serving. 
+
+## Development and Operations
+Hopsworks provides development tools for Data Science, including conda environments for Python, Jupyter notebooks, jobs, or even notebooks as jobs. You can build production pipelines with the bundled Airflow, and even run ML training pipelines with GPUs in notebooks on Airflow. You can train models on as many GPUs as are installed in a Hopsworks cluster and easily share them among users. You can also run Spark, Spark Streaming, or Flink programs on Hopsworks, with support for elastic workers in the cloud (add/remove workers dynamically).
+
+## Available on any Platform
+Hopsworks is available as a both managed platform in the cloud on AWS, Azure, and GCP, and can be installed on any Linux-based virtual machines (Ubuntu/Redhat compatible), even in air-gapped data centers. Hopsworks is also available as a serverless platform that manages and serves both your features and models.
 
 ## Join the community
 - Ask questions and give us feedback in the [Hopsworks Community](https://community.hopsworks.ai/)
@@ -274,7 +280,7 @@ Data from anywhere, allowing models to be served everywhere. Hopsworks is the mo
 We are building the most complete and modular ML platform available in the market and we count on your support to continuously improve Hopsworks. Feel free to [give us suggestions](https://github.com/logicalclocks/hopsworks), [report bugs](https://github.com/logicalclocks/hopsworks/issues) and [add features to our library](https://github.com/logicalclocks/feature-store-api) anytime.
 
 ## Open-Source
-Hopsworks is available under the AGPL-V3 license. In plain English this means that you are free to use Hopsworks and even build paid services on it, but if you modify the source code, you should also release your changes and any systems built around it as AGPL-V3.
+Hopsworks is available under the AGPL-V3 license. In plain English this means that you are free to use Hopsworks and even build paid services on it, but if you modify the source code, you should also release back your changes and any systems built around it as AGPL-V3.
 
 We're the best at what we do, and we strive to keep the same standard for our community!
 Our many thanks to the contributors of Hopsworks.
