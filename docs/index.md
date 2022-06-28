@@ -229,10 +229,10 @@ pointer-events: initial;
             </div>
             <div class="side-content">
               <div class="rec_frame">
-                <div class="name_item"><a href="/user_guides/mlops/prediction_services/#operational-ml/">Operational ML</a></div>
+                <div class="name_item"><a href="/concepts/mlops/prediction_services/#operational-ml/">Operational ML</a></div>
               </div>
                <div class="rec_frame">
-                <div class="name_item"><a href="/user_guides/mlops/prediction_services/#analytical-ml/">Analytical ML</a></div>
+                <div class="name_item"><a href="/concepts/mlops/prediction_services/#analytical-ml/">Analytical ML</a></div>
               </div>
             </div>
             <div class="side-content">
