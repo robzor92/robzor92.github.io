@@ -133,7 +133,8 @@ fg = fs.create_feature_group(
   # expectation_suite=expectation_suite
 )
 
-fg.save(df)
+# Create empty Feature Group in the backend
+fg.insert(df.head(0))
 ```
 
 ## Step 2: Integrating Great Expectations with Hopsworks
