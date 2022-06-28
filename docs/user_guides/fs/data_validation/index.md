@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Clean, high quality feature data is of paramount importance to being able to train and serve high quality models. Hopsworks offers integration with Great Expectations to enable a smooth data validation workflow. This guide is designed to help you integrate a data validation step when inserting new DataFrames into a Feature Group. Note that validation is performed inline as part of your feature pipeline (on the client machine) - it is not executed by Hopsworks after writing features.
+Clean, high quality feature data is of paramount importance to being able to train and serve high quality models. Hopsworks offers integration with [Great Expectations](https://greatexpectations.io/) to enable a smooth data validation workflow. This guide is designed to help you integrate a data validation step when inserting new DataFrames into a Feature Group. Note that validation is performed inline as part of your feature pipeline (on the client machine) - it is not executed by Hopsworks after writing features.
 
 # UI
 
@@ -23,7 +23,8 @@ Scroll to the Expectation Suite section. You can pick a name for your suite as w
 
 By clicking on `Add another expectation` one can choose an expectation type from a dropdown menu. Currently, only the built-in expectations from the Great Expectations framework are supported. For user-defined expectations, please use the Rest API or python client. All default kwargs associated to the selected expectation type are populated as a json below the dropdown menu. Edit the json and click the tick button to save the change locally.
 
-Obs: Click the `Save and Create New Version` button to persist your changes!
+!!! info
+    Click the `Save and Create New Version` button to persist your changes!
 
 ## Step 4: Save new data to a Feature Group
 
@@ -33,7 +34,7 @@ Use the python client to write a DataFrame to the Feature Group. Note that if an
 
 Hopsworks shows a visual summary of validation reports. To check it out, go to your Feature Group overview and scroll to the expectation section. Click on the `Validation Results` tab and check that all went according to plan. Each row corresponds to an expectation in the suite. Features can have several corresponding expectations and the same type of expectation can be applied to different features.
 
-You can navigate to older reports using the dropdown menu.Should you need more than the information displayed in the UI for e.g., debugging, the full report can be downloaded by clicking on the corresponding button.
+You can navigate to older reports using the dropdown menu. Should you need more than the information displayed in the UI for e.g., debugging, the full report can be downloaded by clicking on the corresponding button.
 
 ## Step 6: Check Validation History
 
