@@ -25,7 +25,7 @@ The following permissions are only needed for the backup feature. If you are not
 
 ### Instance type modification permissions
 
-The following permission is only needed to be able to change the head node and RonDB nodes instance type on an existing cluster ([documentation](../scalingup.md)). If you are not going to use this feature, you can limit the permission of the Service Account by removing it.
+The following permission is only needed to be able to change the head node and RonDB nodes instance type on an existing cluster ([documentation](../common/scalingup.md)). If you are not going to use this feature, you can limit the permission of the Service Account by removing it.
 
 ```yaml
 - compute.instances.setMachineType

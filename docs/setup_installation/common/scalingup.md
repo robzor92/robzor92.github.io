@@ -7,8 +7,8 @@ If spark jobs are not starting in your cluster it may come from the fact that yo
 ## Scaling up the head node
 You may run into the need to scale up the head node for different reasons. For example:
 
-* You are running a cluster without [dedicated RonDB nodes](aws/cluster_creation.md#step-12-managed-rondb) and have a workload with a high demand on the online feature store.
-* You are running a cluster without [managed containers](aws/cluster_creation.md#step-7-managed-containers) and want to run an important number of jupyter notebooks simultaneously.
+* You are running a cluster without [dedicated RonDB nodes](../aws/cluster_creation.md#step-12-managed-rondb) and have a workload with a high demand on the online feature store.
+* You are running a cluster without [managed containers](../aws/cluster_creation.md#step-7-managed-containers) and want to run an important number of jupyter notebooks simultaneously.
 
 While we are working on implementing a solution to add these features to an existing cluster you can use the following approach to run your head node on an instance with more vcores and memory to handle more load.
 
@@ -63,7 +63,7 @@ You can now start your cluster. The head node will be started on an instance typ
 
 ## Scaling up the RonDB nodes
 
-If you are running a cluster with [dedicated RonDB nodes](aws/cluster_creation.md#step-12-managed-rondb) and have a workload with a high demand on the online feature store you may need to scale up the RonDB *Datanodes* and *MySQLd* nodes. For this stop the cluster.
+If you are running a cluster with [dedicated RonDB nodes](../aws/cluster_creation.md#step-12-managed-rondb) and have a workload with a high demand on the online feature store you may need to scale up the RonDB *Datanodes* and *MySQLd* nodes. For this stop the cluster.
 
 <p align="center">
   <figure>

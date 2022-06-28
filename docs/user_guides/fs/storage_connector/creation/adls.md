@@ -27,7 +27,7 @@ Before you begin this guide you'll need to retrieve the following information fr
 Head to the Storage Connector View on Hopsworks (1) and set up a new storage connector (2).
 
 <figure markdown>
-  ![Storage Connector Creation](/assets/images/guides/fs/storage_connector/storage_connector_create.png)
+  ![Storage Connector Creation](../../../../assets/images/guides/fs/storage_connector/storage_connector_create.png)
   <figcaption>The Storage Connector View in the User Interface</figcaption>
 </figure>
 
@@ -36,7 +36,7 @@ Head to the Storage Connector View on Hopsworks (1) and set up a new storage con
 Enter the details for your ADLS connector. Start by giving it a **name** and an optional **description**.
 
 <figure markdown>
-  ![ADLS Connector Creation](/assets/images/guides/fs/storage_connector/adls_creation.png)
+  ![ADLS Connector Creation](../../../../assets/images/guides/fs/storage_connector/adls_creation.png)
   <figcaption>ADLS Connector Creation Form</figcaption>
 </figure>
 
@@ -48,19 +48,19 @@ When programmatically signing in, you need to pass the tenant ID with your authe
 2. From App registrations in Azure AD, select your application.
 3. Copy the Directory (tenant) ID and store it in your application code.
     <figure markdown>
-    ![ADLS select tenant-id](/assets/images/guides/fs/storage_connector/adls-copy-tenant-id.png)
+    ![ADLS select tenant-id](../../../../assets/images/guides/fs/storage_connector/adls-copy-tenant-id.png)
     <figcaption>You need to copy the Directory (tenant) id and paste it to the Hopsworks ADLS storage connector  "Directory id" text field.</figcaption>
     </figure>
 
 4. Copy the Application ID and store it in your application code.
     <figure markdown>
-    ![ADLS select app-id](/assets/images/guides/fs/storage_connector/adls-copy-app-id.png)
+    ![ADLS select app-id](../../../../assets/images/guides/fs/storage_connector/adls-copy-app-id.png)
     <figcaption>>You need to copy the Application id and paste it to the Hopsworks ADLS storage connector "Application id" text field.</figcaption>
     </figure>
 
 5. Create an Application Secret and copy it into the Service Credential field.
     <figure markdown>
-    ![ADLS enter application secret](/assets/images/guides/fs/storage_connector/adls-copy-secret.png)
+    ![ADLS enter application secret](../../../../assets/images/guides/fs/storage_connector/adls-copy-secret.png)
     <figcaption>You need to copy the Application Secret and paste it to the Hopsworks ADLS storage connector "Service Credential" text field.</figcaption>
     </figure>
 

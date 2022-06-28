@@ -37,7 +37,7 @@ Before you begin this guide you'll need to retrieve the following information ab
 Head to the Storage Connector View on Hopsworks (1) and set up a new storage connector (2).
 
 <figure markdown>
-  ![Storage Connector Creation](/assets/images/guides/fs/storage_connector/storage_connector_create.png)
+  ![Storage Connector Creation](../../../../assets/images/guides/fs/storage_connector/storage_connector_create.png)
   <figcaption>The Storage Connector View in the User Interface</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ it a unique **name** and an optional
 **description**.
 
 <figure markdown>
-  ![BigQuery Connector Creation](/assets/images/guides/fs/storage_connector/bigquery_creation.png)
+  ![BigQuery Connector Creation](../../../../assets/images/guides/fs/storage_connector/bigquery_creation.png)
   <figcaption>BigQuery Connector Creation Form</figcaption>
 </figure>
 

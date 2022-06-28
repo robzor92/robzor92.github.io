@@ -81,7 +81,7 @@ the project setting by a Data owner in that project.
 </figure>
 
 Any member of a project can then go to the _Project Settings_ -> 
-[Assuming IAM Roles](../../../user_guides/projects/iam_role/iam_role_chaining) page to see which roles they can assume.
+[Assuming IAM Roles](../../user_guides/projects/iam_role/iam_role_chaining) page to see which roles they can assume.
 
 ## Conclusion
 In this guide you learned how to map AWS IAM roles to project roles in Hopsworks.

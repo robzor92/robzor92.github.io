@@ -24,7 +24,7 @@ Before you begin this guide you'll need to retrieve the following information fr
 Head to the Storage Connector View on Hopsworks (1) and set up a new storage connector (2).
 
 <figure markdown>
-  ![Storage Connector Creation](/assets/images/guides/fs/storage_connector/storage_connector_create.png)
+  ![Storage Connector Creation](../../../../assets/images/guides/fs/storage_connector/storage_connector_create.png)
   <figcaption>The Storage Connector View in the User Interface</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ Enter the details for your Kafka connector. Start by giving it a **name** and an
 6. Click "Setup storage connector".
 
 <figure markdown>
-  ![Kafka Connector Creation](/assets/images/guides/fs/storage_connector/kafka_creation.png)
+  ![Kafka Connector Creation](../../../../assets/images/guides/fs/storage_connector/kafka_creation.png)
   <figcaption>Kafka Connector Creation Form</figcaption>
 </figure>
 

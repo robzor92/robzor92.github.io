@@ -6,11 +6,10 @@ will guide you through the necessary steps to register your identity provider in
 Before registering your identity provider in Hopsworks you need to create a client application in your identity provider and
 acquire a _client id_ and a _client secret_. Examples on how to create a client using [Okta](https://www.okta.com/)
 and [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory) identity providers can be found
-[here](https://docs.hopsworks.ai/hopsworks/latest/admin/oauth2/create-okta-client)
-and [here](https://docs.hopsworks.ai/hopsworks/latest/admin/oauth2/create-azure-client) respectively.
+[here](../../../../admin/oauth2/create-okta-client/) and [here](../../../../admin/oauth2/create-azure-client/) respectively.
  
-In the User management step of cluster creation ([AWS](../aws/cluster_creation/#step-11-user-management-selection),
-[Azure](../azure/cluster_creation/#step-10-user-management-selection)) you can choose which user management system to use. Select
+In the User management step of cluster creation ([AWS](../../../aws/cluster_creation/#step-11-user-management-selection),
+[Azure](../../../azure/cluster_creation/#step-10-user-management-selection)) you can choose which user management system to use. Select
 _OAuth2 (OpenId)_ from the dropdown and configure your identity provider.
  
 <p align="center">
@@ -90,4 +89,4 @@ https://server.com/oauth2/keys
 After configuring OAuth2 you can click on **Next** to configure the rest of your cluster.
 
 You can also configure OAuth2 once you have created a Hopsworks cluster. For instructions on how to configure OAUth2 on Hopsworks see 
-[Authentication Methods](https://docs.hopsworks.ai/hopsworks/latest/admin/oauth2/create-client).
+[Authentication Methods](../../../../admin/oauth2/create-client/).

@@ -40,7 +40,7 @@ Port: 22.
 
 ## Limiting outbound traffic to Hopsworks.ai
 
-If you have enabled the use of static IPs to communicate with Hopsworks.ai as described in [AWS](../../../aws/cluster_creation/#limiting-outbound-traffic-to-hopsworksai) and [AZURE](../../../azure/cluster_creation/#limiting-outbound-traffic-to-hopsworksai), you need to ensure that your security group allow outbound traffic to the two IPs indicated in the service page.
+If you have enabled the use of static IPs to communicate with Hopsworks.ai as described in [AWS](../../aws/cluster_creation/#limiting-outbound-traffic-to-hopsworksai) and [AZURE](../../azure/cluster_creation/#limiting-outbound-traffic-to-hopsworksai), you need to ensure that your security group allow outbound traffic to the two IPs indicated in the service page.
 
 <p align="center">
   <figure>

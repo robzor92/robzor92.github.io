@@ -31,7 +31,7 @@ Before you begin this guide you'll need to retrieve the following information ab
   'creating service account keyfile')
 - **Server-side Encryption** GCS encrypts the data on server side by default. The connector additionally supports the 
   optional encryption method `Customer Supplied Encryption Key` by GCP. You can choose the encryption option `AES-256` and provide AES-256 key and hash, encoded in 
-  standard Base64. The encryption details are stored as [Secrets](/user_guides/common/secrets/create_secret) 
+  standard Base64. The encryption details are stored as [Secrets](../../../user_guides/projects/secrets/create_secret) 
   in the Hopsworks for keeping it secure.
   Read more about encryption on [Google Documentation.](https://cloud.google.com/storage/docs/encryption/customer-supplied-keys)
 
@@ -41,7 +41,7 @@ Before you begin this guide you'll need to retrieve the following information ab
 Head to the Storage Connector View on Hopsworks (1) and set up a new storage connector (2).
 
 <figure markdown>
-  ![Storage Connector Creation](/assets/images/guides/fs/storage_connector/storage_connector_create.png)
+  ![Storage Connector Creation](../../../../assets/images/guides/fs/storage_connector/storage_connector_create.png)
   <figcaption>The Storage Connector View in the User Interface</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ it a unique **name** and an optional
 **description**.
 
 <figure markdown>
-  ![GCS Connector Creation](/assets/images/guides/fs/storage_connector/gcs_creation.png)
+  ![GCS Connector Creation](../../../../assets/images/guides/fs/storage_connector/gcs_creation.png)
   <figcaption>GCS Connector Creation Form</figcaption>
 </figure>
 
