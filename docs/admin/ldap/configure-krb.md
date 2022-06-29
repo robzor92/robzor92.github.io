@@ -2,7 +2,7 @@
 
 ## Introduction
 Kerberos is a network authentication protocol that allow nodes to communicating over a non-secure network to prove their identity to one another in a secure manner.
-This tutorial shows an administrator how to configure Kerberos.
+This tutorial shows an administrator how to configure Kerberos authentication.
 
 Kerberos need some server configuration before you can enable it from the UI.
 

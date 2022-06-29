@@ -2,7 +2,7 @@
 
 ## Introduction
 LDAP (Lightweight Directory Access Protocol) is a software protocol for enabling anyone in a network to gain
-access to resources such as files and devices. This tutorial shows an administrator how to configure LDAP.
+access to resources such as files and devices. This tutorial shows an administrator how to configure LDAP authentication.
 
 
 LDAP need some server configuration before you can enable it from the UI.

@@ -1,7 +1,6 @@
 # Log in To Hopsworks
 
 ## Introduction
-Sometimes it is necessary to login to a platform before using, this is also the case with Hopsworks.
 Hopsworks supports different methods of authentication. Here we will look at authentication using username and password.
 
 ## Prerequisites
@@ -17,16 +16,16 @@ After your account is validated by an administrator you can use your email and p
     <figcaption>Login with password</figcaption>
   </figure>
 
-### Step 2: Second factor authentication
+### Step 2: Tow-factor authentication
 
-If second factor authentication is enabled you will be presented with a second factor authentication window after you 
+If two-factor authentication is enabled you will be presented with a two-factor authentication window after you 
 enter your password. Use your authenticator app
 (example. [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en&gl=US))
 on your phone to get a one-time password.
 
 <figure>
   <a  href="../../../assets/images/auth/otp.png">
-    <img width="400px" src="../../../assets/images/auth/otp.png" alt="Second factor" />
+    <img width="400px" src="../../../assets/images/auth/otp.png" alt="Two-factor" />
   </a>
   <figcaption>One time password</figcaption>
 </figure>
