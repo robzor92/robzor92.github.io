@@ -32,7 +32,7 @@ To update your credential go to the **Authentication** tab as shown in the image
   </figure>
 
 ### Step 3: Enable/Reset Two-factor Authentication
-You can also change your two-factor setting in the **Authentication** tab. Second factor authentication
+You can also change your two-factor setting in the **Authentication** tab. Two-factor authentication
 is only available if it is enabled from the cluster administration page.
 
   <figure>
