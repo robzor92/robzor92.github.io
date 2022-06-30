@@ -126,9 +126,12 @@ nav:
         - Model Schema: user_guides/mlops/registry/model_schema.md
         - Input Example: user_guides/mlops/registry/input_example.md
       - Model Serving:
+        # - user_guides/ml/deployment/index.md
         - user_guides/mlops/serving/index.md
+        # - Deployment: user_guides/ml/deployment/deployment.md
         - Predictor: user_guides/mlops/serving/predictor.md
         - Transformer: user_guides/mlops/serving/transformer.md
+        # - Resource Configuration: user_guides/ml/deployment/resources.md
         - Inference Logger: user_guides/mlops/serving/inference-logger.md
         - Inference Batcher: user_guides/mlops/serving/inference-batcher.md
       - Vector Database: user_guides/mlops/vector_database/index.md
