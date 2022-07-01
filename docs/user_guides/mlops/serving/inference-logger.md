@@ -28,7 +28,7 @@ Once in the deployments page, click on `Create new deployment` on the top-right 
 
 ### Step 2: Simplified deployment form
 
-A simplified creation form will appear including the most common deployment fields among all the configuration possible. Inference logging is part of the advanced configuration of a deployment. To navigate to the advanced creation form, click on `Advanced configuration`.
+A simplified creation form will appear including the most common deployment fields among all the configuration possible. Inference logging is part of the advanced options of a deployment. To navigate to the advanced creation form, click on `Advanced options`.
 
 <!-- TODO: Image highlighting the button -->
 <p color=red>CHANGE IMAGE</p>
