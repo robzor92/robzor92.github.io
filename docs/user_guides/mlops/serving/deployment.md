@@ -43,7 +43,7 @@ After selecting the model, the rest of fields are filled automatically. We pick 
 !!! info "Predictor script for Python models" 
     For Python models, you can select a custom [predictor script](#predictor) to load and run the trained model by clicking on `From project` or `Upload new file`, to choose an existing script in the project file system or upload a new script, respectively.
 
-If you prefer, change the name of the deployment, model version or [artifact version](#model-artifact). Then, click on `Create deployment` to create the deployment for your model.
+If you prefer, change the name of the deployment, model version or [artifact version](#model-artifact). Then, click on `Create new deployment` to create the deployment for your model.
 
 <p align="center">
   <figure>
@@ -73,7 +73,7 @@ You will be redirected to a full-page deployment creation form where you can see
     4. [Inference batcher](#inference-batcher)
     5. [Resources](#resources)
 
-Once you are done with the changes, click on `Create deployment` at the bottom of the page to create the deployment for your model.
+Once you are done with the changes, click on `Create new deployment` at the bottom of the page to create the deployment for your model.
 
 ### Step 4: Deployment creation
 

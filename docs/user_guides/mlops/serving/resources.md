@@ -51,7 +51,7 @@ In the `Resource allocation` section of the form, you can optionally set the res
   </figure>
 </p>
 
-Once you are done with the changes, click on `Create deployment` at the end of the page to create the deployment for your model.
+Once you are done with the changes, click on `Create new deployment` at the bottom of the page to create the deployment for your model.
 
 ## CODE
 

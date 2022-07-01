@@ -24,13 +24,10 @@ Predictors are the main component of deployments. They are responsible for runni
 
 If you have at least one model already trained and saved in the Model Registry, navigate to the deployments page by clicking on the `Deployments` tab on the navigation menu on the left.
 
-<!-- TODO: Add image with sidebar menu -->
-
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img src="../../../../assets/images/guides/mlops/serving/deployments_tab_sidebar.png" alt="Deployments navigation tab">
+    <figcaption>Deployments navigation tab</figcaption>
   </figure>
 </p>
 
@@ -38,31 +35,35 @@ Once in the deployments page, click on `Create new deployment` on the top-right 
 
 ### Step 2: Simplified deployment form
 
-A simplified creation form will appear, including the most common deployment fields among all the configuration possible. These fields include the [model server](#model-server) _(a)_ and [custom script](#custom-script) _(b)_ (for python models).
+A simplified creation form will appear, including the most common deployment fields among all the configuration possible. These fields include the [model server](#model-server) and [custom script](#custom-script) (for python models).
 
-If you want to use your own [predictor script](#step-2-optional-implement-predictor-script), click on `Select file` and navigate through the file system to find it, or click on `Upload file` to upload the predictor script now.
+If you want to use your own [predictor script](#step-2-optional-implement-predictor-script), click on `From project` and navigate through the file system to find it, or click on `Upload new file` to upload a predictor script now.
 
-<!-- TODO: Image highlighting the model server and predictor script buttons -->
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img style="float: left; width: 45%; margin-right: 12px" src="../../../../assets/images/guides/mlops/serving/deployment_simple_form_tf.png" alt="Simplified deployment creation form for Tensorflow">
+    <img style="width: 45%;" src="../../../../assets/images/guides/mlops/serving/deployment_simple_form_py.png" alt="Deployment simplified creation form for Python">
+    <figcaption>Simplified deployment creation forms for Tensorflow models (left) and Python models (right)</figcaption>
   </figure>
 </p>
 
 Other configuration such as the serving tool, is part of the advanced options of a deployment. To navigate to the advanced creation form, click on `Advanced options`.
 
+<p align="center">
+  <figure>
+    <img  style="max-width: 85%; margin: 0 auto" src="../../../../assets/images/guides/mlops/serving/deployment_simple_form_adv_options.png" alt="Advance options">
+    <figcaption>Advanced options. Go to advanced deployment creation form</figcaption>
+  </figure>
+</p>
+
 ### Step 3: Advanced deployment form
 
 Here, you change the [serving tool](#serving-tool) for your deployment by enabling or disabling the KServe checkbox.
 
-<!-- TODO: Image with KServe checkbox -->
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img src="../../../../assets/images/guides/mlops/serving/deployment_adv_form_kserve.png" alt="KServe in advanced deployment form">
+    <figcaption>KServe checkbox in the advanced deployment form</figcaption>
   </figure>
 </p>
 
@@ -74,7 +75,7 @@ Additionally, you can adjust the default values of the rest of components:
     3. [Inference batcher](#inference-batcher)
     4. [Resources](#resources)
 
-Once you are done with the changes, click on `Create deployment` at the end of the page to create the deployment for your model.
+Once you are done with the changes, click on `Create new deployment` at the bottom of the page to create the deployment for your model.
 
 ## Code
 
