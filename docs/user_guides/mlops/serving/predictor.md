@@ -51,7 +51,7 @@ If you want to use your own [predictor script](#step-2-optional-implement-predic
   </figure>
 </p>
 
-Other configuration such as the serving tool, is part of the advanced configuration of a deployment. To navigate to the advanced creation form, click on `Advanced configuration`.
+Other configuration such as the serving tool, is part of the advanced options of a deployment. To navigate to the advanced creation form, click on `Advanced options`.
 
 ### Step 3: Advanced deployment form
 
