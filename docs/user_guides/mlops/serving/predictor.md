@@ -20,7 +20,7 @@ Predictors are the main component of deployments. They are responsible for runni
 
 ## GUI
 
-### Step 1: Create a deployment
+### Step 1: Create new deployment
 
 If you have at least one model already trained and saved in the Model Registry, navigate to the deployments page by clicking on the `Deployments` tab on the navigation menu on the left.
 
@@ -33,11 +33,9 @@ If you have at least one model already trained and saved in the Model Registry, 
 
 Once in the deployments page, click on `New deployment` if there are not existing deployments or on `Create new deployment` at the top-right corner to open the deployment creation form.
 
-### Step 2: Simplified deployment form
+### Step 2: Choose a model server
 
 A simplified creation form will appear, including the most common deployment fields among all the configuration possible. These fields include the [model server](#model-server) and [custom script](#custom-script) (for python models).
-
-If you want to use your own [predictor script](#step-2-optional-implement-predictor-script), click on `From project` and navigate through the file system to find it, or click on `Upload new file` to upload a predictor script now.
 
 <p align="center">
   <figure>
@@ -47,16 +45,29 @@ If you want to use your own [predictor script](#step-2-optional-implement-predic
   </figure>
 </p>
 
+Moreover, you can optionally select a predictor script (see [Step 3](#step-3-optional-select-a-predictor-script)), enable KServe (see [Step 4](#step-4-optional-enable-kserve)) or change other advanced configuration (see [Step 5](#step-5-optional-other-advanced-options)). Otherwise, click on `Create new deployment` to create the deployment for your model.
+
+### Step 3 (Optional): Select a predictor script
+
+For python models, if you want to use your own [predictor script](#step-2-optional-implement-predictor-script) click on `From project` and navigate through the file system to find it, or click on `Upload new file` to upload a predictor script now.
+
+<p align="center">
+  <figure>
+    <img style="max-width: 80%; margin: 0 auto" src="../../../../assets/images/guides/mlops/serving/deployment_simple_form_py_pred.png" alt="Predictor script in the simplified deployment form">
+    <figcaption>Select a predictor script in the simplified deployment form</figcaption>
+  </figure>
+</p>
+
+### Step 4 (Optional): Enable KServe
+
 Other configuration such as the serving tool, is part of the advanced options of a deployment. To navigate to the advanced creation form, click on `Advanced options`.
 
 <p align="center">
   <figure>
-    <img  style="max-width: 85%; margin: 0 auto" src="../../../../assets/images/guides/mlops/serving/deployment_simple_form_adv_options.png" alt="Advance options">
+    <img style="max-width: 80%; margin: 0 auto" src="../../../../assets/images/guides/mlops/serving/deployment_simple_form_adv_options.png" alt="Advance options">
     <figcaption>Advanced options. Go to advanced deployment creation form</figcaption>
   </figure>
 </p>
-
-### Step 3: Advanced deployment form
 
 Here, you change the [serving tool](#serving-tool) for your deployment by enabling or disabling the KServe checkbox.
 
@@ -66,6 +77,8 @@ Here, you change the [serving tool](#serving-tool) for your deployment by enabli
     <figcaption>KServe checkbox in the advanced deployment form</figcaption>
   </figure>
 </p>
+
+### Step 5 (Optional): Other advanced options 
 
 Additionally, you can adjust the default values of the rest of components:
 
@@ -215,7 +228,6 @@ A number of different environment variables is available in the predictor to eas
     | MODEL_NAME   | Name of the model being served by the current deployment |
     | MODEL_VERSION | Version of the model being served by the current deployment |
     | ARTIFACT_VERSION       | Version of the model artifact being served by the current deployment |
-
 
 ## Transformer
 
