@@ -10,13 +10,10 @@ Inference batching can be enabled to increase inference request throughput at th
 
 If you have at least one model already trained and saved in the Model Registry, navigate to the deployments page by clicking on the `Deployments` tab on the navigation menu on the left.
 
-<!-- TODO: Add image with sidebar menu -->
-
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img src="../../../../assets/images/guides/mlops/serving/deployments_tab_sidebar.png" alt="Deployments navigation tab">
+    <figcaption>Deployments navigation tab</figcaption>
   </figure>
 </p>
 
@@ -26,12 +23,10 @@ Once in the deployments page, click on `New deployment` if there are not existin
 
 A simplified creation form will appear including the most common deployment fields among all the configuration possible. Inference batching is part of the advanced options of a deployment. To navigate to the advanced creation form, click on `Advanced options`.
 
-<!-- TODO: Image highlighting the button -->
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img  style="max-width: 85%; margin: 0 auto" src="../../../../assets/images/guides/mlops/serving/deployment_simple_form_adv_options.png" alt="Advance options">
+    <figcaption>Advanced options. Go to advanced deployment creation form</figcaption>
   </figure>
 </p>
 
@@ -39,25 +34,14 @@ A simplified creation form will appear including the most common deployment fiel
 
 To enable inference batching, click on the `Request batching` checkbox.
 
-<!-- TODO: Image Request batching -->
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img src="../../../../assets/images/guides/mlops/serving/deployment_adv_form_batcher.png" alt="Inference batcher in advanced deployment form">
+    <figcaption>Inference batching configuration (default values)</figcaption>
   </figure>
 </p>
 
 If your deployment uses KServe, you can optionally set three additional parameters for the inference batcher: maximum batch size, maximum latency (ms) and timeout (s).
-
-<!-- TODO: Image Request batching, additional parameters -->
-<p color=red>CHANGE IMAGE</p>
-<p align="center">
-  <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
-  </figure>
-</p>
 
 Once you are done with the changes, click on `Create new deployment` at the bottom of the page to create the deployment for your model.
 
