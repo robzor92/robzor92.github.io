@@ -11,10 +11,16 @@ edit_uri: ""
 nav:
   - Home: index.md
   - Getting Started:
-    - Feature Store:
-      - Quickstart: getting_started/fs/index.md
+      - Quickstart: getting_started/quickstart.ipynb
       - Tutorials:
-        - AML Tutorial: getting_started/fs/tutorials/aml.md
+        - Fraud Batch:
+          - 1. Feature Groups: getting_started/fraud_batch/1_feature_groups.ipynb
+          - 2. Feature View: getting_started/fraud_batch/2_feature_view_creation.ipynb
+          - 3. Model Training: getting_started/fraud_batch/3_model_training.ipynb
+        - Fraud Online:
+          - 1. Feature Groups: getting_started/fraud_online/1_feature_groups.ipynb
+          - 2. Feature View: getting_started/fraud_online/2_feature_view_creation.ipynb
+          - 3. Model Training: getting_started/fraud_online/3_model_training.ipynb
   - Concepts:
     - Hopsworks Platform: concepts/hopsworks.md
     - Feature Store:
@@ -293,6 +299,7 @@ extra_javascript:
 
 plugins:
     - search
+    - mkdocs-jupyter
 
 markdown_extensions:
     - admonition
