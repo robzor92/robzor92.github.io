@@ -1,9 +1,14 @@
 # Create An Application in Azure Active Directory.
 
+## Introduction
 This example uses Azure Active Directory as the identity provider, but the same can be done with any identity provider 
-supporting OAuth2.
+supporting OAuth2 OpenID Connect protocol.
 
-## Configure your identity provider.
+## Prerequisites
+Azure account.
+
+### Step 1: Register Hopsworks as an application in your identity provider
+
 To use OAuth2 in hopsworks you first need to create and configure an OAuth client in your identity provider. We will take the example of Azure AD for the remaining of this documentation, but equivalent steps can be taken on other identity providers.
 
 Navigate to the [Microsoft Azure Portal](https://portal.azure.com) and authenticate. Navigate to [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview). Click on [App Registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps). Click on *New Registration*.
@@ -28,8 +33,9 @@ Enter a name for the client such as *hopsworks_oauth_client*. Verify the Support
   </figure>
 </p>
 
+### Step 2: Get the nessary fields for client registration
 In the Overview section, copy the *Application (client) ID field*. We will use it in 
-[Identity Provider registration](./create-client.md) under the name *Client id*.
+[Identity Provider registration](../create-client) under the name *Client id*.
 
 <p align="center">
   <figure>
@@ -41,7 +47,7 @@ In the Overview section, copy the *Application (client) ID field*. We will use i
 </p>
 
 Click on *Endpoints* and copy the *OpenId Connect metadata document* endpoint excluding the *.well-known/openid-configuration* part. 
-We will use it in [Identity Provider registration](./create-client.md) under the name *Connection URL*.
+We will use it in [Identity Provider registration](../create-client) under the name *Connection URL*.
 
 <p align="center">
   <figure>
@@ -56,7 +62,7 @@ Click on *Certificates & secrets*, then Click on *New client secret*.
 
 <p align="center">
   <figure>
-    <a  href="../../../assets/images/admin/admin/sso/new_client_secret.png">
+    <a  href="../../../assets/images/admin/oauth2/sso/new_client_secret.png">
       <img style="border: 1px solid #000" src="../../../assets/images/admin/oauth2/sso/new_client_secret.png" alt="New client secret">
     </a>
     <figcaption>New client secret</figcaption>
@@ -74,7 +80,7 @@ Add a *description* of the secret. Select an expiration period. And, Click *Add*
   </figure>
 </p>
 
-Copy the secret. This will be used in [Identity Provider registration](./create-client.md) under the name 
+Copy the secret. This will be used in [Identity Provider registration](../create-client) under the name 
 *Client Secret*.
 
 <p align="center">
@@ -126,3 +132,6 @@ Enter the *Redirect URI* and click on *Configure*. The redirect URI is *HOPSWORK
     in the *General* tab of your cluster and copying the URI.
 
 
+## Conclusion
+In this guide you learned how to create a client in your Azure identity provider and 
+acquire a _client id_ and a _client secret_.

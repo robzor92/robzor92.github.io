@@ -42,7 +42,7 @@ These are a few additional **optional** arguments:
 Head to the Storage Connector View on Hopsworks (1) and set up a new storage connector (2).
 
 <figure markdown>
-  ![Storage Connector Creation](/assets/images/guides/fs/storage_connector/storage_connector_create.png)
+  ![Storage Connector Creation](../../../../assets/images/guides/fs/storage_connector/storage_connector_create.png)
   <figcaption>The Storage Connector View in the User Interface</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ Enter the details for your Snowflake connector. Start by giving it a **name** an
 9. Click "Setup storage connector".
 
 <figure markdown>
-  ![Snowflake Connector Creation](/assets/images/guides/fs/storage_connector/snowflake_creation.png)
+  ![Snowflake Connector Creation](../../../../assets/images/guides/fs/storage_connector/snowflake_creation.png)
   <figcaption>Snowflake Connector Creation Form</figcaption>
 </figure>
 

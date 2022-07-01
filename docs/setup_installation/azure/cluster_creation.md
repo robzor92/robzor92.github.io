@@ -43,7 +43,7 @@ On this page, you can also choose to opt out of hopsworks.ai log collection. Hop
 
 ### Step 3 workers configuration
 
-In this step, you configure the workers. There are two possible setups static or autoscaling. In the static setup, the cluster has a fixed number of workers that you decide. You can then add and remove workers manually, for more details: [the documentation](../adding_removing_workers.md). In the autoscaling setup, you configure conditions to add and remove workers and the cluster will automatically add and remove workers depending on the demand.
+In this step, you configure the workers. There are two possible setups static or autoscaling. In the static setup, the cluster has a fixed number of workers that you decide. You can then add and remove workers manually, for more details: [the documentation](../common/adding_removing_workers.md). In the autoscaling setup, you configure conditions to add and remove workers and the cluster will automatically add and remove workers depending on the demand.
 
 #### Static workers configuration
 You can set the static configuration by selecting *Disabled* in the first drop-down (1). Then you select the number of workers you want to start the cluster with (2). And, select the *Instance type* (3) and *Local storage* size (4) for the *worker nodes*.
@@ -181,9 +181,9 @@ Clusters created on Hopsworks.ai need to be able to send http requests to api.ho
 ### Step 10 User management selection
 In this step, you can choose which user management system to use. You have four choices: 
 
-* *Managed*: Hopsworks.ai automatically adds and removes users from the Hopsworks cluster when you add and remove users from your organization  (more details [here](../user_management.md)).
-* *OAuth2*: integrate the cluster with your organization's OAuth2 identity provider. See [Use OAuth2 for user management](../sso/oauth.md) for more detail.
-* *LDAP*: integrate the cluster with your organization's LDAP/ActiveDirectory server. See [Use LDAP for user management](../sso/ldap.md) for more detail.
+* *Managed*: Hopsworks.ai automatically adds and removes users from the Hopsworks cluster when you add and remove users from your organization  (more details [here](../common/user_management.md)).
+* *OAuth2*: integrate the cluster with your organization's OAuth2 identity provider. See [Use OAuth2 for user management](../common/sso/oauth.md) for more detail.
+* *LDAP*: integrate the cluster with your organization's LDAP/ActiveDirectory server. See [Use LDAP for user management](../common/sso/ldap.md) for more detail.
 * *Disabled*: let you manage users manually from within Hopsworks.
 
 <p align="center">
@@ -200,7 +200,7 @@ Hopsworks uses [RonDB](https://www.rondb.com/) as a database engine for its onli
 own VM. Premium users can scale-out database services to multiple VMs
 to handle increased workload.
 
-For details on how to configure RonDB check our guide [here](../rondb.md).
+For details on how to configure RonDB check our guide [here](../common/rondb.md).
 
 <p align="center">
   <figure>

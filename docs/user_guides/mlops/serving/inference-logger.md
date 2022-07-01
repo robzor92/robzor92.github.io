@@ -10,53 +10,46 @@ Hopsworks supports logging both inference requests and predictions as events to 
 
 ## GUI
 
-### Step 1: Create a deployment
+### Step 1: Create new deployment
 
 If you have at least one model already trained and saved in the Model Registry, navigate to the deployments page by clicking on the `Deployments` tab on the navigation menu on the left.
 
-<!-- TODO: Add image with sidebar menu -->
-
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img src="../../../../assets/images/guides/mlops/serving/deployments_tab_sidebar.png" alt="Deployments navigation tab">
+    <figcaption>Deployments navigation tab</figcaption>
   </figure>
 </p>
 
-Once in the deployments page, click on `Create new deployment` on the top-right corner to open the deployment creation form.
+Once in the deployments page, click on `New deployment` if there are not existing deployments or on `Create new deployment` at the top-right corner to open the deployment creation form.
 
-### Step 2: Simplified deployment form
+### Step 2: Go to advanced options
 
-A simplified creation form will appear including the most common deployment fields among all the configuration possible. Inference logging is part of the advanced configuration of a deployment. To navigate to the advanced creation form, click on `Advanced configuration`.
+A simplified creation form will appear including the most common deployment fields among all the configuration possible. Inference logging is part of the advanced options of a deployment. To navigate to the advanced creation form, click on `Advanced options`.
 
-<!-- TODO: Image highlighting the button -->
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img  style="max-width: 85%; margin: 0 auto" src="../../../../assets/images/guides/mlops/serving/deployment_simple_form_adv_options.png" alt="Advance options">
+    <figcaption>Advanced options. Go to advanced deployment creation form</figcaption>
   </figure>
 </p>
 
-### Step 3: Advanced deployment form
+### Step 3: Configure inference logging
 
-To enable inference logging, choose ´CREATE´ as Kafka topic name to create a new topic, or select an existing topic. If you prefer, you can disable inference logging by selecting `NONE`.
+To enable inference logging, choose `CREATE` as Kafka topic name to create a new topic, or select an existing topic. If you prefer, you can disable inference logging by selecting `NONE`.
 
 If you decide to create a new topic, select the number of partitions and number of replicas for your topic, or use the default values.
 
-If the deployment is created with KServe enabled, you can specify which inference logs you want to send to the Kafka topic (i.e., `MODEL_INPUTS`, `PREDICTIONS` or both)
-
-<!-- TODO: Image Kafka topic -->
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img src="../../../../assets/images/guides/mlops/serving/deployment_adv_form_logger.png" alt="Inference logger in advanced deployment form">
+    <figcaption>Inference logging configuration with a new kafka topic</figcaption>
   </figure>
 </p>
 
-Once you are done with the changes, click on `Create deployment` at the end of the page to create the deployment for your model.
+If the deployment is created with KServe enabled, you can specify which inference logs you want to send to the Kafka topic (i.e., `MODEL_INPUTS`, `PREDICTIONS` or both)
+
+Once you are done with the changes, click on `Create new deployment` at the bottom of the page to create the deployment for your model.
 
 ## CODE
 

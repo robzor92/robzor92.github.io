@@ -20,85 +20,69 @@ Deployments are used to unify the different components involved in making one or
 
 If you have at least one model already trained and saved in the Model Registry, navigate to the deployments page by clicking on the `Deployments` tab on the navigation menu on the left.
 
-<!-- TODO: Add image with sidebar menu -->
-
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img src="../../../../assets/images/guides/mlops/serving/deployments_tab_sidebar.png" alt="Deployments navigation tab">
+    <figcaption>Deployments navigation tab</figcaption>
   </figure>
 </p>
 
-Once in the deployments page, click on `Create new deployment` on the top-right corner to open the deployment creation form.
+Once in the deployments page, click on `New deployment` if there are not existing deployments or on `Create new deployment` at the top-right corner to open the deployment creation form.
 
-### Step 2: Simplified deployment form
+### Step 2: Basic deployment configuration
 
 A simplified creation form will appear including the most common deployment fields among all the configuration possible. We provide default values for the rest of the fields, adjusted to the type of deployment you want to create.
 
-In the simplified form, select the model framework used to train your model _(a)_. Then, select the model you want to deploy from the list of available models in the Model Registry _(b)_.
+In the simplified form, select the model framework used to train your model (i.e., _Tensorflow serving_ or _Python_). Then, select the model you want to deploy from the list of available models under `pick a model`.
 
-After selecting the model, the rest of fields are filled automatically. We pick the last model version _(c)_ and model artifact version _(d)_ available in the Model Registry. Moreover, we infer the deployment name _(e)_ from the name given to the model.
+After selecting the model, the rest of fields are filled automatically. We pick the last model version and model artifact version available in the Model Registry. Moreover, we infer the deployment name from the model name.
 
 !!! notice "Deployment name validation rules"
     A valid deployment name can only contain characters a-z, A-Z and 0-9.
 
 !!! info "Predictor script for Python models" 
-    For Python models, you can select a custom [predictor script](#predictor) to load and run the trained model by clicking on `Select predictor` _(f)_.
+    For Python models, you can select a custom [predictor script](#predictor) to load and run the trained model by clicking on `From project` or `Upload new file`, to choose an existing script in the project file system or upload a new script, respectively.
 
-If you prefer, change the name of the deployment, model version or [artifact version](#model-artifact). Then, click on `Create deployment` to create the deployment for your model.
+If you prefer, change the name of the deployment, model version or [artifact version](#model-artifact). Then, click on `Create new deployment` to create the deployment for your model.
 
-<!-- TODO: Image of quick deployment form with letters a), b), c)... -->
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img style="float: left; width: 45%; margin-right: 12px" src="../../../../assets/images/guides/mlops/serving/deployment_simple_form_tf.png" alt="Simplified deployment form for Tensorflow">
+    <img style="width: 45%;" src="../../../../assets/images/guides/mlops/serving/deployment_simple_form_py.png" alt="Simplified deployment form for Python">
+    <figcaption>Simplified deployment creation forms for Tensorflow models (left) and Python models (right)</figcaption>
   </figure>
 </p>
 
-### Step 3 (Optional): Advanced deployment form
+### Step 3 (Optional): Advanced configuration
 
-Optionally, you can access and adjust other parameters of the deployment configuration by clicking on `Advanced configuration`.
-<!-- TODO: Image highlighting the button -->
-<p color=red>CHANGE IMAGE</p>
+Optionally, you can access and adjust other parameters of the deployment configuration by clicking on `Advanced options`.
+
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img  style="max-width: 85%; margin: 0 auto" src="../../../../assets/images/guides/mlops/serving/deployment_simple_form_adv_options.png" alt="Advance options">
+    <figcaption>Advanced options. Go to advanced deployment creation form</figcaption>
   </figure>
 </p>
 
 You will be redirected to a full-page deployment creation form where you can see all the default configuration values we selected for your deployment and adjust them according to your use case. Apart from the aforementioned simplified configuration, in this form you can setup the following components:
 
-!!! info "Deployment advanced configuration"
+!!! info "Deployment advanced options"
     1. [Predictor](#predictor)
     2. [Transformer](#transformer)
     3. [Inference logger](#inference-logger)
     4. [Inference batcher](#inference-batcher)
     5. [Resources](#resources)
 
-<!-- TODO: Image of full deployment form ??? or we skip image here and include an image per component in the corresponding docs page (transformer.md, ...) -->
-<p color=red>CHANGE IMAGE</p>
-<p align="center">
-  <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
-  </figure>
-</p>
-
-Once you are done with the changes, click on `Create deployment` at the end of the page to create the deployment for your model.
+Once you are done with the changes, click on `Create new deployment` at the bottom of the page to create the deployment for your model.
 
 ### Step 4: Deployment creation
 
 Wait for the deployment creation process to finish.
 
-<!-- TODO: Image Create deployment button loading -->
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img src="../../../../assets/images/guides/mlops/serving/deployment_creating.png" alt="Creating new deployment">
+    <figcaption>Deployment creation in progress</figcaption>
   </figure>
 </p>
 
@@ -106,23 +90,19 @@ Wait for the deployment creation process to finish.
 
 Once the deployment is created, you will be redirected to the list of all your existing deployments in the project. You can use the filters on the top of the page to easily locate your new deployment.
 
-<!-- TODO: Image deployment list / filters -->
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img src="../../../../assets/images/guides/mlops/serving/deployments_list.png" alt="List of deployments">
+    <figcaption>List of deployments</figcaption>
   </figure>
 </p>
 
 After that, click on the new deployment to access the overview page.
 
-<!-- TODO: Deployment overview page -->
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img src="../../../../assets/images/guides/mlops/serving/deployment_overview.png" alt="Deployment overview">
+    <figcaption>Deployment overview</figcaption>
   </figure>
 </p>
 

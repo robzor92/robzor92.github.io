@@ -29,7 +29,7 @@ Before you begin this guide you'll need to retrieve the following information fr
 Head to the Storage Connector View on Hopsworks (1) and set up a new storage connector (2).
 
 <figure markdown>
-  ![Storage Connector Creation](/assets/images/guides/fs/storage_connector/storage_connector_create.png)
+  ![Storage Connector Creation](../../../../assets/images/guides/fs/storage_connector/storage_connector_create.png)
   <figcaption>The Storage Connector View in the User Interface</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ Enter the details for your Redshift connector. Start by giving it a **name** and
 9. Set the appropriate authentication method.
 
 <figure markdown>
-  ![Redshift Connector Creation](/assets/images/guides/fs/storage_connector/redshift_creation.png)
+  ![Redshift Connector Creation](../../../../assets/images/guides/fs/storage_connector/redshift_creation.png)
   <figcaption>Redshift Connector Creation Form</figcaption>
 </figure>
 
@@ -64,7 +64,7 @@ You then upload the driver files to the “Resources” directory in your projec
 3. Upload the driver jar file.
 
 <figure markdown>
-  ![Redshift Driver Upload](/assets/images/guides/fs/storage_connector/driver_upload.png)
+  ![Redshift Driver Upload](../../../../assets/images/guides/fs/storage_connector/driver_upload.png)
   <figcaption>Redshift Driver Upload in the Filesystem Browser</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ You can now add the driver file to the default job and Jupyter configuration. Th
 4. Select and Upload the jar file in the "additional jars" section of the configuration.
 
 <figure markdown>
-  ![Redshift Driver Job and Jupyter Configuration](/assets/images/guides/fs/storage_connector/driver_upload.png)
+  ![Redshift Driver Job and Jupyter Configuration](../../../../assets/images/guides/fs/storage_connector/driver_upload.png)
   <figcaption>Attaching the Redshift Driver to all Jobs and Jupyter Instances of the Project</figcaption>
 </figure>
 

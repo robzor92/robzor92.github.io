@@ -62,7 +62,7 @@ Also, he will be able to view **the same** Dashboard as Alice, so he can start, 
   </figure>
 </p>
 
-If Alice had existing clusters running and she had selected [Managed user management](../../../aws/cluster_creation/#step-11-user-management-selection)
+If Alice had existing clusters running and she had selected [Managed user management](../../aws/cluster_creation/#step-11-user-management-selection)
 during cluster creation, an account will be automatically created for Bob on these clusters.
 
 ## Removing members from an organization
@@ -85,7 +85,7 @@ The supported permissions are:
 
 - __Non admin members can invite new members to the organization__. If this permission is enabled, any member of the organization will be able to invite other members to the organization. Note that only the owner and the administrators will be able to invite new members as administrators. If this permission is not enabled only the owner and the administrators can invite new members to the organization.
 - __Non admin members can create and terminate clusters__. If this permission is enabled, any member of the organization will be able to create and terminate clusters. If it is not enabled, only the owner and the administrators will be able to create and terminate clusters.
-- __Non admin members can open clusters ports__. If this permission is enabled, any member of the organization can open and close [services ports](./services.md) on organization's clusters. If it is not enabled, only the orgnization owener and administrators  will be able to do so.
+- __Non admin members can open clusters ports__. If this permission is enabled, any member of the organization can open and close [services ports](./services.md) on organization's clusters. If it is not enabled, only the organization owner and administrators will be able to do so.
 
 <p align="center">
   <figure>
@@ -99,7 +99,7 @@ The supported permissions are:
 ## Administrator role 
 Members of an organization can be set as administrators. This can be done by checking the __admin__ checkbox at the time of invitation or by checking the __admin__ checkbox then clicking the __Update__ button next to a member email.
 
-Administrators can do all the actions described in the [Organization permissions](#organization-permissions) section of this documentation. They can also update the configuration of these permissions and set other users as administrators. Finnally, administrators are automatically set as administrators on all the clusters of the organization that have [Managed user enabled](../../../aws/cluster_creation/#step-11-user-management-selection) and are version __2.6.0__ or above.
+Administrators can do all the actions described in the [Organization permissions](#organization-permissions) section of this documentation. They can also update the configuration of these permissions and set other users as administrators. Finally, administrators are automatically set as administrators on all the clusters of the organization that have [Managed user enabled](../../aws/cluster_creation/#step-11-user-management-selection) and are version __2.6.0__ or above.
 
 <p align="center">
   <figure>
