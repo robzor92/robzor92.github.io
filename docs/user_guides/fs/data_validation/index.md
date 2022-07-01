@@ -16,7 +16,7 @@ Click on the Feature Group section in the navigation menu. Click on `New Feature
 
 Scroll to the Expectation Suite section. You can pick a name for your suite as well as two general options.
 
-- enabled chekbox controls whether validation will be run automatically before writing a DataFrame to a Feature Group. Note that validation is executed by the client.
+- enabled checkbox controls whether validation will be run automatically before writing a DataFrame to a Feature Group. Note that validation is executed by the client.
 - 'ALWAYS' vs. 'STRICT' mode. This option controls what happens after validation. Hopsworks defaults to 'ALWAYS', where data is written to the Feature Group regardless of the validation result. This means that even if expectations are failing or throw an exception, Hopsworks will attempt to insert the data into the Feature Group. In 'STRICT' mode, Hopsworks will only write data to the Feature Group if each individual expectation has been successful.
 
 ## Step 3: Add new expectations
