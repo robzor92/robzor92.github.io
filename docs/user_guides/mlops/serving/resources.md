@@ -10,28 +10,23 @@ Depending on the serving tool used to deploy a trained model, resource allocatio
 
 If you have at least one model already trained and saved in the Model Registry, navigate to the deployments page by clicking on the `Deployments` tab on the navigation menu on the left.
 
-<!-- TODO: Add image with sidebar menu -->
-
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img src="../../../../assets/images/guides/mlops/serving/deployments_tab_sidebar.png" alt="Deployments navigation tab">
+    <figcaption>Deployments navigation tab</figcaption>
   </figure>
 </p>
 
-Once in the deployments page, click on `Create new deployment` on the top-right corner to open the deployment creation form.
+Once in the deployments page, click on `New deployment` if there are not existing deployments or on `Create new deployment` at the top-right corner to open the deployment creation form.
 
 ### Step 2: Simplified deployment form
 
 A simplified creation form will appear including the most common deployment fields among all the configuration possible. Resource allocation is part of the advanced options of a deployment. To navigate to the advanced creation form, click on `Advanced options`.
 
-<!-- TODO: Image highlighting the button -->
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img  style="max-width: 85%; margin: 0 auto" src="../../../../assets/images/guides/mlops/serving/deployment_simple_form_adv_options.png" alt="Advance options">
+    <figcaption>Advanced options. Go to advanced deployment creation form</figcaption>
   </figure>
 </p>
 
@@ -42,12 +37,10 @@ In the `Resource allocation` section of the form, you can optionally set the res
 ??? note "Scale-to-zero capabilities"
     Deployments with KServe enabled can scale to zero by choosing `0` as the number of instances.
 
-<!-- TODO: Image Resource allocation -->
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img src="../../../../assets/images/guides/mlops/serving/deployment_adv_form_res.png" alt="Resource allocation for the predictor and transformer components">
+    <figcaption>Resource allocation for the predictor and transformer</figcaption>
   </figure>
 </p>
 
