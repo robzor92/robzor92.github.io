@@ -23,13 +23,10 @@ See examples of transformer scripts in the serving [example notebooks](https://g
 
 If you have at least one model already trained and saved in the Model Registry, navigate to the deployments page by clicking on the `Deployments` tab on the navigation menu on the left.
 
-<!-- TODO: Add image with sidebar menu -->
-
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img src="../../../../assets/images/guides/mlops/serving/deployments_tab_sidebar.png" alt="Deployments navigation tab">
+    <figcaption>Deployments navigation tab</figcaption>
   </figure>
 </p>
 
@@ -39,12 +36,10 @@ Once in the deployments page, click on `Create new deployment` on the top-right 
 
 A simplified creation form will appear including the most common deployment fields among all the configuration possible. Transformers are part of the advanced options of a deployment. To navigate to the advanced creation form, click on `Advanced options`.
 
-<!-- TODO: Image highlighting the button -->
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img  style="max-width: 85%; margin: 0 auto" src="../../../../assets/images/guides/mlops/serving/deployment_simple_form_adv_options.png" alt="Advance options">
+    <figcaption>Advanced options. Go to advanced deployment creation form</figcaption>
   </figure>
 </p>
 
@@ -52,35 +47,29 @@ A simplified creation form will appear including the most common deployment fiel
 
 Transformers require KServe as the serving platform for the deployment. Make sure that KServe is enabled for this deployment by activating the corresponding checkbox.
 
-<!-- TODO: Image KServe checkbox -->
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img src="../../../../assets/images/guides/mlops/serving/deployment_adv_form_kserve.png" alt="KServe enabled in advanced deployment form">
+    <figcaption>Enable KServe in the advanced deployment form</figcaption>
   </figure>
 </p>
 
-Then, if the transformer script is already located in Hopsworks, click on `Select file` and navigate through the file system to find your script.
-Otherwise, you can click on `Upload file` to upload the transformer script now.
+Then, if the transformer script is already located in Hopsworks, click on `From project` and navigate through the file system to find your script.
+Otherwise, you can click on `Upload new file` to upload the transformer script now.
 
-<!-- TODO: Image of transformer section with the two buttons -->
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img src="../../../../assets/images/guides/mlops/serving/deployment_adv_form_trans.png" alt="Transformer script in advanced deployment form">
+    <figcaption>Choose a transformer script in the advanced deployment form</figcaption>
   </figure>
 </p>
 
 At the end of the page, you can configure the resources to be allocated for the transformer, as well as the minimum and maximum number of replicas to be deployed.
 
-<!-- TODO: Image of transformer resources config -->
-<p color=red>CHANGE IMAGE</p>
 <p align="center">
   <figure>
-    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
-    <figcaption>List of created API Keys</figcaption>
+    <img src="../../../../assets/images/guides/mlops/serving/deployment_adv_form_res_trans.png" alt="Resource allocation for the transformer">
+    <figcaption>Resource allocation for the transformer</figcaption>
   </figure>
 </p>
 
