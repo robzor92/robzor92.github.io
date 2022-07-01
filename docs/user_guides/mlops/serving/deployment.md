@@ -29,7 +29,7 @@ If you have at least one model already trained and saved in the Model Registry, 
 
 Once in the deployments page, click on `New deployment` if there are not existing deployments or on `Create new deployment` at the top-right corner to open the deployment creation form.
 
-### Step 2: Simplified deployment form
+### Step 2: Basic deployment configuration
 
 A simplified creation form will appear including the most common deployment fields among all the configuration possible. We provide default values for the rest of the fields, adjusted to the type of deployment you want to create.
 
@@ -47,13 +47,13 @@ If you prefer, change the name of the deployment, model version or [artifact ver
 
 <p align="center">
   <figure>
-    <img style="float: left; width: 45%; margin-right: 12px" src="../../../../assets/images/guides/mlops/serving/deployment_simple_form_tf.png" alt="Simplified deployment creation form for Tensorflow">
-    <img style="width: 45%;" src="../../../../assets/images/guides/mlops/serving/deployment_simple_form_py.png" alt="Deployment simplified creation form for Python">
+    <img style="float: left; width: 45%; margin-right: 12px" src="../../../../assets/images/guides/mlops/serving/deployment_simple_form_tf.png" alt="Simplified deployment form for Tensorflow">
+    <img style="width: 45%;" src="../../../../assets/images/guides/mlops/serving/deployment_simple_form_py.png" alt="Simplified deployment form for Python">
     <figcaption>Simplified deployment creation forms for Tensorflow models (left) and Python models (right)</figcaption>
   </figure>
 </p>
 
-### Step 3 (Optional): Advanced deployment form
+### Step 3 (Optional): Advanced configuration
 
 Optionally, you can access and adjust other parameters of the deployment configuration by clicking on `Advanced options`.
 

@@ -19,7 +19,7 @@ See examples of transformer scripts in the serving [example notebooks](https://g
 
 ## GUI
 
-### Step 1: Create a deployment
+### Step 1: Create new deployment
 
 If you have at least one model already trained and saved in the Model Registry, navigate to the deployments page by clicking on the `Deployments` tab on the navigation menu on the left.
 
@@ -32,7 +32,7 @@ If you have at least one model already trained and saved in the Model Registry, 
 
 Once in the deployments page, click on `New deployment` if there are not existing deployments or on `Create new deployment` at the top-right corner to open the deployment creation form.
 
-### Step 2: Simplified deployment form
+### Step 2: Go to advanced options
 
 A simplified creation form will appear including the most common deployment fields among all the configuration possible. Transformers are part of the advanced options of a deployment. To navigate to the advanced creation form, click on `Advanced options`.
 
@@ -43,7 +43,7 @@ A simplified creation form will appear including the most common deployment fiel
   </figure>
 </p>
 
-### Step 3: Advanced deployment form
+### Step 3: Select a transformer script
 
 Transformers require KServe as the serving platform for the deployment. Make sure that KServe is enabled for this deployment by activating the corresponding checkbox.
 
@@ -63,6 +63,10 @@ Otherwise, you can click on `Upload new file` to upload the transformer script n
     <figcaption>Choose a transformer script in the advanced deployment form</figcaption>
   </figure>
 </p>
+
+After selecting the transformer script, you can optionally configure resource allocation for your transformer (see [Step 4](#step-4-optional-configure-resource-allocation)). Otherwise, click on `Create new deployment` to create the deployment for your model.
+
+### Step 4 (Optional): Configure resource allocation
 
 At the end of the page, you can configure the resources to be allocated for the transformer, as well as the minimum and maximum number of replicas to be deployed.
 

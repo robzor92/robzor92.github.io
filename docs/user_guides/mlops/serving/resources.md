@@ -6,7 +6,7 @@ Depending on the serving tool used to deploy a trained model, resource allocatio
 
 ## GUI
 
-### Step 1: Create a deployment
+### Step 1: Create new deployment
 
 If you have at least one model already trained and saved in the Model Registry, navigate to the deployments page by clicking on the `Deployments` tab on the navigation menu on the left.
 
@@ -19,7 +19,7 @@ If you have at least one model already trained and saved in the Model Registry, 
 
 Once in the deployments page, click on `New deployment` if there are not existing deployments or on `Create new deployment` at the top-right corner to open the deployment creation form.
 
-### Step 2: Simplified deployment form
+### Step 2: Go to advanced options
 
 A simplified creation form will appear including the most common deployment fields among all the configuration possible. Resource allocation is part of the advanced options of a deployment. To navigate to the advanced creation form, click on `Advanced options`.
 
@@ -30,7 +30,7 @@ A simplified creation form will appear including the most common deployment fiel
   </figure>
 </p>
 
-### Step 3: Advanced deployment form
+### Step 3: Configure resource allocation
 
 In the `Resource allocation` section of the form, you can optionally set the resources to be allocated to the predictor and/or the transformer (if available). Moreover, you can choose the minimum number of replicas for each of these components. 
 
