@@ -90,6 +90,7 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: 10px;
 }
 
 .enterprisefs {
@@ -640,8 +641,8 @@
   -ms-flex-align: stretch;
   align-items: stretch;
   border-style: solid;
-  border-width: calc (var(--border-width)*2);
-  border-color: #bbbbbb50 ;
+  border-width: var(--border-width);
+  border-color: #bbbbbb35 ;
   border-radius: 100%;
   background-color: transparent;
 }
@@ -657,10 +658,10 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -669,9 +670,9 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border-style: solid;
+  border-style: dotted;
   border-width: var(--border-width);
-  border-color: #585858;
+  border-color: var(--md-tertiary-fg-color);
   border-radius: 100%;
   background-color: #fff;
   outline-color: #fff;
@@ -680,7 +681,7 @@
   outline-width: 7px;
   -webkit-transition: box-shadow 200ms ease, border-color 200ms ease;
   transition: box-shadow 200ms ease, border-color 200ms ease;
-  color: #585858;
+  color: var(--md-tertiary-fg-color);
   text-align: center;
   cursor: pointer;
 }

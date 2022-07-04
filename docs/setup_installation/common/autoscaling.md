@@ -3,7 +3,7 @@ If you run a Hopsworks cluster version 2.2 or above you can enable autoscaling t
 
 ## Enabling and configuring the autoscaling
 Once you have created a cluster you can enable autoscaling by going to the *Details* tab and clicking on *Configure autoscale*.
-You can also set up autoscaling during the cluster creation. For more details about this see the cluster creation documentation ([AWS](aws/cluster_creation.md#autoscaling-workers-configuration), [AZURE](azure/cluster_creation.md#autoscaling-workers-configuration)).
+You can also set up autoscaling during the cluster creation. For more details about this see the cluster creation documentation ([AWS](../aws/cluster_creation.md#autoscaling-workers-configuration), [AZURE](../azure/cluster_creation.md#autoscaling-workers-configuration)).
 
 <p align="center">
   <figure>

@@ -230,7 +230,7 @@ Congratulations, you have successfully connected you Azure account to Hopsworks.
 ## Step 2: Creating and configuring a storage
 
 !!! note 
-    If you prefer using terraform, you can skip this step and the remaining steps, and instead follow [this guide](../terraform.md#getting-started-with-azure).
+    If you prefer using terraform, you can skip this step and the remaining steps, and instead follow [this guide](../common/terraform.md#getting-started-with-azure).
 
 The Hopsworks clusters deployed by hopsworks.ai store their data in a container in your Azure account. To enable this you need to perform the following operations
 
@@ -420,7 +420,7 @@ Select the number of workers you want to start the cluster with (2).
 Select the *Instance type* (3) and *Local storage* size (4) for the *worker nodes*.
 
 !!! note
-    It is possible to [add or remove workers](../adding_removing_workers.md) or to [enable autoscaling](../autoscaling.md) once the cluster is running.
+    It is possible to [add or remove workers](../common/adding_removing_workers.md) or to [enable autoscaling](../common/autoscaling.md) once the cluster is running.
 
 Press *Next*:
 
@@ -508,7 +508,7 @@ As soon as the cluster has started, you will be able to log in to your new Hopsw
 
 Check out our other guides for how to get started with Hopsworks and the Feature Store:
 
-* Make Hopsworks services [accessible from outside services](../services.md)
+* Make Hopsworks services [accessible from outside services](../common/services.md)
 * Get started with the [Hopsworks Feature Store](https://docs.hopsworks.ai/feature-store-api/latest/quickstart)
 * Get started with Machine Learning on Hopsworks: [HopsML](https://hopsworks.readthedocs.io/en/stable/hopsml/index.html#hops-ml)
 * Get started with Hopsworks: [User Guide](https://hopsworks.readthedocs.io/en/stable/user_guide/user_guide.html#userguide)

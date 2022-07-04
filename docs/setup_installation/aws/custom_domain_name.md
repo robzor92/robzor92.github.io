@@ -18,7 +18,7 @@ guide below for more information.
 
 ## Set cluster domain name
 
-If this feature is enabled for your account, then in the [VPC selection](../cluster_creation/#step-8-vpc-selection)
+If this feature is enabled for your account, then in the [VPC selection](cluster_creation/#step-8-vpc-selection)
 step you will have the option to specify the custom domain name as
 shown in the figure below.
 
@@ -53,7 +53,7 @@ in a configured Route 53 hosted zone.
 
 !!! warning
     If you want the VM to register itself with Route 53 you **must** amend the
-    [Instance Profile](../cluster_creation/#step-5-select-the-instance-profile) with the following permissions
+    [Instance Profile](cluster_creation/#step-5-select-the-instance-profile) with the following permissions
 
 ```json
 {
@@ -125,7 +125,7 @@ rm -f ${record_set_file}
 
 ## Set VM initialization script
 As a final step you need to configure the Cluster to use the script above
-during VM creation with the [user init script](../cluster_creation/#step-14-add-an-init-script-to-your-instances) option.
+during VM creation with the [user init script](./cluster_creation/#step-14-add-an-init-script-to-your-instances) option.
 
 Paste the script to the text box and **make sure** you select this script
 to be executed before anything else on the VM.

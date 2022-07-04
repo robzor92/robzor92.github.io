@@ -1,15 +1,29 @@
 window.addEventListener("DOMContentLoaded", function() {
 
-var hopsworksVersion = window.location.pathname.split("/")[1];
+var windowPathNameSplits = window.location.pathname.split("/");
 
-if(new RegExp("^(\\d+[.]\\d+)$").test(hopsworksVersion)) {
+var majorVersionRegex = new RegExp("(\\d+[.]\\d+)")
 
-    document.getElementById("hopsworks_api_link").href="https://docs.hopsworks.ai/hopsworks-api/" + hopsworksVersion;
+if(majorVersionRegex.test(windowPathNameSplits[1])) { // On landing page docs.hopsworks.api/3.0 - URL contains major version
 
-    document.getElementById("hsfs_api_link").href="https://docs.hopsworks.ai/feature-store-api/" + hopsworksVersion;
+    document.getElementById("hopsworks_api_link").href="https://docs.hopsworks.ai/hopsworks-api/" + windowPathNameSplits[1];
 
-    document.getElementById("hsml_api_link").href="https://docs.hopsworks.ai/machine-learning-api/" + hopsworksVersion;
+    document.getElementById("hsfs_api_link").href="https://docs.hopsworks.ai/feature-store-api/" + windowPathNameSplits[1];
 
-};
+    document.getElementById("hsml_api_link").href="https://docs.hopsworks.ai/machine-learning-api/" + windowPathNameSplits[1];
+
+} else { // on docs.hopsworks.api/feature-store-api/3.0 / docs.hopsworks.api/hopsworks-api/3.0 / docs.hopsworks.api/machine-learning-api/3.0
+
+    var apiVersion = windowPathNameSplits[2];
+    var majorVersion = apiVersion.match(majorVersionRegex)[0];
+
+    document.getElementsByClassName("md-tabs__link")[0].href="https://docs.hopsworks.ai/" + majorVersion;
+    document.getElementsByClassName("md-tabs__link")[1].href="https://docs.hopsworks.ai/" + majorVersion + "/getting_started/";
+    document.getElementsByClassName("md-tabs__link")[2].href="https://docs.hopsworks.ai/" + majorVersion + "/concepts/hopsworks/";
+    document.getElementsByClassName("md-tabs__link")[3].href="https://docs.hopsworks.ai/" + majorVersion + "/user_guides/"
+    document.getElementsByClassName("md-tabs__link")[4].href="https://docs.hopsworks.ai/" + majorVersion; + "/setup_installation/aws/getting_started/"
+    document.getElementsByClassName("md-tabs__link")[5].href="https://docs.hopsworks.ai/" + majorVersion; + "/admin/"
+
+}
 
 });

@@ -28,7 +28,7 @@ jdbc:mysql://10.0.2.15:3306/[databaseName]?useSSL=false&allowPublicKeyRetrieval=
 Head to the Storage Connector View on Hopsworks (1) and set up a new storage connector (2).
 
 <figure markdown>
-  ![Storage Connector Creation](/assets/images/guides/fs/storage_connector/storage_connector_create.png)
+  ![Storage Connector Creation](../../../../assets/images/guides/fs/storage_connector/storage_connector_create.png)
   <figcaption>The Storage Connector View in the User Interface</figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ Enter the details for your JDBC enabled database.
 4. Click "Setup storage connector".
 
 <figure markdown>
-  ![JDBC Connector Creation](/assets/images/guides/fs/storage_connector/jdbc_creation.png)
+  ![JDBC Connector Creation](../../../../assets/images/guides/fs/storage_connector/jdbc_creation.png)
   <figcaption>JDBC Connector Creation Form</figcaption>
 </figure>
 

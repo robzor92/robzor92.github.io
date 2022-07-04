@@ -1,9 +1,16 @@
 # Configure Kerberos
 
-Kerberos need some server configuration before you can enable it from the UI. For instruction on how to 
-configure your hopsworks server see 
-[Server Configuration for Kerberos](./configure-server.md#server-configuration-for-kerberos) 
+## Introduction
+Kerberos is a network authentication protocol that allow nodes to communicating over a non-secure network to prove their identity to one another in a secure manner.
+This tutorial shows an administrator how to configure Kerberos authentication.
 
+Kerberos need some server configuration before you can enable it from the UI.
+
+## Prerequisites
+A server configured with Kerberos. See [Server Configuration for Kerberos](../configure-server/#server-configuration-for-kerberos) for 
+instruction on how to do this. 
+
+### Step 1: Enable Kerberos
 After configuring the server you can configure Authentication methods by clicking on your name in the top right
 corner of the navigation bar and choosing *Cluster Settings* from the dropdown menu.
 In the _Authentication_ tab you can find in **Cluster Settings**, you can enable Kerberos by clicking on the Kerberos checkbox.
@@ -18,6 +25,7 @@ clicking on the checkbox.
   <figcaption>Setup Authentication Methods</figcaption>
 </figure>
 
+### Step 2: Edit configuration
 Finally, click on edit configuration and fill in the attributes.
 
 <figure>
@@ -28,7 +36,7 @@ Finally, click on edit configuration and fill in the attributes.
 </figure>
 
 - Account status: the status a user will be assigned when logging in for the first time. If a user is assigned a status
-  different from _Activated_ an admin needs to manually activate each user from the [User management](../user.md).
+  different from _Activated_ an admin needs to manually activate each user from the [User management](../../user).
 - Group mapping: allows you to specify a mapping between LDAP groups and Hopsworks groups. The mapping is a
   semicolon separated string in the form ```Directory Administrators->HOPS_ADMIN;IT People-> HOPS_USER```. Default 
   is empty. If no mapping is specified, users need to be assigned a role by an admin before they can log in.
@@ -59,3 +67,6 @@ The login page will now have the choice to use Kerberos for authentication.
 
     Make sure that you have Kerberos properly configured on your computer and you are logged in.
     Kerberos support must also be configured on the browser to use Kerberos for authentication.
+
+## Conclusion
+In this guide you learned how to configure Kerberos for authentication.

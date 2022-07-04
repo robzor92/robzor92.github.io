@@ -19,7 +19,7 @@ In Hopsworks.ai, select *Create cluster*:
 Select the *GCP Project* (1) in which you want the cluster to run.
 
 !!! note
-    If the *Project* does not appear in the drop-down, make sure that you properly [Connected your GCP account](getting_started.md#step-1-connecting-your-gcp-account) for this project.
+    If the *Project* does not appear in the drop-down, make sure that you properly [Connected your GCP account](./getting_started.md#step-1-connecting-your-gcp-account) for this project.
 
 Name your cluster (2). Choose the *Region*(3) and *Zone*(4) in which to deploy the cluster.
 
@@ -41,7 +41,7 @@ Enter the name of the bucket in which the hopsworks cluster will store its data 
 
 ### Step 3 workers configuration
 
-In this step, you configure the workers. There are two possible setups: static or autoscaling. In the static setup, the cluster has a fixed number of workers that you decide. You can then add and remove workers manually, for more details: [documentation](../adding_removing_workers.md). In the autoscaling setup, you configure conditions to add and remove workers and the cluster will automatically add and remove workers depending on the demand, for more details: [documentation](../autoscaling.md).
+In this step, you configure the workers. There are two possible setups: static or autoscaling. In the static setup, the cluster has a fixed number of workers that you decide. You can then add and remove workers manually, for more details: [documentation](../common/adding_removing_workers.md). In the autoscaling setup, you configure conditions to add and remove workers and the cluster will automatically add and remove workers depending on the demand, for more details: [documentation](../common/autoscaling.md).
 
 #### Static workers configuration
 You can set the static configuration by selecting *Disabled* in the first drop-down (1). Then you select the number of workers you want to start the cluster with (2). And, select the *Instance type* (3) and *Local storage* size (4) for the *worker nodes*.
@@ -106,7 +106,7 @@ To backup the storage bucket data when taking a cluster backup we need to set a 
 
 You can select the VPC which will be used by the Hopsworks cluster. 
 You can either select an existing VPC or let Hopsworks.ai create one for you.
-If you decide to use restricted hopsworks.ai permissions (see [restrictive-permissions](/gcp/restrictive_permissions/#create-a-vpc-permissions) for more details) 
+If you decide to use restricted hopsworks.ai permissions (see [restrictive-permissions](../restrictive_permissions/#create-a-vpc-permissions) for more details) 
 you will need to select an existing VPC here. 
 
 <p align="center">
@@ -137,9 +137,9 @@ Select the *Subnet* to be used by your cluster and press *Next*.
 ### Step 7 User management selection
 In this step, you can choose which user management system to use. You have three choices: 
 
-* *Managed*: Hopsworks.ai automatically adds and removes users from the Hopsworks cluster when you add and remove users from your organization  (more details [here](../user_management.md)).
-* *OAuth2*: integrate the cluster with your organization's OAuth2 identity provider. See [Use OAuth2 for user management](../sso/oauth.md) for more detail.
-* *LDAP*: integrate the cluster with your organization's LDAP/ActiveDirectory server. See [Use LDAP for user management](../sso/ldap.md) for more detail.
+* *Managed*: Hopsworks.ai automatically adds and removes users from the Hopsworks cluster when you add and remove users from your organization  (more details [here](../common/user_management.md)).
+* *OAuth2*: integrate the cluster with your organization's OAuth2 identity provider. See [Use OAuth2 for user management](../common/sso/oauth.md) for more detail.
+* *LDAP*: integrate the cluster with your organization's LDAP/ActiveDirectory server. See [Use LDAP for user management](../common/sso/ldap.md) for more detail.
 * *Disabled*: let you manage users manually from within Hopsworks.
 
 <p align="center">
@@ -156,7 +156,7 @@ Hopsworks uses [RonDB](https://www.rondb.com/) as a database engine for its onli
 own VM. Premium users can scale-out database services to multiple VMs
 to handle increased workload.
 
-For details on how to configure RonDB check our guide [here](../rondb.md).
+For details on how to configure RonDB check our guide [here](../common/rondb.md).
 
 <p align="center">
   <figure>
