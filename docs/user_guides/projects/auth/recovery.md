@@ -10,8 +10,8 @@ An account on a Hopsworks cluster.
 If you forget your password start by clicking on **Forgot password** on the login page. Enter your email and click on the 
 **Send reset link** button.
   <figure>
-    <a  href="../../../assets/images/auth/resetPassword.png">
-      <img width="400px" src="../../../assets/images/auth/resetPassword.png" alt="Recover password">
+    <a  href="../../../../assets/images/auth/resetPassword.png">
+      <img width="400px" src="../../../../assets/images/auth/resetPassword.png" alt="Recover password">
     </a>
     <figcaption>Password reset</figcaption>
   </figure>

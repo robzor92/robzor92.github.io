@@ -10,8 +10,8 @@ An account on a Hopsworks cluster.
 After your account is validated by an administrator you can use your email and password to login.
 
   <figure>
-    <a  href="../../../assets/images/auth/login.png">
-      <img width="400px" src="../../../assets/images/auth/login.png" alt="Login" />
+    <a  href="../../../../assets/images/auth/login.png">
+      <img width="400px" src="../../../../assets/images/auth/login.png" alt="Login" />
     </a>
     <figcaption>Login with password</figcaption>
   </figure>
@@ -24,8 +24,8 @@ enter your password. Use your authenticator app
 on your phone to get a one-time password.
 
 <figure>
-  <a  href="../../../assets/images/auth/otp.png">
-    <img width="400px" src="../../../assets/images/auth/otp.png" alt="Two-factor" />
+  <a  href="../../../../assets/images/auth/otp.png">
+    <img width="400px" src="../../../../assets/images/auth/otp.png" alt="Two-factor" />
   </a>
   <figcaption>One time password</figcaption>
 </figure>
@@ -33,14 +33,14 @@ on your phone to get a one-time password.
 Upon successful login, you will arrive at the landing page:
 
   <figure>
-    <a  href="../../../assets/images/auth/landing-page.png">
-      <img alt="landing page" src="../../../assets/images/auth/landing-page.png">
+    <a  href="../../../../assets/images/auth/landing-page.png">
+      <img alt="landing page" src="../../../../assets/images/auth/landing-page.png">
     </a>
     <figcaption>Landing page</figcaption>
   </figure>
 
 In the landing page, you will find two buttons. Use these buttons to either create a 
-_demo project_ or [a new project](../../projects/project/create_project).
+_demo project_ or [a new project](../../../projects/project/create_project).
 
 ## Conclusion
 In this guide you learned how to log in to Hopsworks.

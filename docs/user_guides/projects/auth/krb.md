@@ -13,8 +13,8 @@ If Kerberos is configured you will see a _Log in using_ alternative on the login
 **Go to Hopsworks** to login. 
 
 <figure>
-  <a  href="../../../assets/images/admin/ldap/login-using-krb.png">
-    <img width="400px" src="../../../assets/images/admin/ldap/login-using-krb.png" alt="Log in using Kerberos" />
+  <a  href="../../../../assets/images/admin/ldap/login-using-krb.png">
+    <img width="400px" src="../../../../assets/images/admin/ldap/login-using-krb.png" alt="Log in using Kerberos" />
   </a>
   <figcaption>Log in using Kerberos</figcaption>
 </figure>
@@ -22,8 +22,8 @@ If Kerberos is configured you will see a _Log in using_ alternative on the login
 If password login is disabled you only see the _Log in using Kerberos/SSO_ alternative. Click on
 **Go to Hopsworks** to login.
 <figure>
-  <a  href="../../../assets/images/admin/ldap/krb-login.png">
-    <img width="400px" src="../../../assets/images/admin/ldap/krb-login.png" alt="Kerberos only" />
+  <a  href="../../../../assets/images/admin/ldap/krb-login.png">
+    <img width="400px" src="../../../../assets/images/admin/ldap/krb-login.png" alt="Kerberos only" />
   </a>
   <figcaption>Kerberos only authentication</figcaption>
 </figure>
@@ -33,8 +33,8 @@ Note that without a properly configured browser, the Kerberos token is not sent 
 
 If Kerberos is not configured properly you will see **Wrong credentials** message when trying to log in.
 <figure>
-  <a  href="../../../assets/images/admin/ldap/no-ticket.png">
-    <img width="400px" src="../../../assets/images/admin/ldap/no-ticket.png" alt="Browser not configured" />
+  <a  href="../../../../assets/images/admin/ldap/no-ticket.png">
+    <img width="400px" src="../../../../assets/images/admin/ldap/no-ticket.png" alt="Browser not configured" />
   </a>
   <figcaption>Missing Kerberos ticket</figcaption>
 </figure>
@@ -48,22 +48,22 @@ If you do not want your information to be saved in Hopsworks you can click **Can
 to the login page.
 
 <figure>
-  <a  href="../../../assets/images/auth/consent.png">
-    <img width="400px" src="../../../assets/images/auth/consent.png" alt="OAuth2 consent" />
+  <a  href="../../../../assets/images/auth/consent.png">
+    <img width="400px" src="../../../../assets/images/auth/consent.png" alt="OAuth2 consent" />
   </a>
   <figcaption>Give consent</figcaption>
 </figure>
 
 After clicking on **Register** you will be redirected to the landing page:
   <figure>
-    <a  href="../../../assets/images/auth/landing-page.png">
-      <img alt="landing page" src="../../../assets/images/auth/landing-page.png">
+    <a  href="../../../../assets/images/auth/landing-page.png">
+      <img alt="landing page" src="../../../../assets/images/auth/landing-page.png">
     </a>
     <figcaption>Landing page</figcaption>
   </figure>
 
 In the landing page, you will find two buttons. Use these buttons to either create a 
-_demo project_ or [a new project](../../projects/project/create_project).
+_demo project_ or [a new project](../../../projects/project/create_project).
 
 ## Conclusion
 In this guide you learned how to log in to Hopsworks using Kerberos.
