@@ -7,7 +7,7 @@ This information is provided through the Services page.
 ## Prerequisites
 Administrator account on a Hopsworks cluster.
 
-### Step 1: Check serice status
+### Step 1: Check service status
 You can find the Services page by clicking on your name, in the top right corner of the navigation bar, and choosing 
 _Cluster Settings_ from the dropdown menu and going to the _Services_ tab.
 

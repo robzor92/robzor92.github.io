@@ -2,7 +2,7 @@
 
 Training data can be created from the feature view and used by different ML libraries for training different models.
 
-You can read [training data concepts](../../../concepts/fs/feature_view/training_data.md) for more details.
+You can read [training data concepts](../../../concepts/fs/feature_view/offline_api.md) for more details.
 
 ## Creation
 It can be created as in-memory DataFrames or materialised as `tfrecords`, `parquet`, `csv`, or `tsv` files to HopsFS or in all other locations, for example, S3, GCS. If you materialise a training dataset, a `PySparkJob` will be launched. By default, `create_training_data` waits for the job to finish. However, you can run the job asynchronously by passing `write_options={"wait_for_job": False}`. You can monitor the job status in the [jobs overview UI](../../projects/jobs/pyspark_job.md#step-1-jobs-overview). 
