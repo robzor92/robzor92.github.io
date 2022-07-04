@@ -148,13 +148,21 @@ nav:
         - Inference Batcher: user_guides/mlops/serving/inference-batcher.md
       - Vector Database: user_guides/mlops/vector_database/index.md
     - Integrations:
-        - Python: integrations/dummy.md
-        - Databricks: integrations/dummy.md
-        - AWS Sagemaker: integrations/dummy.md
-        - AWS EMR: integrations/dummy.md
-        - Azure HDInsight: integrations/dummy.md
-        - Azure Machine Learning: integrations/dummy.md
-        - Apache Spark: integrations/dummy.md
+        - Overview: user_guides/integrations/setup.md
+        - Python: user_guides/integrations/python.md
+        - Databricks:
+            - Networking: user_guides/integrations/databricks/networking.md
+            - Hopsworks API Key: user_guides/integrations/databricks/api_key.md
+            - Configuration: user_guides/integrations/databricks/configuration.md
+        - AWS Sagemaker: user_guides/integrations/sagemaker.md
+        - AWS EMR:
+            - Networking: user_guides/integrations/emr/networking.md
+            - Configure EMR for the Hopsworks Feature Store: user_guides/integrations/emr/emr_configuration.md
+        - Azure HDInsight: user_guides/integrations/hdinsight.md
+        - Azure Machine Learning:
+            - Designer: user_guides/integrations/mlstudio_designer.md
+            - Notebooks: user_guides/integrations/mlstudio_notebooks.md
+        - Apache Spark: user_guides/integrations/spark.md
   - Setup and Installation:
       - AWS:
           - Getting Started: setup_installation/aws/getting_started.md
