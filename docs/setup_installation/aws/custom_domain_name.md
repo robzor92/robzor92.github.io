@@ -125,7 +125,7 @@ rm -f ${record_set_file}
 
 ## Set VM initialization script
 As a final step you need to configure the Cluster to use the script above
-during VM creation with the [user init script](./cluster_creation/#step-14-add-an-init-script-to-your-instances) option.
+during VM creation with the [user init script](../cluster_creation/#step-14-add-an-init-script-to-your-instances) option.
 
 Paste the script to the text box and **make sure** you select this script
 to be executed before anything else on the VM.

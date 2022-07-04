@@ -87,13 +87,13 @@ nav:
       - Tags and Keywords: user_guides/fs/dummy.md
     - Projects:
       - Authentication:
-        - Registration: user_guides/auth/registration.md
-        - Login: user_guides/auth/login.md
-        - Password Recovery: user_guides/auth/recovery.md
-        - OAuth2 Authentication: user_guides/auth/oauth.md
-        - LDAP Authentication: user_guides/auth/ldap.md
-        - Kerberos Authentication: user_guides/auth/krb.md
-        - Update Profile: user_guides/auth/profile.md
+        - Registration: user_guides/projects/auth/registration.md
+        - Login: user_guides/projects/auth/login.md
+        - Password Recovery: user_guides/projects/auth/recovery.md
+        - OAuth2 Authentication: user_guides/projects/auth/oauth.md
+        - LDAP Authentication: user_guides/projects/auth/ldap.md
+        - Kerberos Authentication: user_guides/projects/auth/krb.md
+        - Update Profile: user_guides/projects/auth/profile.md
       - Projects:
         - Create Project: user_guides/projects/project/create_project.md
         - Add Members: user_guides/projects/project/add_members.md

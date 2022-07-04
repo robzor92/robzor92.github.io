@@ -234,7 +234,7 @@ Hopsworks cluster nodes need access to certain resources such as S3 bucket and C
 Follow the instructions in this guide to create an IAM instance profile with access to your S3 bucket: [Guide](https://docs.aws.amazon.com/codedeploy/latest/userguide/getting-started-create-iam-instance-profile.html#getting-started-create-iam-instance-profile-console)
 
 When creating the policy, paste the following in the JSON tab.
-{!aws/instance_profile_permissions.md!}
+{!setup_installation/aws/instance_profile_permissions.md!}
 
 ## Step 3: Creating storage
 
