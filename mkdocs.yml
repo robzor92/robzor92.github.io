@@ -42,6 +42,7 @@ nav:
     - Projects:
         - Governance: concepts/projects/governance.md
         - Data Storage/Sharing: concepts/projects/storage.md 
+        - Tags/Search/Lineage: concepts/projects/search.md
         - CI/CD: concepts/projects/cicd.md
     - MLOps:
       - Prediction Services: concepts/mlops/prediction_services.md
