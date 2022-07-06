@@ -84,7 +84,6 @@ nav:
         - Feature vectors: user_guides/fs/feature_view/feature-vectors.md
         - Query: user_guides/fs/feature_view/query.md
         - Transformation Functions: user_guides/fs/feature_view/transformation-function.md
-      - Tags and Keywords: user_guides/fs/dummy.md
     - Projects:
       - Authentication:
         - Registration: user_guides/projects/auth/registration.md
