@@ -99,13 +99,9 @@ nav:
         - Create Project: user_guides/projects/project/create_project.md
         - Add Members: user_guides/projects/project/add_members.md
       - Python:
-        - Install library:
-          - Git source: user_guides/projects/python/python_install.md
-          - pip: user_guides/projects/python/python_install.md
-          - conda: user_guides/projects/python/python_install.md
-          - distribution: user_guides/projects/python/python_install.md
-          - Export environment: user_guides/projects/python/python_env_export.md
-          - Recreate environment: user_guides/projects/python/python_env_recreate.md
+        - Install Library: user_guides/projects/python/python_install.md
+        - Export environment: user_guides/projects/python/python_env_export.md
+        - Recreate environment: user_guides/projects/python/python_env_recreate.md
       - Jupyter:
         - Run Spark Notebook: user_guides/projects/jupyter/spark_notebook.md
         - Run Python Notebook: user_guides/projects/jupyter/python_notebook.md

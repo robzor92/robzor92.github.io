@@ -1,6 +1,6 @@
 # How To Install Python Libraries
 
-### Introduction
+## Introduction
 
 The prepackaged python environment in Hopsworks contains a large number of libraries for data engineering, machine learning and more general data science development. But in some cases users want to install additional packages for their applications.
 
@@ -15,7 +15,7 @@ In this guide, you will learn how to install Python packages using these differe
 
 Under the `Project settings` section you can find the `Python libraries` setting.
 
-### Step 1 (optional): Name and version
+### Name and version
 
 Enter the name and, optionally, the desired version to install.
 
@@ -26,7 +26,7 @@ Enter the name and, optionally, the desired version to install.
   </figure>
 </p>
 
-### Step 2 (optional): Search
+### Search
 
 Enter the search term and select a library and version to install.
 
@@ -37,7 +37,7 @@ Enter the search term and select a library and version to install.
   </figure>
 </p>
 
-### Step 3 (optional): Distribution (.whl, .egg..)
+### Distribution (.whl, .egg..)
 
 Install a python package by uploading the corresponding package file and selecting it in the file browser.
 
@@ -48,7 +48,7 @@ Install a python package by uploading the corresponding package file and selecti
   </figure>
 </p>
 
-### Step 4 (optional): Git hosted
+### Git source
 
 To install from a git repository simply provide the repository URL. The URL you should provide is the same as you would enter on the command line using `pip install git+{repo_url}`.
 In the case of a private git repository, also select whether it is a GitHub or GitLab repository and the preconfigured access token for the repository.

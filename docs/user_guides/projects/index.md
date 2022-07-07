@@ -1,6 +1,6 @@
 # Projects Guides
 
-This section serves to provide guides and examples for the common usage of abstractions and functionality of a Project through the Hopsworks UI and APIs.
+This section serves to provide guides and examples for the common usage of services in a Project through the Hopsworks UI and APIs.
 
 - [Projects](project/create_project.md)
 - [Authentication](auth/login.md)
