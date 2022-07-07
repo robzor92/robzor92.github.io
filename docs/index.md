@@ -147,7 +147,7 @@ pointer-events: initial;
                   <div class="rec_frame_main-white">
                     <div class="name_item_02"><a href="./concepts/fs/feature_view/fv_overview/">Feature Views</a></div>
                     <div class="rec_frame_main-white dotted">
-                      <div class="name_item_02 non-bold"><a href="/concepts/fs/feature_view/offline_api/">Training Data</a></div>
+                      <div class="name_item_02 non-bold"><a href="./concepts/fs/feature_view/offline_api/">Training Data</a></div>
                     </div>
                     <div class="rec_frame_main-white dotted">
                       <div class="name_item_02 non-bold"><a href="./concepts/fs/feature_view/online_api/">Feature Vectors</a></div>
@@ -260,7 +260,7 @@ Hopsworks is widely used as a standalone Feature Store. Hopsworks breaks the mon
 Hopsworks Feature Store also supports feature pipelines in PySpark, Spark, Flink, and SQL. Offline features can either be stored in Hopsworks, as Hudi tables on object storage, or in external data lakehouses (Snowflake, Databricks, Redshift, BigQuery, any JDBC-enabled platform) via External Feature Groups. Online features are served by [RonDB](https://www.rondbai.com), developed by Hopsworks as the lowest latency, highest throughput, highest availability data store for your features.
 
 ## MLOps on Hops
-Hopsworks provides model serving capabilities through KServe, with additional support for feature/prediction logging to Kafka (also part of Hopsworks), and secure, low-latency model deployments via Istio. Hopsworks also has a Model Registry for KServe, with support for versioning both models and model assets (such as KServe transformers). Hopsworks also includes a vector database to provide similarity search capabilities for embeddings, based on [OpenSearch](/docs/concepts/mlops/opensearch.md).
+Hopsworks provides model serving capabilities through KServe, with additional support for feature/prediction logging to Kafka (also part of Hopsworks), and secure, low-latency model deployments via Istio. Hopsworks also has a Model Registry for KServe, with support for versioning both models and model assets (such as KServe transformers). Hopsworks also includes a vector database to provide similarity search capabilities for embeddings, based on [OpenSearch](./concepts/mlops/opensearch.md).
 
 ## Project-based Multi-Tenancy and Team Collaboration
 Hopsworks provides projects as a secure sandbox in which teams can collaborate and share ML assets. Hopsworks' unique multi-tenant project model even enables sensitive data to be stored in a shared cluster, while still providing fine-grained sharing capabilities for ML assets across project boundaries.  Projects can be used to structure teams so that they have end-to-end responsibilty from raw data to managed features and models. Projects can also be used to create development, staging, and production environments for data teamss. All ML assets support versioning, lineage, and provenance provide all hopsworks users with a complete view of the MLOps life cycle, from feature engineering through model serving. 
