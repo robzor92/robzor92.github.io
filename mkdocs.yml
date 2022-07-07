@@ -76,6 +76,7 @@ nav:
         - Create External: user_guides/fs/feature_group/create_external.md
         - Data Types and Schema management: user_guides/fs/feature_group/data_types.md
         - Statistics: user_guides/fs/feature_group/statistics.md
+        - Data Validation: user_guides/fs/feature_group/data_validation.md
       - Feature View:
         - user_guides/fs/feature_view/index.md
         - Feature View: user_guides/fs/feature_view/overview.md
