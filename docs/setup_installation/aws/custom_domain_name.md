@@ -18,7 +18,7 @@ guide below for more information.
 
 ## Set cluster domain name
 
-If this feature is enabled for your account, then in the [VPC selection](cluster_creation/#step-8-vpc-selection)
+If this feature is enabled for your account, then in the [VPC selection](../cluster_creation/#step-8-vpc-selection)
 step you will have the option to specify the custom domain name as
 shown in the figure below.
 

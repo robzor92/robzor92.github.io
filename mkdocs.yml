@@ -86,6 +86,7 @@ nav:
         - Query: user_guides/fs/feature_view/query.md
         - Transformation Functions: user_guides/fs/feature_view/transformation-function.md
     - Projects:
+      - user_guides/projects/index.md
       - Authentication:
         - Registration: user_guides/projects/auth/registration.md
         - Login: user_guides/projects/auth/login.md
@@ -112,7 +113,6 @@ nav:
         - Run PySpark Job: user_guides/projects/jobs/pyspark_job.md
         - Run Spark Job: user_guides/projects/jobs/spark_job.md
         - Run Python Job: user_guides/projects/jobs/python_job.md
-        - Alerts: user_guides/projects/jobs/alert.md
       - OpenSearch:
         - Connect: user_guides/projects/opensearch/connect.md
       - Kafka:
@@ -169,7 +169,7 @@ nav:
           - Cluster Creation: setup_installation/aws/cluster_creation.md
           - EKS/ECR integration: setup_installation/aws/eks_ecr_integration.md
           - Limiting Permissions: setup_installation/aws/restrictive_permissions.md
-          - Cluster upgrade: 
+          - Cluster upgrade:
             - Version 2.4 or newer: setup_installation/aws/upgrade_2.4.md
             - Version 2.2 or older: setup_installation/aws/upgrade.md
       - Azure:

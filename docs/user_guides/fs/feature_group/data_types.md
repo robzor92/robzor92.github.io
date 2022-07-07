@@ -80,7 +80,7 @@ Potential *online* types are:
 #### Complex online data types
 
 Additionally to the *online* types above, Hopsworks allows users to store complex types (e.g. *ARRAY<INT>*) on the online feature store.
-Hopsworks serializes the complex features transparently and stores them as VARBINARY in the online feature store. The serialization happens when calling the [save()](../api/feature_group_api/#save), [insert()](../api/feature_group_api/#insert) or [insert_stream()](../api/feature_group_api/#insert_stream) methods. The deserialization will be executed when calling the [get_serving_vector()](../api/training_dataset_api/#get_serving_vector) method to retrieve data from the online feature store.
+Hopsworks serializes the complex features transparently and stores them as VARBINARY in the online feature store. The serialization happens when calling the [save()](https://docs.hopsworks.ai/feature-store-api/3.0/generated/api/feature_group_api/#save), [insert()](https://docs.hopsworks.ai/feature-store-api/3.0/generated/api/feature_group_api/#insert) or [insert_stream()](https://docs.hopsworks.ai/feature-store-api/3.0/generated/api/feature_group_api/#insert_stream) methods. The deserialization will be executed when calling the [get_serving_vector()](https://docs.hopsworks.ai/feature-store-api/3.0/generated/api/training_dataset_api/#get_serving_vector) method to retrieve data from the online feature store.
 If users query directly the online feature store, for instance using the `fs.sql("SELECT ...", online=True)` statement, it will return a binary blob.
 
 On the feature store UI, the online feature type for complex features will be reported as *VARBINARY*.
