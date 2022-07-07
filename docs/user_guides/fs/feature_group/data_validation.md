@@ -8,7 +8,7 @@ Clean, high quality feature data is of paramount importance to being able to tra
 
 ### Step 1: Create or Edit a Feature Group
 
-You can attach at most one expectation suite to a Feature Group. It can be done on creation or at a later point in time. Data validation is an optional step and is not required to write to a Feature Group. You can find out more information about creating a Feature Group [here](feature_group/create.md).
+You can attach at most one expectation suite to a Feature Group. It can be done on creation or at a later point in time. Data validation is an optional step and is not required to write to a Feature Group. You can find out more information about creating a Feature Group [here](create.md).
 
 Click on the Feature Group section in the navigation menu. Click on `New Feature Group` if you want to create a brand new Feature Group. If you already created your Feature Group you can use the search bar to find and open it. Select `edit` at the top or scroll to Expectations section and click on `Edit Expectations`.
 
@@ -120,7 +120,7 @@ conn = hsfs.connection()
 fs = conn.get_feature_store()
 ```
 
-Before writing data to Hopsworks, we first need to create a Feature Group. For more information see [create Feature Group](feature_group/create.md).
+Before writing data to Hopsworks, we first need to create a Feature Group. For more information see [create Feature Group](create.md).
 
 ```python3
 fg = fs.create_feature_group(

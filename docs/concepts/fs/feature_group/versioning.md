@@ -1,4 +1,4 @@
-See here for <a href="/concepts/fs/feature_view/versioning/">information about version of feature views</a>.
+See here for <a href="../../../../concepts/fs/feature_view/versioning/">information about version of feature views</a>.
 
 ### Schema Versioning
 

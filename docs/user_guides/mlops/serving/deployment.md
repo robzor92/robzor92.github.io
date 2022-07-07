@@ -162,7 +162,7 @@ A model artifact is a package containing all of the necessary files for the depl
 
 When a new deployment is created, a model artifact is generated in two cases:
 
-- the artifact version in the predictor is set to `CREATE` (see [Artifact Version](predictor.md/#artifact_version))
+- the artifact version in the predictor is set to `CREATE` (see [Artifact Version](../predictor/#artifact_version))
 - no model artifact with the same files has been created before.
 
 ## Predictor
