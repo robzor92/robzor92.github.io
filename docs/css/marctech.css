@@ -8,6 +8,16 @@
   --border-width:1px;
 }
 
+.cellname{
+  font-style: italic;
+  vertical-align: top; 
+  margin-top:-20px;
+}
+.cellname2{
+  font-style: italic;
+  margin-top:10px;
+}
+
 .marctech_main a{
   color: var(--md-fiftuary-fg-color);
   border-bottom: 1px dotted var(--md-fiftuary-fg-color) !important;
@@ -37,7 +47,7 @@
 
 .image_logo{
   width: 69%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.521);
   z-index: 50;
   padding: 0px 15px 0px 15px;
   margin-bottom: 10px;
@@ -675,10 +685,10 @@
   border-color: var(--md-tertiary-fg-color);
   border-radius: 100%;
   background-color: #fff;
-  outline-color: #fff;
+  outline-color: #fffc;
   outline-offset: 0px;
   outline-style: solid;
-  outline-width: 7px;
+  outline-width: 4px;
   -webkit-transition: box-shadow 200ms ease, border-color 200ms ease;
   transition: box-shadow 200ms ease, border-color 200ms ease;
   color: var(--md-tertiary-fg-color);

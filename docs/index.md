@@ -125,11 +125,9 @@ pointer-events: initial;
             </div>
             <div class="columns_center w-row">
               <div class="column w-col w-col-6">
-                <div class="rec_frame_main">
-                  <div class="name_item_02">Write API</div>
-                </div>
                 <div class="div-block">
-                  <div class="rec_frame_main no_content">
+                  <div class="rec_frame_main no_content"> 
+                  <span class="cellname">Write API</span>
                     <div class="rec_frame_main-white">
                       <div class="name_item_02"> <a href="./concepts/fs/feature_group/fg_overview/">Feature Groups</a></div> 
                     </div>
@@ -140,10 +138,8 @@ pointer-events: initial;
                 </div>
               </div>
               <div class="column w-col w-col-6">
-                <div class="rec_frame_main">
-                  <div class="name_item_02">Read API</div>
-                </div>
                 <div class="rec_frame_main no_content">
+                <span class="cellname2">Read API</span>
                   <div class="rec_frame_main-white">
                     <div class="name_item_02"><a href="./concepts/fs/feature_view/fv_overview/">Feature Views</a></div>
                     <div class="rec_frame_main-white dotted">
