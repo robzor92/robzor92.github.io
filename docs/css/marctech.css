@@ -18,6 +18,12 @@
   margin-top:10px;
 }
 
+@media (max-width: 767px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
 .marctech_main a{
   color: var(--md-fiftuary-fg-color);
   border-bottom: 1px dotted var(--md-fiftuary-fg-color) !important;
