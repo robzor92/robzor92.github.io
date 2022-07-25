@@ -18,12 +18,6 @@
   margin-top:10px;
 }
 
-@media (max-width: 767px) {
-  .hidden-mobile {
-    display: none;
-  }
-}
-
 .marctech_main a{
   color: var(--md-fiftuary-fg-color);
   border-bottom: 1px dotted var(--md-fiftuary-fg-color) !important;
@@ -898,6 +892,9 @@ inherited from the original template
   display: none !important;
 }
 @media screen and (max-width: 991px) {
+  .hidden-marctech {
+    display: none !important;
+  }
   .w-container {
     max-width: 728px;
   }

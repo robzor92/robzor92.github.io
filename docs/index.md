@@ -11,7 +11,7 @@ hide:
   }
 </style>
 
-<div class="marctech_main hidden-mobile">
+<div class="marctech_main hidden-marctech">
     <div class="collumns w-row">
       <div class="column_sides w-col w-col-2">
         <div class="enterprise_data">
