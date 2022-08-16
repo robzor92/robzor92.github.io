@@ -25,3 +25,7 @@ Connecting to the Feature Store from any Python environment, such as your local 
 ## Spark Cluster
 
 Connecting to the Feature Store from an external Spark cluster, such as Cloudera, requires configuring it with the Hopsworks client jars and configuration. The [Spark integration guide](spark.md) explains step by step how to connect to the Feature Store from an external Spark cluster.
+
+## Great Expectations
+
+Validate your data with Great Expectations. Hopsworks  enables automatic validation when inserting a DataFrame in a Feature Group. Checkout the introduction to Great Expectations concept with code snippets [here](great_expectations/Great_Expectations_Hopsworks_Concepts.ipynb) or jump right into it with an adaptation of our fraud tutorial to include data validation [here](great_expectations/fraud_batch_data_validation.ipynb)
